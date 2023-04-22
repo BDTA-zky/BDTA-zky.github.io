@@ -69,6 +69,59 @@
       </tags>
   </entry>
   <entry>
+    <title>蓝桥杯-单词分析（java）</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p>
+<p>现在，请你帮助小蓝，给了一个单词后，帮助他找到出现最多的字母和这 个字母出现的次数。</p>
+<h1 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h1><p>输入一行包含一个单词，单词只由小写英文字母组成。</p>
+<p>对于所有的评测用例，输入的单词长度不超过 1000。</p>
+<p>#输出描述</p>
+<p>输出两行，第一行包含一个英文字母，表示单词中出现得最多的字母是哪 个。如果有多个字母出现的次数相等，输出字典序最小的那个。</p>
+<p>第二行包含一个整数，表示出现得最多的那个字母在单词中出现的次数。</p>
+<p>##输入输出样例</p>
+<p>###示例 1</p>
+<blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lanqiao</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h3><blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">longlonglongistoolong</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">o</span><br><span class="line">6</span><br></pre></td></tr></table></figure>
+
+<p>##运行限制</p>
+<ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 256M</li>
+</ul>
+<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><ol>
+<li>设置一个长度为26的数组记录每字母出现的次数（eg：a【0】代表a，若a出现一次则a【0】++）</li>
+<li>利用CharAt方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</li>
+<li>判断数组a的最大值，最大值所在的索引加上97即对应字母在ASCII码表中的值</li>
+</ol>
+<p>【若利用一个长度为26的数组代表a~z    则a[0]代表字母a，a的ASCII码表值即0+97  （b为1+97   c为2+97）以此类推即   （对应的数组索引+97=该字母的ASCII码值）】</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DanCifenxi</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        String s= sc.next();</span><br><span class="line">        <span class="comment">//设置一个长度为26的数组记录字母出现的次数</span></span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            a[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用charat方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            <span class="type">int</span> b=s.charAt(i)-<span class="number">97</span>;</span><br><span class="line">            a[b]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//判断数组a最大值，加上97即对应字母在ASCII码表中的值</span></span><br><span class="line">        <span class="type">int</span> max=a[<span class="number">0</span>];<span class="comment">//变量max代表出现的次数</span></span><br><span class="line">        <span class="type">int</span> b=<span class="number">0</span>;<span class="comment">//变量b+97即对应的ASCII码表数值  eg：b=0，即对应数组a的索引为0  即对应字母a  ASCII码表值即（0+97）</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; a.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(max&lt;a[i])&#123;</span><br><span class="line">                max=a[i];</span><br><span class="line">                b=i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println((<span class="type">char</span>)(b+<span class="number">97</span>));</span><br><span class="line">        System.out.println(max);;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蓝桥杯-成绩统计</title>
     <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
