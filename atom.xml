@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-04-23T02:16:07.819Z</updated>
+  <updated>2023-04-23T02:20:35.918Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/"/>
     <id>http://example.com/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/</id>
     <published>2023-04-23T02:13:31.000Z</published>
-    <updated>2023-04-23T02:16:07.819Z</updated>
+    <updated>2023-04-23T02:20:35.918Z</updated>
     
     <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可</p><p>小蓝要为一条街的住户制作门牌号。</p><p>这条街一共有 20202020 位住户，门牌号从 11 到 20202020 编号。</p><p>小蓝制作门牌的方法是先制作 00 到 99 这几个数字字符，最后根据需要将字符粘贴到门牌上，例如门牌 1017 需要依次粘贴字符 1、0、1、71、0、1、7，即需要 11 个字符 00，22 个字符 11，11 个字符 77。</p><p>请问要制作所有的 11 到 20202020 号门牌，总共需要多少个字符 22？</p><h1 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h1><ul><li>最大运行时间：1s</li><li>最大运行内存: 128M</li></ul><p>#代码</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">2020</span>; i++) &#123;</span><br><span class="line">            String s=<span class="string">&quot;&quot;</span>+i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; s.length(); j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(s.charAt(j)==<span class="string">&#x27;2&#x27;</span>)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -162,7 +162,7 @@
     <link href="http://example.com/2023/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://example.com/2023/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</id>
     <published>2023-04-18T10:04:46.000Z</published>
-    <updated>2023-04-22T15:57:19.386Z</updated>
+    <updated>2023-04-23T02:22:38.675Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一、准备环境"><a href="#一、准备环境" class="headerlink" title="一、准备环境"></a>一、准备环境</h1><h4 id="1、node环境"><a href="#1、node环境" class="headerlink" title="1、node环境"></a>1、node环境</h4><p>首先，安装 nodejs， 因为Hexo是基于 Node.js 驱动的一款博客框架。<br>⭐<a href="http://nodejs.cn/">nodejs下载地址</a>    </p><h4 id="2、git-环境"><a href="#2、git-环境" class="headerlink" title="2、git 环境"></a>2、git 环境</h4><p>然后，安装git, 一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。</p><p>⭐<a href="https://git-scm.com/%EF%BC%88%E5%AE%98%E7%BD%91%EF%BC%89">https://git-scm.com/（官网）</a></p><p>⭐<a href="http://gitforwindows.org/%EF%BC%88%E4%BB%85windows%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%89">http://gitforwindows.org/（仅windows安装包）</a></p><p>⭐<a href="https://registry.npmmirror.com/binary.html?path=git-for-windows/">https://registry.npmmirror.com/binary.html?path=git-for-windows/</a> [阿里镜像]（速度快，ctr+f检索）</p><blockquote><p>安装过程一路next就行（安装路径可改）</p></blockquote><blockquote><p>两者安装完成之后，右击此电脑&gt;属性&gt;高级系统设置&gt;环境变量&gt;系统变量下的Path<br>可以看到两者已自动修改了环境变量，这是我们可以通过<strong>cmd命令</strong>（win+r后输入cmd）查看两者版本。(确认是否安装成功及可以使用)<br>查看Node.js版本命令：<strong>node -v</strong><br>查看Git版本命令：<strong>git –version</strong></p></blockquote><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/1.png"></p><p><strong>以上情况即安装成功</strong></p><h1 id="二、注册GitHub账号并且创建仓库"><a href="#二、注册GitHub账号并且创建仓库" class="headerlink" title="二、注册GitHub账号并且创建仓库"></a>二、注册GitHub账号并且创建仓库</h1><p><a href="https://github.com/">GitHub官网</a></p><h4 id="1-注册（已有GitHub账号可忽略此步）"><a href="#1-注册（已有GitHub账号可忽略此步）" class="headerlink" title="1.注册（已有GitHub账号可忽略此步）"></a>1.注册（已有GitHub账号可忽略此步）</h4><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github"><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github1"><blockquote><p><strong>注册之后邮箱会收到一封Github的邮件，点击Github的链接确认注册</strong></p></blockquote><h4 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h4><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github3"></p><blockquote><p><strong>注意选择public</strong></p><p><strong>注意仓库的取名格式：用户名.github.io(这将是以后的访问域名)</strong></p></blockquote><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github4"></p><blockquote><p><strong>到这里代表我们Github账号以及仓库都已经创建完毕</strong><br><strong>可以把下面这段仓库的地址复制下来留着后面配置时会用到</strong></p><p>（推荐使用ssh，https容易后期出现bug）</p></blockquote><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/6ac617880cefc18fdebbd948ca7dd1f.png"></p><h1 id="三、本地配置安装Hexo"><a href="#三、本地配置安装Hexo" class="headerlink" title="三、本地配置安装Hexo"></a>三、本地配置安装Hexo</h1>]]></content>
     
@@ -186,7 +186,7 @@
     <link href="http://example.com/2023/04/17/typora/"/>
     <id>http://example.com/2023/04/17/typora/</id>
     <published>2023-04-17T09:42:43.000Z</published>
-    <updated>2023-04-22T15:57:27.872Z</updated>
+    <updated>2023-04-23T02:22:53.587Z</updated>
     
     <content type="html"><![CDATA[<h2 id="typora破解教程："><a href="#typora破解教程：" class="headerlink" title="typora破解教程："></a>typora破解教程：</h2><p><strong>一、关闭杀毒（如果有报毒的情况）</strong></p><p><strong>二、下载安装</strong></p><p>链接：<a href="https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41">https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41</a><br>提取码：hy41</p><p><strong>三、安装补丁</strong></p><p>1：打开typora文件所在位置，将补丁粘贴进去</p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/9885716ecfec7a55558819aa9b84174.png"><p>2：查看是否破解成功（文件—&gt;偏好设置—&gt;许可证信息）</p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/1ee2a193864f519f16ca7ea5fb4649c.png">]]></content>
     
