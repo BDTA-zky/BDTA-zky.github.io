@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/about/index.html</loc>
+    
+    <lastmod>2023-04-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2023/04/17/typora/</loc>
     
     <lastmod>2023-04-23</lastmod>
@@ -91,15 +100,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>http://example.com/about/index.html</loc>
-    
-    <lastmod>2023-04-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>http://example.com/</loc>
@@ -140,13 +140,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E8%B5%84%E6%BA%90/</loc>
-    <lastmod>2023-04-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/categories/java/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -154,7 +147,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/%E6%97%A5%E5%B8%B8%E4%B9%A0%E9%A2%98/</loc>
+    <loc>http://example.com/categories/%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -162,6 +155,13 @@
   
   <url>
     <loc>http://example.com/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
+    <lastmod>2023-04-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/categories/%E6%97%A5%E5%B8%B8%E4%B9%A0%E9%A2%98/</loc>
     <lastmod>2023-04-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
