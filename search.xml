@@ -1,198 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>蓝桥杯-592门牌制作</title>
-      <link href="/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/"/>
-      <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/</url>
-      
-        <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可</p><p>小蓝要为一条街的住户制作门牌号。</p><p>这条街一共有 20202020 位住户，门牌号从 11 到 20202020 编号。</p><p>小蓝制作门牌的方法是先制作 00 到 99 这几个数字字符，最后根据需要将字符粘贴到门牌上，例如门牌 1017 需要依次粘贴字符 1、0、1、71、0、1、7，即需要 11 个字符 00，22 个字符 11，11 个字符 77。</p><p>请问要制作所有的 11 到 20202020 号门牌，总共需要多少个字符 22？</p><h1 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h1><ul><li>最大运行时间：1s</li><li>最大运行内存: 128M</li></ul><p>#代码</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">2020</span>; i++) &#123;</span><br><span class="line">            String s=<span class="string">&quot;&quot;</span>+i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; s.length(); j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(s.charAt(j)==<span class="string">&#x27;2&#x27;</span>)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hexo+GitHub搭建个人博客</title>
+    <url>/2023/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="一、准备环境"><a href="#一、准备环境" class="headerlink" title="一、准备环境"></a>一、准备环境</h1><h4 id="1、node环境"><a href="#1、node环境" class="headerlink" title="1、node环境"></a>1、node环境</h4><p>首先，安装 nodejs， 因为Hexo是基于 Node.js 驱动的一款博客框架。<br>⭐<a href="http://nodejs.cn/">nodejs下载地址</a>    </p>
+<h4 id="2、git-环境"><a href="#2、git-环境" class="headerlink" title="2、git 环境"></a>2、git 环境</h4><p>然后，安装git, 一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。</p>
+<p>⭐<a href="https://git-scm.com/%EF%BC%88%E5%AE%98%E7%BD%91%EF%BC%89">https://git-scm.com/（官网）</a></p>
+<p>⭐<a href="http://gitforwindows.org/%EF%BC%88%E4%BB%85windows%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%89">http://gitforwindows.org/（仅windows安装包）</a></p>
+<p>⭐<a href="https://registry.npmmirror.com/binary.html?path=git-for-windows/">https://registry.npmmirror.com/binary.html?path=git-for-windows/</a> [阿里镜像]（速度快，ctr+f检索）</p>
+<blockquote>
+<p>安装过程一路next就行（安装路径可改）</p>
+</blockquote>
+<blockquote>
+<p>两者安装完成之后，右击此电脑&gt;属性&gt;高级系统设置&gt;环境变量&gt;系统变量下的Path<br>可以看到两者已自动修改了环境变量，这是我们可以通过<strong>cmd命令</strong>（win+r后输入cmd）查看两者版本。(确认是否安装成功及可以使用)<br>查看Node.js版本命令：<strong>node -v</strong><br>查看Git版本命令：<strong>git –version</strong></p>
+</blockquote>
+<p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/1.png"></p>
+<p><strong>以上情况即安装成功</strong></p>
+<h1 id="二、注册GitHub账号并且创建仓库"><a href="#二、注册GitHub账号并且创建仓库" class="headerlink" title="二、注册GitHub账号并且创建仓库"></a>二、注册GitHub账号并且创建仓库</h1><p><a href="https://github.com/">GitHub官网</a></p>
+<h4 id="1-注册（已有GitHub账号可忽略此步）"><a href="#1-注册（已有GitHub账号可忽略此步）" class="headerlink" title="1.注册（已有GitHub账号可忽略此步）"></a>1.注册（已有GitHub账号可忽略此步）</h4><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github">
+
+<img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github1">
+
+
+
+
+
+<blockquote>
+<p><strong>注册之后邮箱会收到一封Github的邮件，点击Github的链接确认注册</strong></p>
+</blockquote>
+<h4 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h4><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github3"></p>
+<blockquote>
+<p><strong>注意选择public</strong></p>
+<p><strong>注意仓库的取名格式：用户名.github.io(这将是以后的访问域名)</strong></p>
+</blockquote>
+<p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github4"></p>
+<blockquote>
+<p><strong>到这里代表我们Github账号以及仓库都已经创建完毕</strong><br><strong>可以把下面这段仓库的地址复制下来留着后面配置时会用到</strong></p>
+<p>（推荐使用ssh，https容易后期出现bug）</p>
+</blockquote>
+<p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/6ac617880cefc18fdebbd948ca7dd1f.png"></p>
+<h1 id="三、本地配置安装Hexo"><a href="#三、本地配置安装Hexo" class="headerlink" title="三、本地配置安装Hexo"></a>三、本地配置安装Hexo</h1>]]></content>
       <categories>
-          
-          <category> java </category>
-          
-          <category> 蓝桥杯 </category>
-          
+        <category>教程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
-            
-            <tag> 蓝桥杯 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>蓝桥杯-成绩统计</title>
-      <link href="/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1/"/>
-      <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p><p>如果得分至少是 60 分，则称为及格。如果得分至少为 85 分，则称为优秀。</p><p>请计算及格率和优秀率，用百分数表示，百分号前的部分四舍五入保留整 数。</p><h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入的第一行包含一个整数**n (1≤n≤104)**，表示考试人数。</p><p>接下来 <em><strong>n</strong></em> 行，每行包含一个 0 至 100 的整数，表示一个学生的得分。</p><h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出两行，每行一个百分数，分别表示及格率和优秀率。百分号前的部分 四舍五入保留整数。</p><h1 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h1><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><blockquote><p>输入</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">80</span><br><span class="line">92</span><br><span class="line">56</span><br><span class="line">74</span><br><span class="line">88</span><br><span class="line">100</span><br><span class="line">0</span><br></pre></td></tr></table></figure><blockquote><p>输出</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">71%</span><br><span class="line">43%</span><br></pre></td></tr></table></figure><h2 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h2><ul><li>最大运行时间：1s</li><li>最大运行内存: 256M</li></ul><h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao02</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> i=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> arr[]=<span class="keyword">new</span> <span class="title class_">int</span>[i];</span><br><span class="line">        <span class="type">double</span> sum1=<span class="number">0</span>;</span><br><span class="line">        <span class="type">double</span> sum2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> <span class="number">0</span>; i1 &lt; arr.length; i1++) &#123;</span><br><span class="line">            arr[i1]=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">60</span>&amp;&amp;arr[i1]&lt;<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">                sum2++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(Math.round(sum1*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">        System.out.println(Math.round(sum2*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><p><strong>【四舍五入取整】</strong></p><p>****Math.ceil(double num)****函数是取浮点数的天花板数，即不小于num的最小整数；</p><p>****Math.floor(double num)****函数是取地板数，即不大于num的最大整数。</p><p>这两个函数的返回值均是double型（java中当其值大于9999999.0时，默认用科学记数法表示），如果超过没有特殊情况，或者说规则很明确，就一种规则。</p><p>****Math.round(double num)****函数是取整函数，该函数只关注小数点后第一位小数值，具体规则如下：</p><p>(1).参数的小数点后第一位&lt;5，运算结果为参数整数部分。</p><p>(2).参数的小数点后第一位&gt;5，运算结果为参数整数部分绝对值+1，符号（即正负）不变。</p><p>(3).参数的小数点后第一位=5，正数运算结果为整数部分+1，负数运算结果为整数部分。</p><p>总结：大于五全部加，等于五正数加，小于五全不加。</p>]]></content>
-      
-      
+      <tags>
+        <tag>资源教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typora资源及使用</title>
+    <url>/2023/04/17/typora/</url>
+    <content><![CDATA[<h2 id="typora破解教程："><a href="#typora破解教程：" class="headerlink" title="typora破解教程："></a>typora破解教程：</h2><p><strong>一、关闭杀毒（如果有报毒的情况）</strong></p>
+<p><strong>二、下载安装</strong></p>
+<p>链接：<a href="https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41">https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41</a><br>提取码：hy41</p>
+<p><strong>三、安装补丁</strong></p>
+<p>1：打开typora文件所在位置，将补丁粘贴进去</p>
+<img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/9885716ecfec7a55558819aa9b84174.png">
+
+<p>2：查看是否破解成功（文件—&gt;偏好设置—&gt;许可证信息）</p>
+<img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/1ee2a193864f519f16ca7ea5fb4649c.png">
+
+]]></content>
       <categories>
-          
-          <category> java </category>
-          
-          <category> 蓝桥杯 </category>
-          
+        <category>资源</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
-            
-            <tag> 蓝桥杯 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>蓝桥杯-单词分析（java）</title>
-      <link href="/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89/"/>
-      <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p><p>现在，请你帮助小蓝，给了一个单词后，帮助他找到出现最多的字母和这 个字母出现的次数。</p><h1 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h1><p>输入一行包含一个单词，单词只由小写英文字母组成。</p><p>对于所有的评测用例，输入的单词长度不超过 1000。</p><p>#输出描述</p><p>输出两行，第一行包含一个英文字母，表示单词中出现得最多的字母是哪 个。如果有多个字母出现的次数相等，输出字典序最小的那个。</p><p>第二行包含一个整数，表示出现得最多的那个字母在单词中出现的次数。</p><p>##输入输出样例</p><p>###示例 1</p><blockquote><p>输入</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lanqiao</span><br></pre></td></tr></table></figure><blockquote><p>输出</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a</span><br><span class="line">2</span><br></pre></td></tr></table></figure><h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h3><blockquote><p>输入</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">longlonglongistoolong</span><br></pre></td></tr></table></figure><blockquote><p>输出</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">o</span><br><span class="line">6</span><br></pre></td></tr></table></figure><p>##运行限制</p><ul><li>最大运行时间：1s</li><li>最大运行内存: 256M</li></ul><h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><ol><li>设置一个长度为26的数组记录每字母出现的次数（eg：a【0】代表a，若a出现一次则a【0】++）</li><li>利用CharAt方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</li><li>判断数组a的最大值，最大值所在的索引加上97即对应字母在ASCII码表中的值</li></ol><p>【若利用一个长度为26的数组代表a~z    则a[0]代表字母a，a的ASCII码表值即0+97  （b为1+97   c为2+97）以此类推即   （对应的数组索引+97=该字母的ASCII码值）】</p><h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DanCifenxi</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        String s= sc.next();</span><br><span class="line">        <span class="comment">//设置一个长度为26的数组记录字母出现的次数</span></span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            a[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用charat方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            <span class="type">int</span> b=s.charAt(i)-<span class="number">97</span>;</span><br><span class="line">            a[b]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//判断数组a最大值，加上97即对应字母在ASCII码表中的值</span></span><br><span class="line">        <span class="type">int</span> max=a[<span class="number">0</span>];<span class="comment">//变量max代表出现的次数</span></span><br><span class="line">        <span class="type">int</span> b=<span class="number">0</span>;<span class="comment">//变量b+97即对应的ASCII码表数值  eg：b=0，即对应数组a的索引为0  即对应字母a  ASCII码表值即（0+97）</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; a.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(max&lt;a[i])&#123;</span><br><span class="line">                max=a[i];</span><br><span class="line">                b=i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println((<span class="type">char</span>)(b+<span class="number">97</span>));</span><br><span class="line">        System.out.println(max);;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>资源教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯-592门牌制作</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可</p>
+<p>小蓝要为一条街的住户制作门牌号。</p>
+<p>这条街一共有 20202020 位住户，门牌号从 11 到 20202020 编号。</p>
+<p>小蓝制作门牌的方法是先制作 00 到 99 这几个数字字符，最后根据需要将字符粘贴到门牌上，例如门牌 1017 需要依次粘贴字符 1、0、1、71、0、1、7，即需要 11 个字符 00，22 个字符 11，11 个字符 77。</p>
+<p>请问要制作所有的 11 到 20202020 号门牌，总共需要多少个字符 22？</p>
+<h1 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h1><ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 128M</li>
+</ul>
+<p>#代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">2020</span>; i++) &#123;</span><br><span class="line">            String s=<span class="string">&quot;&quot;</span>+i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; s.length(); j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(s.charAt(j)==<span class="string">&#x27;2&#x27;</span>)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-          
-          <category> java </category>
-          
-          <category> 蓝桥杯 </category>
-          
+        <category>java</category>
+        <category>蓝桥杯</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
-            
-            <tag> 蓝桥杯 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>蓝桥杯-阶乘计算（二分）</title>
-      <link href="/2023/04/22/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/"/>
-      <url>/2023/04/22/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少? </p><p>如果这样的 N 不存在输出 −1。</p><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 K。</p><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数代表答案。 </p><h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure><h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure><h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>对于 30% 的数据，1 ≤ K ≤ 106 .</p><p>对于 100% 的数据，1 ≤ K ≤ 1018 </p><h3 id="代码1：暴力解法"><a href="#代码1：暴力解法" class="headerlink" title="代码1：暴力解法"></a>代码1：暴力解法</h3><p>利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否为K个0，很明显是超时了。但可以得到部分的分数，没有时间的话可以这样简单处理。</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">            n*=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">long</span> sum=<span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> flag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i&lt;<span class="number">1000000</span>; i++) &#123;</span><br><span class="line">            sum*=i;</span><br><span class="line">            <span class="keyword">if</span>(sum%n==<span class="number">0</span>)&#123;</span><br><span class="line">                flag=<span class="number">1</span>;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag==<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>​    代码分析：这个是计算末尾0的个数的代码，很明显在这个环节就没办法达到100%数据的要求，因为1≤K≤10^18，而这个代码复杂度是O(n),要计算10^18次，但蓝桥杯计算量一般不超过10^8，所以用暴力法计算是超时的。</p><h3 id="代码2：二分法求解"><a href="#代码2：二分法求解" class="headerlink" title="代码2：二分法求解"></a>代码2：二分法求解</h3><p>直接算出k个0的N!很难。N! 末尾的 0 取决于1 到 N 各因子2 和 5 的组合个数，但是实际上5的个数小于2的个数，所以末尾0的个数实际取决于 5 的个数。</p><blockquote><p><strong>结论：</strong><a href="https://so.csdn.net/so/search?q=%E6%B1%82N%E7%9A%84%E9%98%B6%E4%B9%98&spm=1001.2101.3001.7020">求N的阶乘</a>中因子5的个数,将N<strong>每次除以5</strong>的<strong>商****求和</strong>即可。</p></blockquote><p> <strong>由此可编写一个统计0的个数的方法为：</strong></p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674new</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//输入的数字应为long。原因是阶乘算出的结果较大，用int会溢出。</span></span><br><span class="line">        <span class="type">long</span> k=sc.nextLong();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用二分查找，找到符合0个数的最小数字</span></span><br><span class="line">        <span class="type">long</span> left=<span class="number">0</span>,right=Long.MAX_VALUE;</span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            <span class="type">long</span> mid=left+(right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(zero(mid)&lt;k)left=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> right=mid;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//此时left就是我们求出的结果</span></span><br><span class="line">        <span class="type">long</span> res=zero(left);<span class="comment">//可能不为k。</span></span><br><span class="line">        <span class="keyword">if</span>(res==k)System.out.println(left);<span class="comment">//若和k相等，则是找到了数字left的阶乘结果又k个0。</span></span><br><span class="line">        <span class="keyword">else</span> System.out.println(-<span class="number">1</span>);<span class="comment">//不相等则返回-1;</span></span><br><span class="line">        sc.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//统计0的个数的函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>关于二分法，可看此篇文章：<a href="https://blog.csdn.net/qq_53060585/article/details/122735971">二分法总结（超级详细）附带图解_友人苏的博客-CSDN博客</a></p>]]></content>
-      
-      
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯-单词分析（java）</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p>
+<p>现在，请你帮助小蓝，给了一个单词后，帮助他找到出现最多的字母和这 个字母出现的次数。</p>
+<h1 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h1><p>输入一行包含一个单词，单词只由小写英文字母组成。</p>
+<p>对于所有的评测用例，输入的单词长度不超过 1000。</p>
+<p>#输出描述</p>
+<p>输出两行，第一行包含一个英文字母，表示单词中出现得最多的字母是哪 个。如果有多个字母出现的次数相等，输出字典序最小的那个。</p>
+<p>第二行包含一个整数，表示出现得最多的那个字母在单词中出现的次数。</p>
+<p>##输入输出样例</p>
+<p>###示例 1</p>
+<blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lanqiao</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h3><blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">longlonglongistoolong</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">o</span><br><span class="line">6</span><br></pre></td></tr></table></figure>
+
+<p>##运行限制</p>
+<ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 256M</li>
+</ul>
+<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><ol>
+<li>设置一个长度为26的数组记录每字母出现的次数（eg：a【0】代表a，若a出现一次则a【0】++）</li>
+<li>利用CharAt方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</li>
+<li>判断数组a的最大值，最大值所在的索引加上97即对应字母在ASCII码表中的值</li>
+</ol>
+<p>【若利用一个长度为26的数组代表a~z    则a[0]代表字母a，a的ASCII码表值即0+97  （b为1+97   c为2+97）以此类推即   （对应的数组索引+97=该字母的ASCII码值）】</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DanCifenxi</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        String s= sc.next();</span><br><span class="line">        <span class="comment">//设置一个长度为26的数组记录字母出现的次数</span></span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            a[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用charat方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            <span class="type">int</span> b=s.charAt(i)-<span class="number">97</span>;</span><br><span class="line">            a[b]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//判断数组a最大值，加上97即对应字母在ASCII码表中的值</span></span><br><span class="line">        <span class="type">int</span> max=a[<span class="number">0</span>];<span class="comment">//变量max代表出现的次数</span></span><br><span class="line">        <span class="type">int</span> b=<span class="number">0</span>;<span class="comment">//变量b+97即对应的ASCII码表数值  eg：b=0，即对应数组a的索引为0  即对应字母a  ASCII码表值即（0+97）</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; a.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(max&lt;a[i])&#123;</span><br><span class="line">                max=a[i];</span><br><span class="line">                b=i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println((<span class="type">char</span>)(b+<span class="number">97</span>));</span><br><span class="line">        System.out.println(max);;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-          
-          <category> java </category>
-          
-          <category> 蓝桥杯 </category>
-          
+        <category>java</category>
+        <category>蓝桥杯</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
-            
-            <tag> 蓝桥杯 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>验证码（random类）</title>
-      <link href="/2023/04/22/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89/"/>
-      <url>/2023/04/22/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><p>定义方法实现随机产生一个5位的验证码</p><h3 id="验证码格式"><a href="#验证码格式" class="headerlink" title="验证码格式:"></a>验证码格式:</h3><p>1.长度为5</p><p>2.前四位是大写字母或者小写字母最后一位是数字</p><h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><p>1.需要用到random类</p><p>2.可以先将字母放入数组中，再根据随机索引抽取随机字母</p><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Vcode</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//1.创立一个数组，将大小写字母都放入其中</span></span><br><span class="line">        <span class="type">char</span>[] Arr=<span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用ASCII码表</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">52</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//添加大写字母</span></span><br><span class="line">            <span class="keyword">if</span>(i&lt;<span class="number">26</span>) &#123;</span><br><span class="line">                Arr[i] = (<span class="type">char</span>) (<span class="number">65</span> + i);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//添加小写字母</span></span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                Arr[i]=(<span class="type">char</span>)(<span class="number">97</span>+i-<span class="number">26</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//2.通过随机索引，得到随机字母</span></span><br><span class="line">        <span class="comment">//random类</span></span><br><span class="line">        Random r=<span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//随机四次并将结果拼接到字符串中</span></span><br><span class="line">        String result=<span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//拼接</span></span><br><span class="line">            result+=Arr[r.nextInt(Arr.length)];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//3.随机一个数字0~9也拼接入字符串</span></span><br><span class="line">        result+=r.nextInt(<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//4.输出结果</span></span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="random类"><a href="#random类" class="headerlink" title="random类"></a>random类</h2><p>**<em>*</em>*定义******：Random类是java.until下的一个根据随机算法的起源数字进行一些变化，从而得到随机数字的方法。</p><p>随机算法的起源数字被成为种子数（seed）</p><p>****常用方法****：</p><ol><li><em><strong>*random.nextInt()*</strong></em></li></ol><p>返回值为整数,范围是int类型范围</p><ol><li><em><strong>*random.nextLong()*</strong></em></li></ol><p>返回值为长整型，范围是long类型的范围</p><ol><li><em><strong>*random.nextFloat()*</strong></em></li></ol><p>返回值为小数，范围是[0,0.1]</p><ol><li><em><strong>*random.nextDouble()*</strong></em></li></ol><p>返回值为小数，范围是[0,0.1]</p><ol><li><em><strong>*random.nextBoolean()*</strong></em></li></ol><p>返回值为boolean值，true和false概率相同</p><ol><li><em><strong>*radom.nextGaussian()*</strong></em></li></ol><p>返回值为呈高斯（“正态”）分布的 double 值，其平均值是 0.0，标准差是 1.0</p>]]></content>
-      
-      
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯-成绩统计</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
+<p>如果得分至少是 60 分，则称为及格。如果得分至少为 85 分，则称为优秀。</p>
+<p>请计算及格率和优秀率，用百分数表示，百分号前的部分四舍五入保留整 数。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入的第一行包含一个整数**n (1≤n≤104)**，表示考试人数。</p>
+<p>接下来 <em><strong>n</strong></em> 行，每行包含一个 0 至 100 的整数，表示一个学生的得分。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出两行，每行一个百分数，分别表示及格率和优秀率。百分号前的部分 四舍五入保留整数。</p>
+<h1 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h1><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">80</span><br><span class="line">92</span><br><span class="line">56</span><br><span class="line">74</span><br><span class="line">88</span><br><span class="line">100</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">71%</span><br><span class="line">43%</span><br></pre></td></tr></table></figure>
+
+<h2 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h2><ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 256M</li>
+</ul>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao02</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> i=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> arr[]=<span class="keyword">new</span> <span class="title class_">int</span>[i];</span><br><span class="line">        <span class="type">double</span> sum1=<span class="number">0</span>;</span><br><span class="line">        <span class="type">double</span> sum2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> <span class="number">0</span>; i1 &lt; arr.length; i1++) &#123;</span><br><span class="line">            arr[i1]=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">60</span>&amp;&amp;arr[i1]&lt;<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">                sum2++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(Math.round(sum1*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">        System.out.println(Math.round(sum2*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><p><strong>【四舍五入取整】</strong></p>
+<p>****Math.ceil(double num)****函数是取浮点数的天花板数，即不小于num的最小整数；</p>
+<p>****Math.floor(double num)****函数是取地板数，即不大于num的最大整数。</p>
+<p>这两个函数的返回值均是double型（java中当其值大于9999999.0时，默认用科学记数法表示），如果超过没有特殊情况，或者说规则很明确，就一种规则。</p>
+<p>****Math.round(double num)****函数是取整函数，该函数只关注小数点后第一位小数值，具体规则如下：</p>
+<p>(1).参数的小数点后第一位&lt;5，运算结果为参数整数部分。</p>
+<p>(2).参数的小数点后第一位&gt;5，运算结果为参数整数部分绝对值+1，符号（即正负）不变。</p>
+<p>(3).参数的小数点后第一位=5，正数运算结果为整数部分+1，负数运算结果为整数部分。</p>
+<p>总结：大于五全部加，等于五正数加，小于五全不加。</p>
+]]></content>
       <categories>
-          
-          <category> 日常习题 </category>
-          
+        <category>java</category>
+        <category>蓝桥杯</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> java </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo+GitHub搭建个人博客</title>
-      <link href="/2023/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2023/04/18/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、准备环境"><a href="#一、准备环境" class="headerlink" title="一、准备环境"></a>一、准备环境</h1><h4 id="1、node环境"><a href="#1、node环境" class="headerlink" title="1、node环境"></a>1、node环境</h4><p>首先，安装 nodejs， 因为Hexo是基于 Node.js 驱动的一款博客框架。<br>⭐<a href="http://nodejs.cn/">nodejs下载地址</a>    </p><h4 id="2、git-环境"><a href="#2、git-环境" class="headerlink" title="2、git 环境"></a>2、git 环境</h4><p>然后，安装git, 一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。</p><p>⭐<a href="https://git-scm.com/%EF%BC%88%E5%AE%98%E7%BD%91%EF%BC%89">https://git-scm.com/（官网）</a></p><p>⭐<a href="http://gitforwindows.org/%EF%BC%88%E4%BB%85windows%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%89">http://gitforwindows.org/（仅windows安装包）</a></p><p>⭐<a href="https://registry.npmmirror.com/binary.html?path=git-for-windows/">https://registry.npmmirror.com/binary.html?path=git-for-windows/</a> [阿里镜像]（速度快，ctr+f检索）</p><blockquote><p>安装过程一路next就行（安装路径可改）</p></blockquote><blockquote><p>两者安装完成之后，右击此电脑&gt;属性&gt;高级系统设置&gt;环境变量&gt;系统变量下的Path<br>可以看到两者已自动修改了环境变量，这是我们可以通过<strong>cmd命令</strong>（win+r后输入cmd）查看两者版本。(确认是否安装成功及可以使用)<br>查看Node.js版本命令：<strong>node -v</strong><br>查看Git版本命令：<strong>git –version</strong></p></blockquote><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/1.png"></p><p><strong>以上情况即安装成功</strong></p><h1 id="二、注册GitHub账号并且创建仓库"><a href="#二、注册GitHub账号并且创建仓库" class="headerlink" title="二、注册GitHub账号并且创建仓库"></a>二、注册GitHub账号并且创建仓库</h1><p><a href="https://github.com/">GitHub官网</a></p><h4 id="1-注册（已有GitHub账号可忽略此步）"><a href="#1-注册（已有GitHub账号可忽略此步）" class="headerlink" title="1.注册（已有GitHub账号可忽略此步）"></a>1.注册（已有GitHub账号可忽略此步）</h4><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github"><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github1"><blockquote><p><strong>注册之后邮箱会收到一封Github的邮件，点击Github的链接确认注册</strong></p></blockquote><h4 id="2-创建仓库"><a href="#2-创建仓库" class="headerlink" title="2.创建仓库"></a>2.创建仓库</h4><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github3"></p><blockquote><p><strong>注意选择public</strong></p><p><strong>注意仓库的取名格式：用户名.github.io(这将是以后的访问域名)</strong></p></blockquote><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/github4"></p><blockquote><p><strong>到这里代表我们Github账号以及仓库都已经创建完毕</strong><br><strong>可以把下面这段仓库的地址复制下来留着后面配置时会用到</strong></p><p>（推荐使用ssh，https容易后期出现bug）</p></blockquote><p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/6ac617880cefc18fdebbd948ca7dd1f.png"></p><h1 id="三、本地配置安装Hexo"><a href="#三、本地配置安装Hexo" class="headerlink" title="三、本地配置安装Hexo"></a>三、本地配置安装Hexo</h1>]]></content>
-      
-      
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>验证码（random类）</title>
+    <url>/2023/04/22/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><p>定义方法实现随机产生一个5位的验证码</p>
+<h3 id="验证码格式"><a href="#验证码格式" class="headerlink" title="验证码格式:"></a>验证码格式:</h3><p>1.长度为5</p>
+<p>2.前四位是大写字母或者小写字母最后一位是数字</p>
+<h3 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h3><p>1.需要用到random类</p>
+<p>2.可以先将字母放入数组中，再根据随机索引抽取随机字母</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Vcode</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//1.创立一个数组，将大小写字母都放入其中</span></span><br><span class="line">        <span class="type">char</span>[] Arr=<span class="keyword">new</span> <span class="title class_">char</span>[<span class="number">52</span>];</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用ASCII码表</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">52</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//添加大写字母</span></span><br><span class="line">            <span class="keyword">if</span>(i&lt;<span class="number">26</span>) &#123;</span><br><span class="line">                Arr[i] = (<span class="type">char</span>) (<span class="number">65</span> + i);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//添加小写字母</span></span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                Arr[i]=(<span class="type">char</span>)(<span class="number">97</span>+i-<span class="number">26</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//2.通过随机索引，得到随机字母</span></span><br><span class="line">        <span class="comment">//random类</span></span><br><span class="line">        Random r=<span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//随机四次并将结果拼接到字符串中</span></span><br><span class="line">        String result=<span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">4</span>; i++) &#123;</span><br><span class="line">            <span class="comment">//拼接</span></span><br><span class="line">            result+=Arr[r.nextInt(Arr.length)];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//3.随机一个数字0~9也拼接入字符串</span></span><br><span class="line">        result+=r.nextInt(<span class="number">10</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//4.输出结果</span></span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="random类"><a href="#random类" class="headerlink" title="random类"></a>random类</h2><p>**<em>*</em>*定义******：Random类是java.until下的一个根据随机算法的起源数字进行一些变化，从而得到随机数字的方法。</p>
+<p>随机算法的起源数字被成为种子数（seed）</p>
+<p>****常用方法****：</p>
+<ol>
+<li><em><strong>*random.nextInt()*</strong></em></li>
+</ol>
+<p>返回值为整数,范围是int类型范围</p>
+<ol>
+<li><em><strong>*random.nextLong()*</strong></em></li>
+</ol>
+<p>返回值为长整型，范围是long类型的范围</p>
+<ol>
+<li><em><strong>*random.nextFloat()*</strong></em></li>
+</ol>
+<p>返回值为小数，范围是[0,0.1]</p>
+<ol>
+<li><em><strong>*random.nextDouble()*</strong></em></li>
+</ol>
+<p>返回值为小数，范围是[0,0.1]</p>
+<ol>
+<li><em><strong>*random.nextBoolean()*</strong></em></li>
+</ol>
+<p>返回值为boolean值，true和false概率相同</p>
+<ol>
+<li><em><strong>*radom.nextGaussian()*</strong></em></li>
+</ol>
+<p>返回值为呈高斯（“正态”）分布的 double 值，其平均值是 0.0，标准差是 1.0</p>
+]]></content>
       <categories>
-          
-          <category> 教程 </category>
-          
+        <category>日常习题</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 资源教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Typora资源及使用</title>
-      <link href="/2023/04/17/typora/"/>
-      <url>/2023/04/17/typora/</url>
-      
-        <content type="html"><![CDATA[<h2 id="typora破解教程："><a href="#typora破解教程：" class="headerlink" title="typora破解教程："></a>typora破解教程：</h2><p><strong>一、关闭杀毒（如果有报毒的情况）</strong></p><p><strong>二、下载安装</strong></p><p>链接：<a href="https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41">https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41</a><br>提取码：hy41</p><p><strong>三、安装补丁</strong></p><p>1：打开typora文件所在位置，将补丁粘贴进去</p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/9885716ecfec7a55558819aa9b84174.png"><p>2：查看是否破解成功（文件—&gt;偏好设置—&gt;许可证信息）</p><img src="https://cdn.staticaly.com/gh/BDTA-zky/pictures@main/1ee2a193864f519f16ca7ea5fb4649c.png">]]></content>
-      
-      
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯-阶乘计算（二分）</title>
+    <url>/2023/04/22/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少? </p>
+<p>如果这样的 N 不存在输出 −1。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 K。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数代表答案。 </p>
+<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure>
+
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>对于 30% 的数据，1 ≤ K ≤ 106 .</p>
+<p>对于 100% 的数据，1 ≤ K ≤ 1018 </p>
+<h3 id="代码1：暴力解法"><a href="#代码1：暴力解法" class="headerlink" title="代码1：暴力解法"></a>代码1：暴力解法</h3><p>利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否为K个0，很明显是超时了。但可以得到部分的分数，没有时间的话可以这样简单处理。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">            n*=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">long</span> sum=<span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> flag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i&lt;<span class="number">1000000</span>; i++) &#123;</span><br><span class="line">            sum*=i;</span><br><span class="line">            <span class="keyword">if</span>(sum%n==<span class="number">0</span>)&#123;</span><br><span class="line">                flag=<span class="number">1</span>;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag==<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>​    代码分析：这个是计算末尾0的个数的代码，很明显在这个环节就没办法达到100%数据的要求，因为1≤K≤10^18，而这个代码复杂度是O(n),要计算10^18次，但蓝桥杯计算量一般不超过10^8，所以用暴力法计算是超时的。</p>
+<h3 id="代码2：二分法求解"><a href="#代码2：二分法求解" class="headerlink" title="代码2：二分法求解"></a>代码2：二分法求解</h3><p>直接算出k个0的N!很难。N! 末尾的 0 取决于1 到 N 各因子2 和 5 的组合个数，但是实际上5的个数小于2的个数，所以末尾0的个数实际取决于 5 的个数。</p>
+<blockquote>
+<p><strong>结论：</strong><a href="https://so.csdn.net/so/search?q=%E6%B1%82N%E7%9A%84%E9%98%B6%E4%B9%98&spm=1001.2101.3001.7020">求N的阶乘</a>中因子5的个数,将N<strong>每次除以5</strong>的<strong>商****求和</strong>即可。</p>
+</blockquote>
+<p> <strong>由此可编写一个统计0的个数的方法为：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674new</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//输入的数字应为long。原因是阶乘算出的结果较大，用int会溢出。</span></span><br><span class="line">        <span class="type">long</span> k=sc.nextLong();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用二分查找，找到符合0个数的最小数字</span></span><br><span class="line">        <span class="type">long</span> left=<span class="number">0</span>,right=Long.MAX_VALUE;</span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            <span class="type">long</span> mid=left+(right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(zero(mid)&lt;k)left=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> right=mid;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//此时left就是我们求出的结果</span></span><br><span class="line">        <span class="type">long</span> res=zero(left);<span class="comment">//可能不为k。</span></span><br><span class="line">        <span class="keyword">if</span>(res==k)System.out.println(left);<span class="comment">//若和k相等，则是找到了数字left的阶乘结果又k个0。</span></span><br><span class="line">        <span class="keyword">else</span> System.out.println(-<span class="number">1</span>);<span class="comment">//不相等则返回-1;</span></span><br><span class="line">        sc.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//统计0的个数的函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>关于二分法，可看此篇文章：<a href="https://blog.csdn.net/qq_53060585/article/details/122735971">二分法总结（超级详细）附带图解_友人苏的博客-CSDN博客</a></p>
+]]></content>
       <categories>
-          
-          <category> 资源 </category>
-          
+        <category>java</category>
+        <category>蓝桥杯</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 资源教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
 </search>

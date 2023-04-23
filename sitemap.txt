@@ -16,5 +16,5 @@ http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/
 http://example.com/categories/%E6%95%99%E7%A8%8B/
 http://example.com/categories/%E8%B5%84%E6%BA%90/
 http://example.com/categories/java/
-http://example.com/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF/
 http://example.com/categories/%E6%97%A5%E5%B8%B8%E4%B9%A0%E9%A2%98/
+http://example.com/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF/
