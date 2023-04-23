@@ -69,6 +69,74 @@
       </tags>
   </entry>
   <entry>
+    <title>蓝桥杯-592门牌制作</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可</p>
+<p>小蓝要为一条街的住户制作门牌号。</p>
+<p>这条街一共有 20202020 位住户，门牌号从 11 到 20202020 编号。</p>
+<p>小蓝制作门牌的方法是先制作 00 到 99 这几个数字字符，最后根据需要将字符粘贴到门牌上，例如门牌 1017 需要依次粘贴字符 1、0、1、71、0、1、7，即需要 11 个字符 00，22 个字符 11，11 个字符 77。</p>
+<p>请问要制作所有的 11 到 20202020 号门牌，总共需要多少个字符 22？</p>
+<h1 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h1><ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 128M</li>
+</ul>
+<p>#代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= <span class="number">2020</span>; i++) &#123;</span><br><span class="line">            String s=<span class="string">&quot;&quot;</span>+i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; s.length(); j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(s.charAt(j)==<span class="string">&#x27;2&#x27;</span>)&#123;</span><br><span class="line">                    sum++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯-成绩统计</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1/</url>
+    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
+<p>如果得分至少是 60 分，则称为及格。如果得分至少为 85 分，则称为优秀。</p>
+<p>请计算及格率和优秀率，用百分数表示，百分号前的部分四舍五入保留整 数。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入的第一行包含一个整数**n (1≤n≤104)**，表示考试人数。</p>
+<p>接下来 <em><strong>n</strong></em> 行，每行包含一个 0 至 100 的整数，表示一个学生的得分。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出两行，每行一个百分数，分别表示及格率和优秀率。百分号前的部分 四舍五入保留整数。</p>
+<h1 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h1><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">80</span><br><span class="line">92</span><br><span class="line">56</span><br><span class="line">74</span><br><span class="line">88</span><br><span class="line">100</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">71%</span><br><span class="line">43%</span><br></pre></td></tr></table></figure>
+
+<h2 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h2><ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 256M</li>
+</ul>
+<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao02</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> i=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> arr[]=<span class="keyword">new</span> <span class="title class_">int</span>[i];</span><br><span class="line">        <span class="type">double</span> sum1=<span class="number">0</span>;</span><br><span class="line">        <span class="type">double</span> sum2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> <span class="number">0</span>; i1 &lt; arr.length; i1++) &#123;</span><br><span class="line">            arr[i1]=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">60</span>&amp;&amp;arr[i1]&lt;<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">                sum2++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(Math.round(sum1*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">        System.out.println(Math.round(sum2*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><p><strong>【四舍五入取整】</strong></p>
+<p>****Math.ceil(double num)****函数是取浮点数的天花板数，即不小于num的最小整数；</p>
+<p>****Math.floor(double num)****函数是取地板数，即不大于num的最大整数。</p>
+<p>这两个函数的返回值均是double型（java中当其值大于9999999.0时，默认用科学记数法表示），如果超过没有特殊情况，或者说规则很明确，就一种规则。</p>
+<p>****Math.round(double num)****函数是取整函数，该函数只关注小数点后第一位小数值，具体规则如下：</p>
+<p>(1).参数的小数点后第一位&lt;5，运算结果为参数整数部分。</p>
+<p>(2).参数的小数点后第一位&gt;5，运算结果为参数整数部分绝对值+1，符号（即正负）不变。</p>
+<p>(3).参数的小数点后第一位=5，正数运算结果为整数部分+1，负数运算结果为整数部分。</p>
+<p>总结：大于五全部加，等于五正数加，小于五全不加。</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蓝桥杯-单词分析（java）</title>
     <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89/</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p>
@@ -114,49 +182,7 @@
 <h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">DanCifenxi</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        String s= sc.next();</span><br><span class="line">        <span class="comment">//设置一个长度为26的数组记录字母出现的次数</span></span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            a[i]=<span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用charat方法获取第i位的字符，并强制转化为int型，减去97之后即可映射出数组a中的位置</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">            <span class="type">int</span> b=s.charAt(i)-<span class="number">97</span>;</span><br><span class="line">            a[b]++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//判断数组a最大值，加上97即对应字母在ASCII码表中的值</span></span><br><span class="line">        <span class="type">int</span> max=a[<span class="number">0</span>];<span class="comment">//变量max代表出现的次数</span></span><br><span class="line">        <span class="type">int</span> b=<span class="number">0</span>;<span class="comment">//变量b+97即对应的ASCII码表数值  eg：b=0，即对应数组a的索引为0  即对应字母a  ASCII码表值即（0+97）</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; a.length; i++) &#123;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(max&lt;a[i])&#123;</span><br><span class="line">                max=a[i];</span><br><span class="line">                b=i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println((<span class="type">char</span>)(b+<span class="number">97</span>));</span><br><span class="line">        System.out.println(max);;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>蓝桥杯</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>蓝桥杯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯-成绩统计</title>
-    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1/</url>
-    <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
-<p>如果得分至少是 60 分，则称为及格。如果得分至少为 85 分，则称为优秀。</p>
-<p>请计算及格率和优秀率，用百分数表示，百分号前的部分四舍五入保留整 数。</p>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入的第一行包含一个整数**n (1≤n≤104)**，表示考试人数。</p>
-<p>接下来 <em><strong>n</strong></em> 行，每行包含一个 0 至 100 的整数，表示一个学生的得分。</p>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出两行，每行一个百分数，分别表示及格率和优秀率。百分号前的部分 四舍五入保留整数。</p>
-<h1 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h1><h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><blockquote>
-<p>输入</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">80</span><br><span class="line">92</span><br><span class="line">56</span><br><span class="line">74</span><br><span class="line">88</span><br><span class="line">100</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>输出</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">71%</span><br><span class="line">43%</span><br></pre></td></tr></table></figure>
-
-<h2 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h2><ul>
-<li>最大运行时间：1s</li>
-<li>最大运行内存: 256M</li>
-</ul>
-<h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao02</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> i=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> arr[]=<span class="keyword">new</span> <span class="title class_">int</span>[i];</span><br><span class="line">        <span class="type">double</span> sum1=<span class="number">0</span>;</span><br><span class="line">        <span class="type">double</span> sum2=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i1</span> <span class="operator">=</span> <span class="number">0</span>; i1 &lt; arr.length; i1++) &#123;</span><br><span class="line">            arr[i1]=sc.nextInt();</span><br><span class="line">            <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">60</span>&amp;&amp;arr[i1]&lt;<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(arr[i1]&gt;=<span class="number">85</span>)&#123;</span><br><span class="line">                sum1++;</span><br><span class="line">                sum2++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(Math.round(sum1*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">        System.out.println(Math.round(sum2*<span class="number">100</span>/i)+<span class="string">&quot;%&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><p><strong>【四舍五入取整】</strong></p>
-<p>****Math.ceil(double num)****函数是取浮点数的天花板数，即不小于num的最小整数；</p>
-<p>****Math.floor(double num)****函数是取地板数，即不大于num的最大整数。</p>
-<p>这两个函数的返回值均是double型（java中当其值大于9999999.0时，默认用科学记数法表示），如果超过没有特殊情况，或者说规则很明确，就一种规则。</p>
-<p>****Math.round(double num)****函数是取整函数，该函数只关注小数点后第一位小数值，具体规则如下：</p>
-<p>(1).参数的小数点后第一位&lt;5，运算结果为参数整数部分。</p>
-<p>(2).参数的小数点后第一位&gt;5，运算结果为参数整数部分绝对值+1，符号（即正负）不变。</p>
-<p>(3).参数的小数点后第一位=5，正数运算结果为整数部分+1，负数运算结果为整数部分。</p>
-<p>总结：大于五全部加，等于五正数加，小于五全不加。</p>
-]]></content>
-      <categories>
+        <category>java</category>
         <category>蓝桥杯</category>
       </categories>
       <tags>
@@ -196,6 +222,7 @@
 <p>关于二分法，可看此篇文章：<a href="https://blog.csdn.net/qq_53060585/article/details/122735971">二分法总结（超级详细）附带图解_友人苏的博客-CSDN博客</a></p>
 ]]></content>
       <categories>
+        <category>java</category>
         <category>蓝桥杯</category>
       </categories>
       <tags>
