@@ -230,50 +230,12 @@
       </tags>
   </entry>
   <entry>
-    <title>蓝桥杯-时间显示</title>
-    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%B6%E9%97%B4%E6%98%BE%E7%A4%BA/</url>
-    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小蓝要和朋友合作开发一个时间显示的网站。</p>
-<p>在服务器上，朋友已经获取了当前的时间，用一个整数表示，值为从 19701970 年 11 月 11 日 00:00:0000:00:00 到当前时刻经过的毫秒数。</p>
-<p>现在，小蓝要在客户端显示出这个时间。小蓝不用显示出年月日，只需要显示出时分秒即可，毫秒也不用显示，直接舍去即可。</p>
-<p>给定一个用整数表示的时间，请将这个时间对应的时分秒输出。</p>
-<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入一行包含一个整数，表示时间。</p>
-<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出时分秒表示的当前时间，格式形如 HH:MM:SS，其中 HH 表示时，值为 00 到 2323，MM 表示分，值为 00 到 5959，SS 表示秒，值为 00 到 5959。时、分、秒 不足两位时补前导 00。</p>
-<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h3><blockquote>
-<p>输入</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">46800999</span><br></pre></td></tr></table></figure>
+    <title>蓝桥杯-山（java）</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%B1%B1%EF%BC%88java%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>这天小明正在学数数。<br> 他突然发现有些正整数的形状像一座“山”，比如123565321、145541。<br> 它们左右对称（回文）且数位上的数字先单调不减，后单调不增。<br> 小明数了很久也没有数完，他想让你告诉他在区间[2022：2022222022]中有多少个数的形状像一座“山”。<br> 这是一道结果填空的题，你只需要算出结果后提交即可。<br> 本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
+<h3 id="代码详解"><a href="#代码详解" class="headerlink" title="代码详解"></a>代码详解</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int count = 0;</span><br><span class="line">        int top = 0;</span><br><span class="line">        f:</span><br><span class="line">        for (long i = 2022; i &lt;= 2022222022; i++) &#123;</span><br><span class="line">            String str = String.valueOf(i);</span><br><span class="line">            for (int j = 0; j &lt; str.length(); j++) &#123;</span><br><span class="line"></span><br><span class="line">                if (str.charAt(j) != str.charAt(str.length() - j - 1)) &#123;</span><br><span class="line">                    continue f;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                if (j&lt;str.length()/2)&#123;</span><br><span class="line">                    if ((str.charAt(j)-&#x27;0&#x27;)&gt;(str.charAt(j+1)-&#x27;0&#x27;))&#123;</span><br><span class="line">                        continue f;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            count++;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(count);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<blockquote>
-<p>输出</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">13:00:00</span><br></pre></td></tr></table></figure>
-
-<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h3><blockquote>
-<p>输入</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1618708103123</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>输出</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">01:08:23</span><br></pre></td></tr></table></figure>
-
-<h3 id="评测用例规模与约定"><a href="#评测用例规模与约定" class="headerlink" title="评测用例规模与约定"></a>评测用例规模与约定</h3><p>对于所有评测用例，给定的时间为不超过 10181018 的正整数。</p>
-<h3 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h3><ul>
-<li>最大运行时间：1s</li>
-<li>最大运行内存: 512M</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Lanqiao_1463 &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner sc=new Scanner(System.in);</span><br><span class="line">        long n=sc.nextLong();</span><br><span class="line">        //将毫秒转换成秒</span><br><span class="line">        n=n/1000;</span><br><span class="line">        //求最后一天的秒数</span><br><span class="line">        n=n%(24*60*60);</span><br><span class="line">        //求小时</span><br><span class="line">        long h=n/(60*60);</span><br><span class="line">        //这个小时剩余的秒数</span><br><span class="line">        n=n%(60*60);</span><br><span class="line">        //求分钟</span><br><span class="line">        long m=n/60;</span><br><span class="line">        //求秒</span><br><span class="line">        long s=n%60;</span><br><span class="line">        System.out.printf(&quot;%02d:%02d:%02d&quot;,h,m,s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h2><p>java 中由 int 型返回字符串时，经常用 String.format 方法，传入 %d，%2d， %02d 类似参数，记录下这些参数的含义。</p>
-<p>String.format 传入 %XYd 的意思，拆解如下，</p>
-<p>%d ：正常输出十进制数 。</p>
-<p>%Yd：十进制数，输出 Y 位。如果本身大于 Y 位，正常输出。</p>
-<p>%XYd：十进制数，输出 Y 位，不足 Y 位就补 X 。如果本身大于 Y 位，正常输出。</p>
-<p>以 %d，%2d， %02d 为例，</p>
-<p>%d：十进制数正常输出 。</p>
-<p>%2d：十进制数，输出 2 位。如果本身大于 2 位，正常输出。</p>
-<p>%02d ：十进制数，输出 2 位，不足 2 位就补 0 。如果本身大于 2 位，正常输出。</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
 ]]></content>
       <categories>
         <category>java</category>
@@ -329,6 +291,61 @@
       </tags>
   </entry>
   <entry>
+    <title>蓝桥杯-时间显示</title>
+    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%B6%E9%97%B4%E6%98%BE%E7%A4%BA/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小蓝要和朋友合作开发一个时间显示的网站。</p>
+<p>在服务器上，朋友已经获取了当前的时间，用一个整数表示，值为从 19701970 年 11 月 11 日 00:00:0000:00:00 到当前时刻经过的毫秒数。</p>
+<p>现在，小蓝要在客户端显示出这个时间。小蓝不用显示出年月日，只需要显示出时分秒即可，毫秒也不用显示，直接舍去即可。</p>
+<p>给定一个用整数表示的时间，请将这个时间对应的时分秒输出。</p>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入一行包含一个整数，表示时间。</p>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出时分秒表示的当前时间，格式形如 HH:MM:SS，其中 HH 表示时，值为 00 到 2323，MM 表示分，值为 00 到 5959，SS 表示秒，值为 00 到 5959。时、分、秒 不足两位时补前导 00。</p>
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><h3 id="示例-1"><a href="#示例-1" class="headerlink" title="示例 1"></a>示例 1</h3><blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">46800999</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">13:00:00</span><br></pre></td></tr></table></figure>
+
+<h3 id="示例-2"><a href="#示例-2" class="headerlink" title="示例 2"></a>示例 2</h3><blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1618708103123</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">01:08:23</span><br></pre></td></tr></table></figure>
+
+<h3 id="评测用例规模与约定"><a href="#评测用例规模与约定" class="headerlink" title="评测用例规模与约定"></a>评测用例规模与约定</h3><p>对于所有评测用例，给定的时间为不超过 10181018 的正整数。</p>
+<h3 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h3><ul>
+<li>最大运行时间：1s</li>
+<li>最大运行内存: 512M</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import java.util.Scanner;</span><br><span class="line"></span><br><span class="line">public class Lanqiao_1463 &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Scanner sc=new Scanner(System.in);</span><br><span class="line">        long n=sc.nextLong();</span><br><span class="line">        //将毫秒转换成秒</span><br><span class="line">        n=n/1000;</span><br><span class="line">        //求最后一天的秒数</span><br><span class="line">        n=n%(24*60*60);</span><br><span class="line">        //求小时</span><br><span class="line">        long h=n/(60*60);</span><br><span class="line">        //这个小时剩余的秒数</span><br><span class="line">        n=n%(60*60);</span><br><span class="line">        //求分钟</span><br><span class="line">        long m=n/60;</span><br><span class="line">        //求秒</span><br><span class="line">        long s=n%60;</span><br><span class="line">        System.out.printf(&quot;%02d:%02d:%02d&quot;,h,m,s);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="注："><a href="#注：" class="headerlink" title="注："></a>注：</h2><p>java 中由 int 型返回字符串时，经常用 String.format 方法，传入 %d，%2d， %02d 类似参数，记录下这些参数的含义。</p>
+<p>String.format 传入 %XYd 的意思，拆解如下，</p>
+<p>%d ：正常输出十进制数 。</p>
+<p>%Yd：十进制数，输出 Y 位。如果本身大于 Y 位，正常输出。</p>
+<p>%XYd：十进制数，输出 Y 位，不足 Y 位就补 X 。如果本身大于 Y 位，正常输出。</p>
+<p>以 %d，%2d， %02d 为例，</p>
+<p>%d：十进制数正常输出 。</p>
+<p>%2d：十进制数，输出 2 位。如果本身大于 2 位，正常输出。</p>
+<p>%02d ：十进制数，输出 2 位，不足 2 位就补 0 。如果本身大于 2 位，正常输出。</p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蓝桥杯-最少刷题数</title>
     <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0/</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小蓝老师教的编程课有 N 名学生，编号依次是 1 . . . N。第 i 号学生这学期刷题的数量是 Ai。</p>
@@ -360,23 +377,6 @@
 <p>我们先将b[pos]加到u，我们会知道此时s就会减1，而d不变（因为b[pos]此时跟u相等了），所以如果此时d &lt;= s - 1 ,满足条件，就只需要加到u即可，即结果为u - a[i]</p>
 <p>反之，这些人的题数必须定为u + 1题</p>
 <h3 id="代码2"><a href="#代码2" class="headerlink" title="代码2"></a>代码2</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2673new</span> &#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="type">int</span> <span class="variable">N</span> <span class="operator">=</span> <span class="number">100010</span>;</span><br><span class="line">        <span class="keyword">static</span> <span class="type">int</span>[] a = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">        <span class="keyword">static</span> <span class="type">int</span>[] b = <span class="keyword">new</span> <span class="title class_">int</span>[N];</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">            <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">            <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n;i++) &#123;</span><br><span class="line">                a[i] = sc.nextInt();</span><br><span class="line">                b[i] = a[i];</span><br><span class="line">            &#125;</span><br><span class="line">            Arrays.sort(b,<span class="number">0</span>,n);</span><br><span class="line"><span class="comment">//        求出中间值</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">u</span> <span class="operator">=</span> b[n / <span class="number">2</span>];</span><br><span class="line">            <span class="type">boolean</span> <span class="variable">flag</span> <span class="operator">=</span> <span class="literal">false</span>;</span><br><span class="line"><span class="comment">//        求出比u大的个数和比u小的个数</span></span><br><span class="line"></span><br><span class="line">            <span class="type">int</span> <span class="variable">s</span> <span class="operator">=</span> <span class="number">0</span>,d = <span class="number">0</span>;</span><br><span class="line"><span class="comment">//        求出u的个数</span></span><br><span class="line">            <span class="type">int</span> <span class="variable">Unum</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n;i++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(b[i] == u) &#123;</span><br><span class="line">                    Unum++;</span><br><span class="line">                    <span class="keyword">if</span>(!flag) &#123;</span><br><span class="line">                        s = i;</span><br><span class="line">                        flag = <span class="literal">true</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            d = n - Unum - s;</span><br><span class="line"><span class="comment">//        判断与u相同的数</span></span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n;i++) &#123;</span><br><span class="line">                <span class="type">int</span> <span class="variable">pos</span> <span class="operator">=</span> Arrays.binarySearch(b,<span class="number">0</span>,n, a[i]);</span><br><span class="line"><span class="comment">//            如果找的值不是中间值</span></span><br><span class="line">                <span class="keyword">if</span>(b[pos] &lt; u) &#123;</span><br><span class="line">                    <span class="comment">//如果右边小于左边减1</span></span><br><span class="line">                    <span class="keyword">if</span>(d &lt;= s - <span class="number">1</span>) &#123;</span><br><span class="line">                        System.out.print(u - a[i] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                        System.out.print(u + <span class="number">1</span> - a[i] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(b[pos] &gt; u) &#123;</span><br><span class="line">                    System.out.print(<span class="number">0</span> + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span>(d &lt;= s) System.out.print(<span class="number">0</span> + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                    <span class="keyword">else</span> System.out.print(<span class="number">1</span> + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>蓝桥杯</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>蓝桥杯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯-山（java）</title>
-    <url>/2023/04/23/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%B1%B1%EF%BC%88java%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>这天小明正在学数数。<br> 他突然发现有些正整数的形状像一座“山”，比如123565321、145541。<br> 它们左右对称（回文）且数位上的数字先单调不减，后单调不增。<br> 小明数了很久也没有数完，他想让你告诉他在区间[2022：2022222022]中有多少个数的形状像一座“山”。<br> 这是一道结果填空的题，你只需要算出结果后提交即可。<br> 本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
-<h3 id="代码详解"><a href="#代码详解" class="headerlink" title="代码详解"></a>代码详解</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int count = 0;</span><br><span class="line">        int top = 0;</span><br><span class="line">        f:</span><br><span class="line">        for (long i = 2022; i &lt;= 2022222022; i++) &#123;</span><br><span class="line">            String str = String.valueOf(i);</span><br><span class="line">            for (int j = 0; j &lt; str.length(); j++) &#123;</span><br><span class="line"></span><br><span class="line">                if (str.charAt(j) != str.charAt(str.length() - j - 1)) &#123;</span><br><span class="line">                    continue f;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                if (j&lt;str.length()/2)&#123;</span><br><span class="line">                    if ((str.charAt(j)-&#x27;0&#x27;)&gt;(str.charAt(j+1)-&#x27;0&#x27;))&#123;</span><br><span class="line">                        continue f;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            count++;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(count);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
 ]]></content>
       <categories>
         <category>java</category>
@@ -423,6 +423,46 @@
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">    //利用取余取整的方法</span></span><br><span class="line"><span class="comment">    private static boolean cheak(int n) &#123;</span></span><br><span class="line"><span class="comment">        while (n != 0) &#123;</span></span><br><span class="line"><span class="comment">            int a = n % 10;</span></span><br><span class="line"><span class="comment">            if (a == 2 || a == 0 || a == 1 || a == 9) &#123;</span></span><br><span class="line"><span class="comment">                return true;</span></span><br><span class="line"><span class="comment">            &#125;</span></span><br><span class="line"><span class="comment">            n /= 10;</span></span><br><span class="line"><span class="comment">        &#125;</span></span><br><span class="line"><span class="comment">        return false;</span></span><br><span class="line"><span class="comment">    &#125;</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+]]></content>
+      <categories>
+        <category>java</category>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯-阶乘计算（二分）</title>
+    <url>/2023/04/22/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少? </p>
+<p>如果这样的 N 不存在输出 −1。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 K。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数代表答案。 </p>
+<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure>
+
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>对于 30% 的数据，1 ≤ K ≤ 106 .</p>
+<p>对于 100% 的数据，1 ≤ K ≤ 1018 </p>
+<h3 id="代码1：暴力解法"><a href="#代码1：暴力解法" class="headerlink" title="代码1：暴力解法"></a>代码1：暴力解法</h3><p>利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否为K个0，很明显是超时了。但可以得到部分的分数，没有时间的话可以这样简单处理。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">            n*=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">long</span> sum=<span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> flag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i&lt;<span class="number">1000000</span>; i++) &#123;</span><br><span class="line">            sum*=i;</span><br><span class="line">            <span class="keyword">if</span>(sum%n==<span class="number">0</span>)&#123;</span><br><span class="line">                flag=<span class="number">1</span>;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag==<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>​    代码分析：这个是计算末尾0的个数的代码，很明显在这个环节就没办法达到100%数据的要求，因为1≤K≤10^18，而这个代码复杂度是O(n),要计算10^18次，但蓝桥杯计算量一般不超过10^8，所以用暴力法计算是超时的。</p>
+<h3 id="代码2：二分法求解"><a href="#代码2：二分法求解" class="headerlink" title="代码2：二分法求解"></a>代码2：二分法求解</h3><p>直接算出k个0的N!很难。N! 末尾的 0 取决于1 到 N 各因子2 和 5 的组合个数，但是实际上5的个数小于2的个数，所以末尾0的个数实际取决于 5 的个数。</p>
+<blockquote>
+<p><strong>结论：</strong><a href="https://so.csdn.net/so/search?q=%E6%B1%82N%E7%9A%84%E9%98%B6%E4%B9%98&spm=1001.2101.3001.7020">求N的阶乘</a>中因子5的个数,将N<strong>每次除以5</strong>的<strong>商****求和</strong>即可。</p>
+</blockquote>
+<p> <strong>由此可编写一个统计0的个数的方法为：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674new</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//输入的数字应为long。原因是阶乘算出的结果较大，用int会溢出。</span></span><br><span class="line">        <span class="type">long</span> k=sc.nextLong();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用二分查找，找到符合0个数的最小数字</span></span><br><span class="line">        <span class="type">long</span> left=<span class="number">0</span>,right=Long.MAX_VALUE;</span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            <span class="type">long</span> mid=left+(right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(zero(mid)&lt;k)left=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> right=mid;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//此时left就是我们求出的结果</span></span><br><span class="line">        <span class="type">long</span> res=zero(left);<span class="comment">//可能不为k。</span></span><br><span class="line">        <span class="keyword">if</span>(res==k)System.out.println(left);<span class="comment">//若和k相等，则是找到了数字left的阶乘结果又k个0。</span></span><br><span class="line">        <span class="keyword">else</span> System.out.println(-<span class="number">1</span>);<span class="comment">//不相等则返回-1;</span></span><br><span class="line">        sc.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//统计0的个数的函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>关于二分法，可看此篇文章：<a href="https://blog.csdn.net/qq_53060585/article/details/122735971">二分法总结（超级详细）附带图解_友人苏的博客-CSDN博客</a></p>
 ]]></content>
       <categories>
         <category>java</category>
@@ -528,46 +568,6 @@
       </categories>
       <tags>
         <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯-阶乘计算（二分）</title>
-    <url>/2023/04/22/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少? </p>
-<p>如果这样的 N 不存在输出 −1。</p>
-<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 K。</p>
-<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数代表答案。 </p>
-<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure>
-
-<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>对于 30% 的数据，1 ≤ K ≤ 106 .</p>
-<p>对于 100% 的数据，1 ≤ K ≤ 1018 </p>
-<h3 id="代码1：暴力解法"><a href="#代码1：暴力解法" class="headerlink" title="代码1：暴力解法"></a>代码1：暴力解法</h3><p>利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否为K个0，很明显是超时了。但可以得到部分的分数，没有时间的话可以这样简单处理。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">            n*=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">long</span> sum=<span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> flag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i&lt;<span class="number">1000000</span>; i++) &#123;</span><br><span class="line">            sum*=i;</span><br><span class="line">            <span class="keyword">if</span>(sum%n==<span class="number">0</span>)&#123;</span><br><span class="line">                flag=<span class="number">1</span>;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag==<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<p>​    代码分析：这个是计算末尾0的个数的代码，很明显在这个环节就没办法达到100%数据的要求，因为1≤K≤10^18，而这个代码复杂度是O(n),要计算10^18次，但蓝桥杯计算量一般不超过10^8，所以用暴力法计算是超时的。</p>
-<h3 id="代码2：二分法求解"><a href="#代码2：二分法求解" class="headerlink" title="代码2：二分法求解"></a>代码2：二分法求解</h3><p>直接算出k个0的N!很难。N! 末尾的 0 取决于1 到 N 各因子2 和 5 的组合个数，但是实际上5的个数小于2的个数，所以末尾0的个数实际取决于 5 的个数。</p>
-<blockquote>
-<p><strong>结论：</strong><a href="https://so.csdn.net/so/search?q=%E6%B1%82N%E7%9A%84%E9%98%B6%E4%B9%98&spm=1001.2101.3001.7020">求N的阶乘</a>中因子5的个数,将N<strong>每次除以5</strong>的<strong>商****求和</strong>即可。</p>
-</blockquote>
-<p> <strong>由此可编写一个统计0的个数的方法为：</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674new</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//输入的数字应为long。原因是阶乘算出的结果较大，用int会溢出。</span></span><br><span class="line">        <span class="type">long</span> k=sc.nextLong();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用二分查找，找到符合0个数的最小数字</span></span><br><span class="line">        <span class="type">long</span> left=<span class="number">0</span>,right=Long.MAX_VALUE;</span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            <span class="type">long</span> mid=left+(right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(zero(mid)&lt;k)left=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> right=mid;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//此时left就是我们求出的结果</span></span><br><span class="line">        <span class="type">long</span> res=zero(left);<span class="comment">//可能不为k。</span></span><br><span class="line">        <span class="keyword">if</span>(res==k)System.out.println(left);<span class="comment">//若和k相等，则是找到了数字left的阶乘结果又k个0。</span></span><br><span class="line">        <span class="keyword">else</span> System.out.println(-<span class="number">1</span>);<span class="comment">//不相等则返回-1;</span></span><br><span class="line">        sc.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//统计0的个数的函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<p>关于二分法，可看此篇文章：<a href="https://blog.csdn.net/qq_53060585/article/details/122735971">二分法总结（超级详细）附带图解_友人苏的博客-CSDN博客</a></p>
-]]></content>
-      <categories>
-        <category>java</category>
-        <category>蓝桥杯</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>蓝桥杯</tag>
       </tags>
   </entry>
 </search>
