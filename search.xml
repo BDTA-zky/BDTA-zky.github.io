@@ -159,10 +159,10 @@
 <h2 id="结果演示："><a href="#结果演示：" class="headerlink" title="结果演示："></a>结果演示：</h2><p> 按题目要求可得需要记录商品信息，由常识可知：品牌型号一般为String类型；尺寸，价格为int类型；配置也可按String类型；库存为int类型；总价为double类型。可按正常赋值的一样赋予商品各类信息，并通过输出函数输出。<br>题目要求入库数量要从控制台输入，那么就需要使用输入函数</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Scanner myScanner = new Scanner(System.in);</span><br><span class="line"></span><br><span class="line">String   str_1= myScanner.next();   接收用户输入字符串</span><br><span class="line"></span><br><span class="line">int   int_1 = myScanner.nextInt();    接收用户输入int</span><br><span class="line"></span><br><span class="line">double   do_1 = myScanner.nextDouble();   接收用户输入double</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-        <category>Java</category>
+        <category>java</category>
       </categories>
       <tags>
-        <tag>Java</tag>
+        <tag>java</tag>
       </tags>
   </entry>
   <entry>

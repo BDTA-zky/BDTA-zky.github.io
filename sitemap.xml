@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/2023/04/27/%E6%A1%88%E4%BE%8B2-1%20%E5%95%86%E5%93%81%E5%85%A5%E5%BA%93%EF%BC%88java%EF%BC%89/</loc>
+    
+    <lastmod>2023-05-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/2023/05/06/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%8C%9C%E7%94%9F%E6%97%A5%EF%BC%88python%EF%BC%89/</loc>
     
     <lastmod>2023-05-06</lastmod>
@@ -236,15 +245,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/2023/04/27/%E6%A1%88%E4%BE%8B2-1%20%E5%95%86%E5%93%81%E5%85%A5%E5%BA%93%EF%BC%88java%EF%BC%89/</loc>
-    
-    <lastmod>2023-05-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/2023/04/27/%E7%8C%9C%E6%95%B0%E5%AD%97%EF%BC%88python%EF%BC%89/</loc>
     
     <lastmod>2023-05-06</lastmod>
@@ -421,13 +421,6 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/Java/</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://example.com/tags/python/</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
@@ -480,13 +473,6 @@
   
   <url>
     <loc>http://example.com/categories/%E8%B5%84%E6%BA%90/</loc>
-    <lastmod>2023-05-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/categories/Java/</loc>
     <lastmod>2023-05-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
