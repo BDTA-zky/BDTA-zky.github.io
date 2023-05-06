@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-06T01:48:34.373Z</updated>
+  <updated>2023-05-06T02:17:36.394Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/05/06/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%8C%9C%E7%94%9F%E6%97%A5%EF%BC%88python%EF%BC%89/"/>
     <id>http://example.com/2023/05/06/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%8C%9C%E7%94%9F%E6%97%A5%EF%BC%88python%EF%BC%89/</id>
     <published>2023-05-06T01:34:38.990Z</published>
-    <updated>2023-05-06T01:48:34.373Z</updated>
+    <updated>2023-05-06T02:17:36.394Z</updated>
     
     <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p><p>今年的植树节（2012 年 3 月 12 日），小明和他的叔叔还有小伙伴们一起去植树。休息的时候，小明的同学问他叔叔多大年纪，他叔叔说：“我说个题目，看你们谁先猜出来！”</p><p>“把我出生的年月日连起来拼成一个 8 位数（月、日不足两位前补 0）正好可以被今天的年、月、日整除！”</p><p>他想了想，又补充到：“再给个提示，我是 6 月出生的。”</p><p>根据这些信息，请你帮小明算一下，他叔叔的出生年月日。</p><p>格式是年月日连成的 8 位数。例如，如果是 1948年 6 月 12 日，就写：19480612。</p><p>参考代码：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">num = y = m = d = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1900</span>, <span class="number">2012</span>):  <span class="comment"># 叔叔出生的年份至少要在1900年以后吧，要不就太大了</span></span><br><span class="line">    <span class="keyword">for</span> d <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">31</span>):   <span class="comment"># 六月是30天</span></span><br><span class="line">        num = y * <span class="number">10000</span> + <span class="number">6</span> * <span class="number">100</span> + d   <span class="comment"># 要将其变为八位数</span></span><br><span class="line">        <span class="keyword">if</span> num % <span class="number">2012</span> == <span class="number">0</span> <span class="keyword">and</span> num % <span class="number">3</span> == <span class="number">0</span> <span class="keyword">and</span> num % <span class="number">12</span> == <span class="number">0</span>:  <span class="comment"># 分别被年，月，日整除，要同时满足</span></span><br><span class="line">            <span class="built_in">print</span>(num)</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>由题可知叔叔的生日可以被今天的年，月，日分别整除，首先要猜一下叔叔的年龄范围，尽量要猜的大点；我最开始猜是三四十，但范围写的小了运行不出来，就直接拉到最大即一百岁以内，这次运行出来了叔叔六十多岁！！！</p><p>所以年份的范围为（1900，2012），由题目可知叔叔是六月的，而六月是30天，所以范围为（1，31）。</p><p>xxxxxxxxxx int sum=0;        for (int i = 1; i &lt;= 2020; i++) {            String s=””+i;            for (int j = 0; j &lt; s.length(); j++) {                if(s.charAt(j)==’2’){                    sum++;                }            }​        }        System.out.println(sum);java</p>]]></content>
     
