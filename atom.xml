@@ -161,6 +161,35 @@
   </entry>
   
   <entry>
+    <title>蓝桥杯--字母数（python）</title>
+    <link href="http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%AD%97%E6%AF%8D%E6%95%B0%EF%BC%88python%EF%BC%89/"/>
+    <id>http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%AD%97%E6%AF%8D%E6%95%B0%EF%BC%88python%EF%BC%89/</id>
+    <published>2023-05-05T09:28:55.983Z</published>
+    <updated>2023-05-06T02:44:28.475Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>请找到一个大于 2022的最小数，这个数转换成十六进制之后，所有的数位（不含前导 0）都为字母（A 到 F）。</p><p>请将这个数的十进制形式作为答案提交。</p><h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p><h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a><strong>代码实现：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">xiao</span>(<span class="params">m</span>):</span><br><span class="line">    <span class="keyword">while</span> m:   <span class="comment"># 当m为0时，跳出循环</span></span><br><span class="line">        <span class="keyword">if</span> m % <span class="number">16</span> &lt;= <span class="number">9</span>:   <span class="comment"># 十六进制数中，A到F代表的是10到15</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            m //= <span class="number">16</span>    <span class="comment"># 当不满足if的时候，让其向下整除16，在进行一次取余，观察是否符合条件</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x = <span class="number">2022</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">if</span> xiao(x):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    x += <span class="number">1</span>  <span class="comment"># 如不满足条件就加一</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>本题要求的是转换为16进制数后所有位数都为A到F，而A到F转换为10进制为10到15.</p><p>可以写一个函数，用来判断其是否满足条件。</p><p>当数对16取余小于等于9的时候，其不满足条件，数需要加一，再进行比较</p><p>若对16取余大于9，则需要判断其对16取整是否为0，若不为0，重复上述操作，先取余……..</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h3&gt;&lt;p&gt;请找到一个大于 2022的最小数，这个数转换成十六进制之后，所有的数位（不含前导 0）都为字母（A 到 F）。&lt;/p&gt;
+&lt;p</summary>
+      
+    
+    
+    
+    <category term="python" scheme="http://example.com/categories/python/"/>
+    
+    <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
+    
+    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title>蓝桥杯--迷宫（python）</title>
     <link href="http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%BF%B7%E5%AE%AB%EF%BC%88python%EF%BC%89/"/>
     <id>http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%BF%B7%E5%AE%AB%EF%BC%88python%EF%BC%89/</id>
@@ -557,34 +586,6 @@
       
     <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。&lt;/p&gt;
 &lt;p&gt;小蓝要为一条街的住户制作门牌号。&lt;/</summary>
-      
-    
-    
-    
-    <category term="python" scheme="http://example.com/categories/python/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>蓝桥杯--回文日期（python）</title>
-    <link href="http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88python%EF%BC%89/"/>
-    <id>http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88python%EF%BC%89/</id>
-    <published>2023-05-05T07:53:43.567Z</published>
-    <updated>2023-05-06T02:38:04.376Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p> 2020 年春节期间，有一个特殊的日期引起了大家的注意：2020 年 2 月 2 日。因为如果将这个日期按 “yyyymmdd” 的格式写成一个 8 位数是 20200202，恰好是一个回文数。我们称这样的日期是回文日期。</p><p>有人表示 20200202 是 “千年一遇” 的特殊日子。对此小明很不认同，因为不到 2 年之后就是下一个回文日期：20211202 即 2021 年 12 月 2 日。</p><p>也有人表示 20200202 并不仅仅是一个回文日期，还是一个 ABABBABA 型的回文日期。对此小明也不认同，因为大约 100 年后就能遇到下一个 ABABBABA 型的回文日期：21211212 即 2121 年 12 月 12 日。算不上 “千年一遇”，顶多算 “千年两遇”。</p><p>给定一个 8 位数的日期，请你计算该日期之后下一个回文日期和下一个 ABABBABA 型的回文日期各是哪一天。</p><h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入包含一个八位整数 N，表示日期。</p><p>对于所有评测用例，10000101≤N≤89991231，保证 N 是一个合法日期的 8 位数表示。</p><h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出两行，每行 1 个八位数。第一行表示下一个回文日期，第二行表示下一个 ABABBABA 型的回文日期。</p><h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><p>示例</p><blockquote><p>输入</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20200202</span><br></pre></td></tr></table></figure><blockquote><p>输出</p></blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">20211202</span><br><span class="line">21211212</span><br></pre></td></tr></table></figure><h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">import</span> datetime   <span class="comment"># python中的日期库提供多种日期和时间表达式</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line">st = <span class="built_in">input</span>()      <span class="comment"># 输入合法的日期</span></span><br><span class="line">y = <span class="built_in">int</span>(st[:<span class="number">4</span>])   <span class="comment"># 取出日期中的年份</span></span><br><span class="line">m = <span class="built_in">int</span>(st[<span class="number">4</span>:<span class="number">6</span>])  <span class="comment"># 取出月份</span></span><br><span class="line">d = <span class="built_in">int</span>(st[<span class="number">6</span>:])   <span class="comment"># 取出日份</span></span><br><span class="line">flag = <span class="literal">True</span>       <span class="comment"># 用来判断结束</span></span><br><span class="line">date = datetime.date(y, m, d)   <span class="comment"># 检查输入的日期是否合规</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">9999999</span>):       <span class="comment"># 通过for循环来查找回文日期，range后面的数字代表将要循环的次数但不一定是必须进行的次数</span></span><br><span class="line">    date = date + datetime.timedelta(days=<span class="number">1</span>)  <span class="comment"># datatime.timedelata函数可按日期的规范增加天数</span></span><br><span class="line">    date_str = <span class="built_in">str</span>(date).replace(<span class="string">&#x27;-&#x27;</span>, <span class="string">&#x27;&#x27;</span>)     <span class="comment"># 将日期中间的&#x27;-&#x27;去掉，方便后面的比较</span></span><br><span class="line">    <span class="keyword">if</span> date_str[:] == date_str[::-<span class="number">1</span>]:      <span class="comment"># str[:]代表的是正序输出，str[::-1]代表的是倒序输出，两者比较是否为回文日期</span></span><br><span class="line">        <span class="keyword">if</span> flag:             <span class="comment"># 题目要求的是输一次回文日期和一次ababbaba型的，则用布尔类型来控制输出次数</span></span><br><span class="line">            <span class="built_in">print</span>(date_str)</span><br><span class="line">            flag = <span class="literal">False</span>     <span class="comment"># 若输出一次后，使flag为False，则这个if语句将不再执行</span></span><br><span class="line">        <span class="keyword">if</span> date_str[<span class="number">0</span>] == date_str[<span class="number">2</span>] == date_str[<span class="number">5</span>] == date_str[<span class="number">7</span>] <span class="keyword">and</span> \</span><br><span class="line">                date_str[<span class="number">1</span>] == date_str[<span class="number">3</span>] == date_str[<span class="number">4</span>] == date_str[<span class="number">6</span>]:    <span class="comment"># 判断回文日期是否满足ababbaba型</span></span><br><span class="line">            <span class="built_in">print</span>(date_str)</span><br><span class="line">            <span class="keyword">break</span>     <span class="comment"># 若满足则结束循环</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>[可参考kpython中字符截取<a href="https://www.cnblogs.com/xiohao/p/11261809.html">-1]、[:-1]、[::-1]、[n::-1]等使用方法的详细讲解（建议留存） - @ 小浩 - 博客园 (cnblogs.com)<img src="https://csdnimg.cn/release/blog_editor_html/release2.2.3/ckeditor/plugins/CsdnLink/icons/icon-default.png?t=N176" alt=" ">https://www.cnblogs.com/xiohao/p/11261809.html</a></p><p>可参考</p><p><a href="https://www.geeksforgeeks.org/python-datetime-timedelta-function/">蟒蛇 |datetime.timedelta（） 函数 - GeeksforGeeks<img src="https://csdnimg.cn/release/blog_editor_html/release2.2.3/ckeditor/plugins/CsdnLink/icons/icon-default.png?t=N176" alt=" ">https://www.geeksforgeeks.org/python-datetime-timedelta-function/</a></p><p>datetime.date(year, month, day):<br> year : 表示年,范围[MINYEAR, MAXYEAR]，即[1, 9999]<br> month : 表示月，范围[1, 12]<br> day ：一月中第几天，最大值根据给定的year，month参数来决定。例如闰年2月份有29天 </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt; 2020 年春节期间，有一个特殊的日期引起了大家的注意：2020 年 2 月 2 日。因为如果将这个日期按 “yyyymm</summary>
       
     
     
