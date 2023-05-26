@@ -166,6 +166,22 @@
       </tags>
   </entry>
   <entry>
+    <title>猜数字（python）</title>
+    <url>/2023/04/27/%E7%8C%9C%E6%95%B0%E5%AD%97%EF%BC%88python%EF%BC%89/</url>
+    <content><![CDATA[<h1 id="猜数字（python）"><a href="#猜数字（python）" class="headerlink" title="猜数字（python）"></a>猜数字（python）</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 以下两行可以生成随机数，范围（1，100）可自拟</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">num = random.randint(<span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line"><span class="comment"># 定义一个int型变量，并初始化猜的次数</span></span><br><span class="line">x = <span class="number">0</span></span><br><span class="line"><span class="comment"># 定义一个布尔型变量</span></span><br><span class="line">flag = <span class="literal">True</span></span><br><span class="line"><span class="comment"># 在while循环中用布尔类型来控制循环，若为真则继续循环，为假则跳出循环</span></span><br><span class="line"><span class="keyword">while</span> flag:</span><br><span class="line">    <span class="comment"># 输入你所猜数字哦</span></span><br><span class="line">    n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入:&quot;</span>))</span><br><span class="line">    <span class="comment"># 猜的次数</span></span><br><span class="line">    x += <span class="number">1</span></span><br><span class="line">    <span class="comment"># 用if循环来比较猜的对错</span></span><br><span class="line">    <span class="keyword">if</span> n == num:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;猜中了!!!&quot;</span>)</span><br><span class="line">        flag = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> n &gt; num:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;大了~&quot;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;小了~&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;恭喜你猜对啦，就是<span class="subst">&#123;n&#125;</span>啦，总共猜了<span class="subst">&#123;x&#125;</span>次 &quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>  猜数字的前提是有数可猜，那么就需要先来找一个数，这个数不能是确定的，需要系统随机来赋值。而random函数的作用是产生随机数的模块，需要用import来导入random库。并且猜数字的范围要确定，我这里取得范围是（1，100）；范围可按需求更改，可参考以下这位</p>
+<p><a href="https://blog.csdn.net/m0_62735081">西瓜芒果气泡水</a>博主关于random使用范围的文章，<br> 链接：<a href="https://blog.csdn.net/m0_62735081/article/details/124978101">https://blog.csdn.net/m0_62735081/article/details/124978101</a></p>
+<p> 猜数字的范围确定完后，后面就是输入自己所猜的数字，通过while循环和if循环来判断是否猜中；在此处用布尔类型来判断while循环是否继续，为真则继续；如猜中数字，则赋予flag为假，以此来跳出循环。</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蓝桥杯--单词分析（python）</title>
     <url>/2023/04/27/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88python%EF%BC%89/</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p>
@@ -218,45 +234,6 @@
       </tags>
   </entry>
   <entry>
-    <title>猜数字（python）</title>
-    <url>/2023/04/27/%E7%8C%9C%E6%95%B0%E5%AD%97%EF%BC%88python%EF%BC%89/</url>
-    <content><![CDATA[<h1 id="猜数字（python）"><a href="#猜数字（python）" class="headerlink" title="猜数字（python）"></a>猜数字（python）</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 以下两行可以生成随机数，范围（1，100）可自拟</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">num = random.randint(<span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line"><span class="comment"># 定义一个int型变量，并初始化猜的次数</span></span><br><span class="line">x = <span class="number">0</span></span><br><span class="line"><span class="comment"># 定义一个布尔型变量</span></span><br><span class="line">flag = <span class="literal">True</span></span><br><span class="line"><span class="comment"># 在while循环中用布尔类型来控制循环，若为真则继续循环，为假则跳出循环</span></span><br><span class="line"><span class="keyword">while</span> flag:</span><br><span class="line">    <span class="comment"># 输入你所猜数字哦</span></span><br><span class="line">    n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入:&quot;</span>))</span><br><span class="line">    <span class="comment"># 猜的次数</span></span><br><span class="line">    x += <span class="number">1</span></span><br><span class="line">    <span class="comment"># 用if循环来比较猜的对错</span></span><br><span class="line">    <span class="keyword">if</span> n == num:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;猜中了!!!&quot;</span>)</span><br><span class="line">        flag = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> n &gt; num:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;大了~&quot;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;小了~&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;恭喜你猜对啦，就是<span class="subst">&#123;n&#125;</span>啦，总共猜了<span class="subst">&#123;x&#125;</span>次 &quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>  猜数字的前提是有数可猜，那么就需要先来找一个数，这个数不能是确定的，需要系统随机来赋值。而random函数的作用是产生随机数的模块，需要用import来导入random库。并且猜数字的范围要确定，我这里取得范围是（1，100）；范围可按需求更改，可参考以下这位</p>
-<p><a href="https://blog.csdn.net/m0_62735081">西瓜芒果气泡水</a>博主关于random使用范围的文章，<br> 链接：<a href="https://blog.csdn.net/m0_62735081/article/details/124978101">https://blog.csdn.net/m0_62735081/article/details/124978101</a></p>
-<p> 猜数字的范围确定完后，后面就是输入自己所猜的数字，通过while循环和if循环来判断是否猜中；在此处用布尔类型来判断while循环是否继续，为真则继续；如猜中数字，则赋予flag为假，以此来跳出循环。</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯--字母数（python）</title>
-    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%AD%97%E6%AF%8D%E6%95%B0%EF%BC%88python%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>请找到一个大于 2022的最小数，这个数转换成十六进制之后，所有的数位（不含前导 0）都为字母（A 到 F）。</p>
-<p>请将这个数的十进制形式作为答案提交。</p>
-<h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a><strong>代码实现：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">xiao</span>(<span class="params">m</span>):</span><br><span class="line">    <span class="keyword">while</span> m:   <span class="comment"># 当m为0时，跳出循环</span></span><br><span class="line">        <span class="keyword">if</span> m % <span class="number">16</span> &lt;= <span class="number">9</span>:   <span class="comment"># 十六进制数中，A到F代表的是10到15</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            m //= <span class="number">16</span>    <span class="comment"># 当不满足if的时候，让其向下整除16，在进行一次取余，观察是否符合条件</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x = <span class="number">2022</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">if</span> xiao(x):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    x += <span class="number">1</span>  <span class="comment"># 如不满足条件就加一</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>本题要求的是转换为16进制数后所有位数都为A到F，而A到F转换为10进制为10到15.</p>
-<p>可以写一个函数，用来判断其是否满足条件。</p>
-<p>当数对16取余小于等于9的时候，其不满足条件，数需要加一，再进行比较</p>
-<p>若对16取余大于9，则需要判断其对16取整是否为0，若不为0，重复上述操作，先取余……..</p>
-]]></content>
-      <categories>
-        <category>python</category>
-        <category>蓝桥杯</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>蓝桥杯</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>蓝桥杯--回文日期（python）</title>
     <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88python%EF%BC%89/</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p> 2020 年春节期间，有一个特殊的日期引起了大家的注意：2020 年 2 月 2 日。因为如果将这个日期按 “yyyymmdd” 的格式写成一个 8 位数是 20200202，恰好是一个回文数。我们称这样的日期是回文日期。</p>
@@ -295,39 +272,73 @@
       </tags>
   </entry>
   <entry>
-    <title>蓝桥杯--排序（python）</title>
-    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%8E%92%E5%BA%8F%EF%BC%88python%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
-<p>小蓝最近学习了一些排序算法，其中冒泡排序让他印象深刻。</p>
-<p>在冒泡排序中，每次只能交换相邻的两个元素。</p>
-<p>小蓝发现，如果对一个字符串中的字符排序，只允许交换相邻的两个字符， 则在所有可能的排序方案中，冒泡排序的总交换次数是最少的。</p>
-<p>例如，对于字符串lan 排序，只需要 1 次交换。对于字符串qiao 排序，总共需要 4 次交换。</p>
-<p>小蓝找到了很多字符串试图排序，他恰巧碰到一个字符串，需要 100 次交 换，可是他忘了吧这个字符串记下来，现在找不到了。</p>
-<p>请帮助小蓝找一个只包含小写英文字母且没有字母重复出现的字符串，对 该串的字符排序，正好需 100 次交换。如果可能找到多个，请告诉小蓝最短的那个。如果最短的仍然有多个，请告诉小蓝字典序最小的那个。</p>
-<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a><strong>代码实现：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line">word = <span class="string">&#x27;abcdefghijklmnopqrstuvwxyz&#x27;</span></span><br><span class="line">dy, s = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(word)):     <span class="comment"># 通过for循环找到需要的个数</span></span><br><span class="line">    n = <span class="built_in">int</span>(i * (i - <span class="number">1</span>) / <span class="number">2</span>)  <span class="comment"># 全逆乱序的冒泡排序次数  i*(i-1)/2  i为需要排序的个数</span></span><br><span class="line">    <span class="keyword">if</span> n &gt;= <span class="number">100</span>:          <span class="comment"># 找出最接近100且比100大的数</span></span><br><span class="line">        dy = n - <span class="number">100</span>      <span class="comment"># 比100多的次数</span></span><br><span class="line">        s = i             <span class="comment"># 找到需要排序的个数</span></span><br><span class="line">        <span class="keyword">break</span>             <span class="comment"># 跳出循环</span></span><br><span class="line"></span><br><span class="line">result = word[s - <span class="number">1</span>::-<span class="number">1</span>]     <span class="comment"># 将所需的单词逆序排列</span></span><br><span class="line"><span class="built_in">print</span>(result[dy] + result[:dy] + result[dy + <span class="number">1</span>:])    <span class="comment"># 找到多余次数所对应的单词将其放到第一位以减少循环</span></span><br></pre></td></tr></table></figure>
+    <title>蓝桥杯--字母数（python）</title>
+    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%AD%97%E6%AF%8D%E6%95%B0%EF%BC%88python%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>请找到一个大于 2022的最小数，这个数转换成十六进制之后，所有的数位（不含前导 0）都为字母（A 到 F）。</p>
+<p>请将这个数的十进制形式作为答案提交。</p>
+<h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a><strong>代码实现：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">xiao</span>(<span class="params">m</span>):</span><br><span class="line">    <span class="keyword">while</span> m:   <span class="comment"># 当m为0时，跳出循环</span></span><br><span class="line">        <span class="keyword">if</span> m % <span class="number">16</span> &lt;= <span class="number">9</span>:   <span class="comment"># 十六进制数中，A到F代表的是10到15</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            m //= <span class="number">16</span>    <span class="comment"># 当不满足if的时候，让其向下整除16，在进行一次取余，观察是否符合条件</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">x = <span class="number">2022</span></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    <span class="keyword">if</span> xiao(x):</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    x += <span class="number">1</span>  <span class="comment"># 如不满足条件就加一</span></span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
 
 <p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>本题的要求是找到符合<strong>冒泡排序次数</strong>的对应单词序列，而且是字典序最小的</p>
-<h6 id="字典序是指从前到后比较两个字符串的大小的方法。例如：ab-abc-ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。"><a href="#字典序是指从前到后比较两个字符串的大小的方法。例如：ab-abc-ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。" class="headerlink" title="字典序是指从前到后比较两个字符串的大小的方法。例如：ab abc ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。"></a>字典序是指从前到后比较两个字符串的大小的方法。例如：ab abc ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。</h6><p>当<strong>逆序</strong>的时候字典序且<strong>字母靠前</strong>的是单词<strong>最小</strong>的。</p>
-<p>那么可以将26个英文字母赋给一个变量，通过<strong>len()函数</strong>得到这个字符串的长度；用<strong>for循环开始遍历</strong>长度，用<strong>全逆乱序</strong>的<strong>冒泡排序</strong>次数找到符合条件的个数</p>
-<p><strong>全逆乱序的冒泡排序次数为 <em>i</em>(i-1)/2       i为需要排序的个数</strong></p>
-<p>用<strong>if</strong>找出最<strong>接近</strong>目标次数<strong>且</strong>比目标次数大的数，并算出比目标次数<strong>大多少</strong>，然后跳出循环；</p>
-<p>将找到的个数即s=i值，其所包含的单词序列<strong>找出并逆序排列</strong>（<strong>要注意s所代表的是个数而不是下标，这里需要将s值减一，才是所需下标</strong>）；</p>
-<p>将序列某部分找出并<strong>倒序排列</strong>所用的为**[n::-1]**;  -1代表的是逆序全部排列，n代表的是从下标为0到下标为n的所有序列；这个整体代表的是将下标为0到下标为n的所有序列逆序排列。</p>
-<p>写到这里这道题基本完成了，只差<strong>最后一步</strong>：就是将本序列的<strong>位置调动</strong>一下使冒泡排序次数达到目标要求；<strong>冒泡排序是两个两个的排序</strong>，我们可以<strong>根据多余的次数</strong>将一个单词<strong>比较</strong>的<strong>过程给抵消</strong>了，即将一个<strong>单词的顺序改一下</strong>让它少比较几次。</p>
-<p>本题我们已经得知多余的次数，可以找的<strong>多余的次数</strong>作为<strong>下标</strong>对应的字母，将其的位置放到<strong>第一位</strong>，其他单词不变。这里我们会用到**[n:],[:m]**</p>
-<p>[:m]代表的是取出下标为0到下标为m-1的序列</p>
-<p>[n:]代表的是取出从下标为n到最后的序列</p>
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>本题要求的是转换为16进制数后所有位数都为A到F，而A到F转换为10进制为10到15.</p>
+<p>可以写一个函数，用来判断其是否满足条件。</p>
+<p>当数对16取余小于等于9的时候，其不满足条件，数需要加一，再进行比较</p>
+<p>若对16取余大于9，则需要判断其对16取整是否为0，若不为0，重复上述操作，先取余……..</p>
 ]]></content>
       <categories>
         <category>python</category>
         <category>蓝桥杯</category>
-        <category>冒泡排序</category>
       </categories>
       <tags>
         <tag>python</tag>
         <tag>蓝桥杯</tag>
-        <tag>冒泡排序</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蓝桥杯--成绩分析（python）</title>
+    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%88%90%E7%BB%A9%E5%88%86%E6%9E%90%EF%BC%88python%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
+<p>请计算这次考试的最高分、最低分和平均分。</p>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入的第一行包含一个整数 n (1≤n≤10^4)，表示考试人数。</p>
+<p>接下来 n 行，每行包含一个 0 至 100 的整数，表示一个学生的得分。</p>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出三行。</p>
+<p>第一行包含一个整数，表示最高分。</p>
+<p>第二行包含一个整数，表示最低分。</p>
+<p>第三行包含一个实数，四舍五入保留正好两位小数，表示平均分。</p>
+<h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><p>示例</p>
+<blockquote>
+<p>输入</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">80</span><br><span class="line">92</span><br><span class="line">56</span><br><span class="line">74</span><br><span class="line">88</span><br><span class="line">99</span><br><span class="line">10</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p>输出</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">99</span><br><span class="line">10</span><br><span class="line">71.29</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="参考代码："><a href="#参考代码：" class="headerlink" title="参考代码："></a><strong>参考代码：</strong></h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())  <span class="comment"># 输入人数</span></span><br><span class="line">cj_list = []  <span class="comment"># 创建列表存放成绩</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):  <span class="comment"># 通过for循环依次向列表中添加成绩</span></span><br><span class="line">    cj_list.append(<span class="built_in">int</span>(<span class="built_in">input</span>()))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">max</span>(cj_list))  <span class="comment"># 用max函数找出列表中的最大值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(cj_list))  <span class="comment"># 用min函数找出列表中的最小值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="built_in">sum</span>(cj_list) / n))  <span class="comment"># 用sum函数求和，算出平均成绩，在保留两位小数</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>本题的要求为输入学生人数以及成绩，输出最高分，最低分和平均成绩。成绩的输入可以通过append函数依次添加到一个空列表中，而最高分，最低分，总成绩都有对应的函数max()，min()，sum()来方便运算；而平均成绩需要保留两位小数，就需要用到这个表达式</p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&quot;&#123;:.2f&#125;&quot;.format(135.1576))</span><br></pre></td></tr></table></figure>
+</blockquote>
+<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><blockquote>
+<p>D:\python\python3.10.7\练习01.py<br> 135.16</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>蓝桥杯</tag>
       </tags>
   </entry>
   <entry>
@@ -388,50 +399,39 @@
       </tags>
   </entry>
   <entry>
-    <title>蓝桥杯--成绩分析（python）</title>
-    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%88%90%E7%BB%A9%E5%88%86%E6%9E%90%EF%BC%88python%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
-<p>请计算这次考试的最高分、最低分和平均分。</p>
-<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入的第一行包含一个整数 n (1≤n≤10^4)，表示考试人数。</p>
-<p>接下来 n 行，每行包含一个 0 至 100 的整数，表示一个学生的得分。</p>
-<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出三行。</p>
-<p>第一行包含一个整数，表示最高分。</p>
-<p>第二行包含一个整数，表示最低分。</p>
-<p>第三行包含一个实数，四舍五入保留正好两位小数，表示平均分。</p>
-<h3 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h3><p>示例</p>
-<blockquote>
-<p>输入</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">7</span><br><span class="line">80</span><br><span class="line">92</span><br><span class="line">56</span><br><span class="line">74</span><br><span class="line">88</span><br><span class="line">99</span><br><span class="line">10</span><br></pre></td></tr></table></figure>
+    <title>蓝桥杯--排序（python）</title>
+    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%8E%92%E5%BA%8F%EF%BC%88python%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
+<p>小蓝最近学习了一些排序算法，其中冒泡排序让他印象深刻。</p>
+<p>在冒泡排序中，每次只能交换相邻的两个元素。</p>
+<p>小蓝发现，如果对一个字符串中的字符排序，只允许交换相邻的两个字符， 则在所有可能的排序方案中，冒泡排序的总交换次数是最少的。</p>
+<p>例如，对于字符串lan 排序，只需要 1 次交换。对于字符串qiao 排序，总共需要 4 次交换。</p>
+<p>小蓝找到了很多字符串试图排序，他恰巧碰到一个字符串，需要 100 次交 换，可是他忘了吧这个字符串记下来，现在找不到了。</p>
+<p>请帮助小蓝找一个只包含小写英文字母且没有字母重复出现的字符串，对 该串的字符排序，正好需 100 次交换。如果可能找到多个，请告诉小蓝最短的那个。如果最短的仍然有多个，请告诉小蓝字典序最小的那个。</p>
+<h3 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a><strong>代码实现：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line">word = <span class="string">&#x27;abcdefghijklmnopqrstuvwxyz&#x27;</span></span><br><span class="line">dy, s = <span class="number">0</span>, <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(word)):     <span class="comment"># 通过for循环找到需要的个数</span></span><br><span class="line">    n = <span class="built_in">int</span>(i * (i - <span class="number">1</span>) / <span class="number">2</span>)  <span class="comment"># 全逆乱序的冒泡排序次数  i*(i-1)/2  i为需要排序的个数</span></span><br><span class="line">    <span class="keyword">if</span> n &gt;= <span class="number">100</span>:          <span class="comment"># 找出最接近100且比100大的数</span></span><br><span class="line">        dy = n - <span class="number">100</span>      <span class="comment"># 比100多的次数</span></span><br><span class="line">        s = i             <span class="comment"># 找到需要排序的个数</span></span><br><span class="line">        <span class="keyword">break</span>             <span class="comment"># 跳出循环</span></span><br><span class="line"></span><br><span class="line">result = word[s - <span class="number">1</span>::-<span class="number">1</span>]     <span class="comment"># 将所需的单词逆序排列</span></span><br><span class="line"><span class="built_in">print</span>(result[dy] + result[:dy] + result[dy + <span class="number">1</span>:])    <span class="comment"># 找到多余次数所对应的单词将其放到第一位以减少循环</span></span><br></pre></td></tr></table></figure>
 
-
-
-<blockquote>
-<p>输出</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">99</span><br><span class="line">10</span><br><span class="line">71.29</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="参考代码："><a href="#参考代码：" class="headerlink" title="参考代码："></a><strong>参考代码：</strong></h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n = <span class="built_in">int</span>(<span class="built_in">input</span>())  <span class="comment"># 输入人数</span></span><br><span class="line">cj_list = []  <span class="comment"># 创建列表存放成绩</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):  <span class="comment"># 通过for循环依次向列表中添加成绩</span></span><br><span class="line">    cj_list.append(<span class="built_in">int</span>(<span class="built_in">input</span>()))</span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">max</span>(cj_list))  <span class="comment"># 用max函数找出列表中的最大值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">min</span>(cj_list))  <span class="comment"># 用min函数找出列表中的最小值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="built_in">sum</span>(cj_list) / n))  <span class="comment"># 用sum函数求和，算出平均成绩，在保留两位小数</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h3><p>本题的要求为输入学生人数以及成绩，输出最高分，最低分和平均成绩。成绩的输入可以通过append函数依次添加到一个空列表中，而最高分，最低分，总成绩都有对应的函数max()，min()，sum()来方便运算；而平均成绩需要保留两位小数，就需要用到这个表达式</p>
-<blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">print(&quot;&#123;:.2f&#125;&quot;.format(135.1576))</span><br></pre></td></tr></table></figure>
-</blockquote>
-<h3 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h3><blockquote>
-<p>D:\python\python3.10.7\练习01.py<br> 135.16</p>
-</blockquote>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>本题的要求是找到符合<strong>冒泡排序次数</strong>的对应单词序列，而且是字典序最小的</p>
+<h6 id="字典序是指从前到后比较两个字符串的大小的方法。例如：ab-abc-ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。"><a href="#字典序是指从前到后比较两个字符串的大小的方法。例如：ab-abc-ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。" class="headerlink" title="字典序是指从前到后比较两个字符串的大小的方法。例如：ab abc ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。"></a>字典序是指从前到后比较两个字符串的大小的方法。例如：ab abc ac是按照字典序从小到大排列。首先比较第一个字符，如果不同则第一个字符较小的字符串更小，如果相同则继续比较第2个字符……如此继续，来比较整个字符串的大小。</h6><p>当<strong>逆序</strong>的时候字典序且<strong>字母靠前</strong>的是单词<strong>最小</strong>的。</p>
+<p>那么可以将26个英文字母赋给一个变量，通过<strong>len()函数</strong>得到这个字符串的长度；用<strong>for循环开始遍历</strong>长度，用<strong>全逆乱序</strong>的<strong>冒泡排序</strong>次数找到符合条件的个数</p>
+<p><strong>全逆乱序的冒泡排序次数为 <em>i</em>(i-1)/2       i为需要排序的个数</strong></p>
+<p>用<strong>if</strong>找出最<strong>接近</strong>目标次数<strong>且</strong>比目标次数大的数，并算出比目标次数<strong>大多少</strong>，然后跳出循环；</p>
+<p>将找到的个数即s=i值，其所包含的单词序列<strong>找出并逆序排列</strong>（<strong>要注意s所代表的是个数而不是下标，这里需要将s值减一，才是所需下标</strong>）；</p>
+<p>将序列某部分找出并<strong>倒序排列</strong>所用的为**[n::-1]**;  -1代表的是逆序全部排列，n代表的是从下标为0到下标为n的所有序列；这个整体代表的是将下标为0到下标为n的所有序列逆序排列。</p>
+<p>写到这里这道题基本完成了，只差<strong>最后一步</strong>：就是将本序列的<strong>位置调动</strong>一下使冒泡排序次数达到目标要求；<strong>冒泡排序是两个两个的排序</strong>，我们可以<strong>根据多余的次数</strong>将一个单词<strong>比较</strong>的<strong>过程给抵消</strong>了，即将一个<strong>单词的顺序改一下</strong>让它少比较几次。</p>
+<p>本题我们已经得知多余的次数，可以找的<strong>多余的次数</strong>作为<strong>下标</strong>对应的字母，将其的位置放到<strong>第一位</strong>，其他单词不变。这里我们会用到**[n:],[:m]**</p>
+<p>[:m]代表的是取出下标为0到下标为m-1的序列</p>
+<p>[n:]代表的是取出从下标为n到最后的序列</p>
 ]]></content>
       <categories>
         <category>python</category>
         <category>蓝桥杯</category>
+        <category>冒泡排序</category>
       </categories>
       <tags>
         <tag>python</tag>
         <tag>蓝桥杯</tag>
+        <tag>冒泡排序</tag>
       </tags>
   </entry>
   <entry>
@@ -907,6 +907,44 @@
       </tags>
   </entry>
   <entry>
+    <title>蓝桥杯--迷宫（python）</title>
+    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%BF%B7%E5%AE%AB%EF%BC%88python%EF%BC%89/</url>
+    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
+<p>下图给出了一个迷宫的平面图，其中标记为 11 的为障碍，标记为 00 的为可以通行的地方。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">010000</span><br><span class="line">000100</span><br><span class="line">001001</span><br><span class="line">110000</span><br></pre></td></tr></table></figure>
+
+<p>迷宫的入口为左上角，出口为右下角，在迷宫中，只能从一个位置走到这 个它的上、下、左、右四个方向之一。</p>
+<p>对于上面的迷宫，从入口开始，可以按 <code>DRRURRDDDR</code> 的顺序通过迷宫， 一共 10 步。其中 D、U、L、R 分别表示向下、向上、向左、向右走。 对于下面这个更复杂的迷宫（30 行 50 列），请找出一种通过迷宫的方式，其使用的步数最少，在步数最少的前提下，请找出字典序最小的一个作为答案。</p>
+<p>请注意在字典序中 D&lt;L&lt;R&lt;U。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">01010101001011001001010110010110100100001000101010</span><br><span class="line">00001000100000101010010000100000001001100110100101</span><br><span class="line">01111011010010001000001101001011100011000000010000</span><br><span class="line">01000000001010100011010000101000001010101011001011</span><br><span class="line">00011111000000101000010010100010100000101100000000</span><br><span class="line">11001000110101000010101100011010011010101011110111</span><br><span class="line">00011011010101001001001010000001000101001110000000</span><br><span class="line">10100000101000100110101010111110011000010000111010</span><br><span class="line">00111000001010100001100010000001000101001100001001</span><br><span class="line">11000110100001110010001001010101010101010001101000</span><br><span class="line">00010000100100000101001010101110100010101010000101</span><br><span class="line">11100100101001001000010000010101010100100100010100</span><br><span class="line">00000010000000101011001111010001100000101010100011</span><br><span class="line">10101010011100001000011000010110011110110100001000</span><br><span class="line">10101010100001101010100101000010100000111011101001</span><br><span class="line">10000000101100010000101100101101001011100000000100</span><br><span class="line">10101001000000010100100001000100000100011110101001</span><br><span class="line">00101001010101101001010100011010101101110000110101</span><br><span class="line">11001010000100001100000010100101000001000111000010</span><br><span class="line">00001000110000110101101000000100101001001000011101</span><br><span class="line">10100101000101000000001110110010110101101010100001</span><br><span class="line">00101000010000110101010000100010001001000100010101</span><br><span class="line">10100001000110010001000010101001010101011111010010</span><br><span class="line">00000100101000000110010100101001000001000000000010</span><br><span class="line">11010000001001110111001001000011101001011011101000</span><br><span class="line">00000110100010001000100000001000011101000000110011</span><br><span class="line">10101000101000100010001111100010101001010000001000</span><br><span class="line">10000010100101001010110000000100101010001011101000</span><br><span class="line">00111100001000010000000110111000000001000000001011</span><br><span class="line">10000001100111010111010001000110111010101101111000</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<h3 id="代码演示："><a href="#代码演示：" class="headerlink" title="代码演示："></a><strong>代码演示：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n, m = <span class="number">30</span>, <span class="number">50</span></span><br><span class="line">z_set = <span class="built_in">set</span>()  <span class="comment"># 记录走过的点</span></span><br><span class="line">mg = [[<span class="built_in">int</span>(x) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">input</span>()] <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">no</span>(<span class="params">x, y</span>):</span><br><span class="line">    <span class="keyword">if</span> x &lt; <span class="number">0</span> <span class="keyword">or</span> y &lt; <span class="number">0</span> <span class="keyword">or</span> x &gt;= <span class="number">30</span> <span class="keyword">or</span> y &gt;= <span class="number">50</span> <span class="keyword">or</span> mg[x][y] == <span class="number">1</span> <span class="keyword">or</span> ((x, y) <span class="keyword">in</span> z_set):  <span class="comment"># 满足任意一个都不符合要求</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lujing</span>(<span class="params">x, y</span>):</span><br><span class="line">    cun = [(x, y, <span class="string">&#x27;&#x27;</span>)]   <span class="comment"># 存走的步数和方向</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> cun:</span><br><span class="line">        x, y, z = cun.pop(<span class="number">0</span>)  <span class="comment"># 将位于0号位置的元素删除，将后面的赋给x，y，z</span></span><br><span class="line">        <span class="keyword">if</span> no(x, y):  <span class="comment"># x,y没有超界</span></span><br><span class="line">            z_set.add((x, y))   <span class="comment"># 将符合条件的x，y存起来，存到集合</span></span><br><span class="line">            cun.append((x + <span class="number">1</span>, y, z + <span class="string">&#x27;D&#x27;</span>))  <span class="comment"># 按字母顺序，这样最后的出来的是顺序小的</span></span><br><span class="line">            cun.append((x, y - <span class="number">1</span>, z + <span class="string">&#x27;L&#x27;</span>))</span><br><span class="line">            cun.append((x, y + <span class="number">1</span>, z + <span class="string">&#x27;R&#x27;</span>))</span><br><span class="line">            cun.append((x - <span class="number">1</span>, y, z + <span class="string">&#x27;U&#x27;</span>))</span><br><span class="line">        <span class="keyword">if</span> x == <span class="number">29</span> <span class="keyword">and</span> y == <span class="number">49</span>:  <span class="comment"># 判断是否到达出口</span></span><br><span class="line">            <span class="keyword">return</span> z</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(lujing(<span class="number">0</span>, <span class="number">0</span>))</span><br></pre></td></tr></table></figure>
+
+<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>首先是将整个迷宫给存起来，将每一个数字都按单独的一个元素，</p>
+<p>先来看一个案例：</p>
+<blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = [0 for _ in range(10)]</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">b = [[0 for _ in range(2)]for _ in range(4)]</span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line">c = [[int(x)for x in range(5)]for _ in range(3)]</span><br><span class="line">print(c)</span><br><span class="line"></span><br><span class="line">d = [[str(x)for x in input()]for _ in range(4)]</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
+</blockquote>
+<p>结果：</p>
+<blockquote>
+<p>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]<br> [[0, 0], [0, 0], [0, 0], [0, 0]]<br> [[0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]]<br> <strong>asdfgh # 输入的<br> qwert<br> plknv<br> tgfbn</strong><br> [[‘a’, ‘s’, ‘d’, ‘f’, ‘g’, ‘h’], [‘q’, ‘w’, ‘e’, ‘r’, ‘t’], [‘p’, ‘l’, ‘k’, ‘n’, ‘v’], [‘t’, ‘g’, ‘f’, ‘b’, ‘n’]]</p>
+</blockquote>
+<p> 我们可以根据最后一个案例，将迷宫的每个数字都作为一个<strong>小元素</strong>，每一行作为一个<strong>大元素</strong>，需要将<strong>str（x）</strong>转换为<strong>int（x）</strong>，方便后面的运算。</p>
+<p><strong>no</strong>方法，是判断下这一步<strong>可不可以走</strong>，<strong>有没有出边界</strong>，这一步<strong>是不是障碍物（即1）</strong>，这一步<strong>之前走过没有</strong>，只要有<strong>一项满足就不能走</strong></p>
+<p><strong>lujing</strong>方法，是统计路径的，让每一个点都向它的<strong>四个方向各走一步</strong>，每走一步它的x，y都要发生改变，然后由no方法一个一个判断</p>
+<p>当它到达出口时结束循环，输出路径即可</p>
+]]></content>
+      <categories>
+        <category>python</category>
+        <category>蓝桥杯</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>蓝桥杯</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>蓝桥杯--递增序列（python）</title>
     <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E9%80%92%E5%A2%9E%E5%BA%8F%E5%88%97%EF%BC%88python%EF%BC%89/</url>
     <content><![CDATA[<p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
@@ -936,44 +974,6 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">m - i == n - j and m - i &gt; 0</span><br></pre></td></tr></table></figure>
 
 <p>在这里面还用到一个函数<strong>ord（）函数</strong>，其作用是将字符<strong>转换</strong>为对应的<strong>Ascll码值</strong>，方便比较大小</p>
-]]></content>
-      <categories>
-        <category>python</category>
-        <category>蓝桥杯</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>蓝桥杯</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蓝桥杯--迷宫（python）</title>
-    <url>/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%BF%B7%E5%AE%AB%EF%BC%88python%EF%BC%89/</url>
-    <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
-<p>下图给出了一个迷宫的平面图，其中标记为 11 的为障碍，标记为 00 的为可以通行的地方。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">010000</span><br><span class="line">000100</span><br><span class="line">001001</span><br><span class="line">110000</span><br></pre></td></tr></table></figure>
-
-<p>迷宫的入口为左上角，出口为右下角，在迷宫中，只能从一个位置走到这 个它的上、下、左、右四个方向之一。</p>
-<p>对于上面的迷宫，从入口开始，可以按 <code>DRRURRDDDR</code> 的顺序通过迷宫， 一共 10 步。其中 D、U、L、R 分别表示向下、向上、向左、向右走。 对于下面这个更复杂的迷宫（30 行 50 列），请找出一种通过迷宫的方式，其使用的步数最少，在步数最少的前提下，请找出字典序最小的一个作为答案。</p>
-<p>请注意在字典序中 D&lt;L&lt;R&lt;U。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">01010101001011001001010110010110100100001000101010</span><br><span class="line">00001000100000101010010000100000001001100110100101</span><br><span class="line">01111011010010001000001101001011100011000000010000</span><br><span class="line">01000000001010100011010000101000001010101011001011</span><br><span class="line">00011111000000101000010010100010100000101100000000</span><br><span class="line">11001000110101000010101100011010011010101011110111</span><br><span class="line">00011011010101001001001010000001000101001110000000</span><br><span class="line">10100000101000100110101010111110011000010000111010</span><br><span class="line">00111000001010100001100010000001000101001100001001</span><br><span class="line">11000110100001110010001001010101010101010001101000</span><br><span class="line">00010000100100000101001010101110100010101010000101</span><br><span class="line">11100100101001001000010000010101010100100100010100</span><br><span class="line">00000010000000101011001111010001100000101010100011</span><br><span class="line">10101010011100001000011000010110011110110100001000</span><br><span class="line">10101010100001101010100101000010100000111011101001</span><br><span class="line">10000000101100010000101100101101001011100000000100</span><br><span class="line">10101001000000010100100001000100000100011110101001</span><br><span class="line">00101001010101101001010100011010101101110000110101</span><br><span class="line">11001010000100001100000010100101000001000111000010</span><br><span class="line">00001000110000110101101000000100101001001000011101</span><br><span class="line">10100101000101000000001110110010110101101010100001</span><br><span class="line">00101000010000110101010000100010001001000100010101</span><br><span class="line">10100001000110010001000010101001010101011111010010</span><br><span class="line">00000100101000000110010100101001000001000000000010</span><br><span class="line">11010000001001110111001001000011101001011011101000</span><br><span class="line">00000110100010001000100000001000011101000000110011</span><br><span class="line">10101000101000100010001111100010101001010000001000</span><br><span class="line">10000010100101001010110000000100101010001011101000</span><br><span class="line">00111100001000010000000110111000000001000000001011</span><br><span class="line">10000001100111010111010001000110111010101101111000</span><br></pre></td></tr></table></figure>
-
-<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
-<h3 id="代码演示："><a href="#代码演示：" class="headerlink" title="代码演示："></a><strong>代码演示：</strong></h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">n, m = <span class="number">30</span>, <span class="number">50</span></span><br><span class="line">z_set = <span class="built_in">set</span>()  <span class="comment"># 记录走过的点</span></span><br><span class="line">mg = [[<span class="built_in">int</span>(x) <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">input</span>()] <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(n)]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">no</span>(<span class="params">x, y</span>):</span><br><span class="line">    <span class="keyword">if</span> x &lt; <span class="number">0</span> <span class="keyword">or</span> y &lt; <span class="number">0</span> <span class="keyword">or</span> x &gt;= <span class="number">30</span> <span class="keyword">or</span> y &gt;= <span class="number">50</span> <span class="keyword">or</span> mg[x][y] == <span class="number">1</span> <span class="keyword">or</span> ((x, y) <span class="keyword">in</span> z_set):  <span class="comment"># 满足任意一个都不符合要求</span></span><br><span class="line">        <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">lujing</span>(<span class="params">x, y</span>):</span><br><span class="line">    cun = [(x, y, <span class="string">&#x27;&#x27;</span>)]   <span class="comment"># 存走的步数和方向</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> cun:</span><br><span class="line">        x, y, z = cun.pop(<span class="number">0</span>)  <span class="comment"># 将位于0号位置的元素删除，将后面的赋给x，y，z</span></span><br><span class="line">        <span class="keyword">if</span> no(x, y):  <span class="comment"># x,y没有超界</span></span><br><span class="line">            z_set.add((x, y))   <span class="comment"># 将符合条件的x，y存起来，存到集合</span></span><br><span class="line">            cun.append((x + <span class="number">1</span>, y, z + <span class="string">&#x27;D&#x27;</span>))  <span class="comment"># 按字母顺序，这样最后的出来的是顺序小的</span></span><br><span class="line">            cun.append((x, y - <span class="number">1</span>, z + <span class="string">&#x27;L&#x27;</span>))</span><br><span class="line">            cun.append((x, y + <span class="number">1</span>, z + <span class="string">&#x27;R&#x27;</span>))</span><br><span class="line">            cun.append((x - <span class="number">1</span>, y, z + <span class="string">&#x27;U&#x27;</span>))</span><br><span class="line">        <span class="keyword">if</span> x == <span class="number">29</span> <span class="keyword">and</span> y == <span class="number">49</span>:  <span class="comment"># 判断是否到达出口</span></span><br><span class="line">            <span class="keyword">return</span> z</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(lujing(<span class="number">0</span>, <span class="number">0</span>))</span><br></pre></td></tr></table></figure>
-
-<h3 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a><strong>解题思路：</strong></h3><p>首先是将整个迷宫给存起来，将每一个数字都按单独的一个元素，</p>
-<p>先来看一个案例：</p>
-<blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a = [0 for _ in range(10)]</span><br><span class="line">print(a)</span><br><span class="line"></span><br><span class="line">b = [[0 for _ in range(2)]for _ in range(4)]</span><br><span class="line">print(b)</span><br><span class="line"></span><br><span class="line">c = [[int(x)for x in range(5)]for _ in range(3)]</span><br><span class="line">print(c)</span><br><span class="line"></span><br><span class="line">d = [[str(x)for x in input()]for _ in range(4)]</span><br><span class="line">print(d)</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>结果：</p>
-<blockquote>
-<p>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]<br> [[0, 0], [0, 0], [0, 0], [0, 0]]<br> [[0, 1, 2, 3, 4], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]]<br> <strong>asdfgh # 输入的<br> qwert<br> plknv<br> tgfbn</strong><br> [[‘a’, ‘s’, ‘d’, ‘f’, ‘g’, ‘h’], [‘q’, ‘w’, ‘e’, ‘r’, ‘t’], [‘p’, ‘l’, ‘k’, ‘n’, ‘v’], [‘t’, ‘g’, ‘f’, ‘b’, ‘n’]]</p>
-</blockquote>
-<p> 我们可以根据最后一个案例，将迷宫的每个数字都作为一个<strong>小元素</strong>，每一行作为一个<strong>大元素</strong>，需要将<strong>str（x）</strong>转换为<strong>int（x）</strong>，方便后面的运算。</p>
-<p><strong>no</strong>方法，是判断下这一步<strong>可不可以走</strong>，<strong>有没有出边界</strong>，这一步<strong>是不是障碍物（即1）</strong>，这一步<strong>之前走过没有</strong>，只要有<strong>一项满足就不能走</strong></p>
-<p><strong>lujing</strong>方法，是统计路径的，让每一个点都向它的<strong>四个方向各走一步</strong>，每走一步它的x，y都要发生改变，然后由no方法一个一个判断</p>
-<p>当它到达出口时结束循环，输出路径即可</p>
 ]]></content>
       <categories>
         <category>python</category>
