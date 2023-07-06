@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-07-06T07:34:59.736Z</updated>
+  <updated>2023-07-06T10:36:32.203Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-offline-popup（提升hexo框架博客访问速度）</title>
+    <link href="http://example.com/2023/07/06/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/"/>
+    <id>http://example.com/2023/07/06/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/</id>
+    <published>2023-07-06T10:32:54.000Z</published>
+    <updated>2023-07-06T10:36:32.203Z</updated>
+    
+    <content type="html"><![CDATA[<p>采用hexo+github的方式搭建博客的，访问速度是比较慢的。部署后访问有些甚至要加载十几秒，这对用户来说，是非常伤脑筋的，因为托管网站github是外网，所以访问慢是必然的。怎样解决这个问题，提升我们的访问速度呢?</p><p>最近在GitHub上发现一个名为hexo-offline-popup的插件，可以加快hexo的加载速度，解决这种问题。</p><h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a><strong>官方介绍</strong></h2><p><strong>hexo-offline-popup</strong> 是一个 hexo 插件， 它可加速您的Hexo网站的加载速度，以及网站内容更新弹窗提示。</p><p>该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。</p><h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>在hexo的根目录下打开<strong>git bash</strong>输入如下指令下载安装</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-offline-popup --save</span><br></pre></td></tr></table></figure><p>如果npm i hexo-offline-popup –save命令执行得很慢，可能是由于网络连接较慢或npm仓库的响应时间较长导致的。您可以尝试以下方法来<strong>加快安装速度</strong>：</p><p><strong>使用淘宝镜像源：</strong>淘宝镜像源是一个国内的npm镜像源，可以加速npm包的下载。您可以使用以下命令将npm的镜像源设置为淘宝镜像：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure><p>然后再次运行安装命令：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-offline-popup --save</span><br></pre></td></tr></table></figure><p>安装后, 运行 <strong>hexo clean &amp;&amp; hexo generate</strong> 激活插件. </p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 <strong>hexo clean &amp;&amp; hexo generate</strong>。</p><p>在博客根目录的 _config.yml 中添加以下配置:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># offline config passed to sw-precache.</span><br><span class="line">service_worker:</span><br><span class="line">  maximumFileSizeToCacheInBytes: 5242880</span><br><span class="line">  staticFileGlobs:</span><br><span class="line">  - public/**/*.&#123;js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2&#125;</span><br><span class="line">  stripPrefix: public</span><br><span class="line">  verbose: true</span><br></pre></td></tr></table></figure><p>如果你有CDN资源，例：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://cdn.some.com/some/path/some-script.js</span><br><span class="line"></span><br><span class="line">http://cdn.some-else.org/some/path/deeply/some-style.css</span><br></pre></td></tr></table></figure><p>将此配置添加到根目录的 _config.yml</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service_worker:</span><br><span class="line">  runtimeCaching:</span><br><span class="line">    - urlPattern: /*</span><br><span class="line">      handler: cacheFirst</span><br><span class="line">      options:</span><br><span class="line">        origin: cdn.some.com</span><br><span class="line">    - urlPattern: /*</span><br><span class="line">      handler: cacheFirst</span><br><span class="line">      options:</span><br><span class="line">        origin: cdn.some-else.org</span><br></pre></td></tr></table></figure><blockquote><p>附上GitHub仓库地址：<a href="https://github.com/Colsrch/hexo-offline-popup">Colsrch/hexo-offline-popup: 一个增强Hexo站点的插件 (github.com)</a></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;采用hexo+github的方式搭建博客的，访问速度是比较慢的。部署后访问有些甚至要加载十几秒，这对用户来说，是非常伤脑筋的，因为托管网站github是外网，所以访问慢是必然的。怎样解决这个问题，提升我们的访问速度呢?&lt;/p&gt;
+&lt;p&gt;最近在GitHub上发现一个名为hexo</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="资源教程" scheme="http://example.com/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Tomcat部署项目后，验证码不显示问题</title>
+    <link href="http://example.com/2023/07/06/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>http://example.com/2023/07/06/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
+    <published>2023-07-06T09:26:53.000Z</published>
+    <updated>2023-07-06T10:16:37.157Z</updated>
+    
+    <content type="html"><![CDATA[<p> <strong>在使用Tomcat服务器部署项目后，发现验证码不显示，在浏览器按f12查询后出现以下页面</strong></p><p><a href="https://imgse.com/i/pC6BuW9"><img src="https://s1.ax1x.com/2023/07/06/pC6BuW9.png" alt="pC6BuW9.png"></a><a href="https://imgse.com/i/pC6BKzR"><img src="https://s1.ax1x.com/2023/07/06/pC6BKzR.png" alt="pC6BKzR.png"></a></p><p><strong>查看源码发现一切正常</strong><a href="https://imgse.com/i/pC6Blsx"><img src="https://s1.ax1x.com/2023/07/06/pC6Blsx.png" alt="pC6Blsx.png"></a></p><p><a href="https://imgse.com/i/pC6r0Vf"><img src="https://s1.ax1x.com/2023/07/06/pC6r0Vf.png" alt="pC6r0Vf.png"></a></p><p> <strong>查阅相关资料后，得到以下方法：</strong></p><blockquote><p>1.在tomcat配置文件catalina.sh文件中找到-Djava.io.tmpdir=”$CATALINA_TMPDIR”</p><p>2.然后在这一行下加入：-Djava.awt.headless=true \，一共需要在修改文件里面添加7次</p><p>3.修改好“保存”再重启tomcat后网页的验证码就可以正确显示了。</p></blockquote><p> <strong>结果然并卵，添加后依然不显示</strong></p><p><strong>之后继续一步步探索，发现了问题所在：</strong></p><blockquote><p><strong>根本原因是，不能在Tomcat目录下的temp文件夹下写入图片</strong></p></blockquote><p><a href="https://imgse.com/i/pC6rDIS"><img src="https://s1.ax1x.com/2023/07/06/pC6rDIS.png" alt="pC6rDIS.png"></a></p><p><a href="https://imgse.com/i/pC6r62j"><img src="https://s1.ax1x.com/2023/07/06/pC6r62j.png" alt="pC6r62j.png"></a></p><p><strong>然后重新部署项目即可可以看到，验证码已正常显示</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt; &lt;strong&gt;在使用Tomcat服务器部署项目后，发现验证码不显示，在浏览器按f12查询后出现以下页面&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://imgse.com/i/pC6BuW9&quot;&gt;&lt;img src=&quot;https://s1.ax1x.com</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="资源教程" scheme="http://example.com/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>合根植物（JAVA）</title>
@@ -587,70 +637,6 @@
       
     <summary type="html">&lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;小蓝学习了</summary>
-      
-    
-    
-    
-    <category term="java" scheme="http://example.com/categories/java/"/>
-    
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    
-    <category term="java" scheme="http://example.com/tags/java/"/>
-    
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>牌型种数（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E7%89%8C%E5%9E%8B%E7%A7%8D%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E7%89%8C%E5%9E%8B%E7%A7%8D%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
-    <published>2023-05-07T04:27:40.000Z</published>
-    <updated>2023-07-06T07:29:08.523Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小明被劫持到X 赌城，被迫与其他 3 人玩牌一副扑克牌 (去掉大小王牌，共 52 张)，均发给 4个人，每个人 13 张.这时，小明脑子里突然冒出一个问题:如果不考虑花色，只考虑点数，也不考虑自己得到的牌的先后顺序，自已手里能拿到的初始牌型组合一共有多少种呢?</p><p>请填写该整数，不要填写任何多余的内容或说明文字</p><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> result=<span class="number">0</span>;                <span class="comment">//储存结果种数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        select(<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">select</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span>&#123;   <span class="comment">//递归</span></span><br><span class="line">        <span class="keyword">if</span> (x&gt;<span class="number">13</span>||y&gt;<span class="number">13</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (x==<span class="number">13</span>&amp;&amp;y==<span class="number">13</span>)&#123;</span><br><span class="line">            result++;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;       <span class="comment">//0，1，2，3，4，共五种情况</span></span><br><span class="line">            select(x+<span class="number">1</span>,y+i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>可以拿十三次每次拿一张牌，但每张牌都要有十三种情况拿到所以复杂度是13^13复杂度过高。所以换一种思路</p><p>13种牌每张牌只有四张，所以我们拿十三张牌每种牌的个数可能是0，1，2，3，4张，共五种情况。</p><p>所以我们采取递归思想：</p><p>select(int x,int y);</p><p>x:目前在拿哪张牌（牌型）。</p><p>y:总共拿了多少张牌。</p><p>这样每张牌从十三种情况变为了五种，复杂度变为了5^13,并且如果在中途y&gt;13那么可以直接舍弃这种情况（比如1取了4张，2取了4张，3取了4张，4取了4张总共已经16张牌舍弃），如果取到了第十三种牌型的牌，而且总数正好是13则种数加1。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;小明被劫持到X 赌城，被迫与其他 3 人玩牌一副扑克牌 (去掉大小王牌，共 52 张)，均发给 4个人，每个人 13 张.这时，小明</summary>
-      
-    
-    
-    
-    <category term="java" scheme="http://example.com/categories/java/"/>
-    
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    
-    <category term="java" scheme="http://example.com/tags/java/"/>
-    
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数位排序（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E6%95%B0%E4%BD%8D%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E6%95%B0%E4%BD%8D%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/</id>
-    <published>2023-05-07T04:22:45.000Z</published>
-    <updated>2023-07-06T07:24:46.190Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小蓝对一个数的数位之和很感兴趣, 今天他要按照数位之和给数排序。当 两个数各个数位之和不同时, 将数位和较小的排在前面, 当数位之和相等时, 将数值小的排在前面。</p><p>例如, 2022 排在 409 前面, 因为 2022 的数位之和是 6, 小于 409 的数位 之和 13 。</p><p>又如, 6 排在 2022 前面, 因为它们的数位之和相同, 而 6 小于 2022 。</p><p>给定正整数n,m, 请问对 1 到 n 采用这种方法排序时, 排在第 m 个的元 素是多少?</p><p><strong>输入格式</strong><br>输入第一行包含一个正整数 n 。</p><p>第二行包含一个正整数 m 。</p><p><strong>输出格式</strong><br>输出一行包含一个整数, 表示答案。</p><p><strong>样例输入</strong></p><blockquote><p>13<br>5</p></blockquote><p><strong>样例输出</strong></p><blockquote><p>3</p></blockquote><p><strong>样例说明</strong><br>1 到 13 的排序为: 1,10,2,11,3,12,4,13,5,6,7,8,9 。第 5 个数为 3 。</p><p><strong>评测用例规模与约定</strong><br>对于30% 的评测用例,1≤m≤n≤300 。</p><p>对于50% 的评测用例, 1≤m≤n≤1000 。</p><p>对于所有评测用例, 1≤m≤n≤106 。</p><p><strong>运行限制</strong><br>最大运行时间：3s<br>最大运行内存: 512M</p><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> n,m;                         </span><br><span class="line">        n=sc.nextInt();</span><br><span class="line">        m=sc.nextInt();</span><br><span class="line">        Integer[] arr=<span class="keyword">new</span> <span class="title class_">Integer</span>[n];  <span class="comment">//必须用int的包装类Integer</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            arr[i]=i+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Arrays.sort(arr,((o1, o2) -&gt; js(o1)!=js(o2)?js(o1)-js(o2):o1-o2)); <span class="comment">//Lambda表达式用sort方法进行排序</span></span><br><span class="line">        System.out.println(arr[m-<span class="number">1</span>]);</span><br><span class="line">        sc.close();</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">js</span><span class="params">(Integer a)</span>&#123;    <span class="comment">//求数位和</span></span><br><span class="line">        <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(a&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            sum+=a%<span class="number">10</span>;</span><br><span class="line">            a=a/<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>本题用sort方法中的</p><p>sort(T[] a, Comparator&lt;? super T&gt; c)<br>根据指定的比较器引发的顺序对指定的对象数组进行排序</p><p> 此方法可以根据设置的条件交换元素的顺序，</p><p>Arrays.sort(arr,((o1, o2) -&gt; js(o1)!=js(o2)?js(o1)-js(o2):o1-o2));<br>这段代码采用了Lambda表达式意思是比较前后两个数的数位和如果不同，则将数位和较小的放到前面，如果数位和相同则将较小的数字放到前面。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;小蓝对一个数的数位之和很感兴趣, 今天他要按照数位之和给数排序。当 两个数各个数位之和不同时, 将数位和较小的排在前面, 当数位之和</summary>
       
     
     
