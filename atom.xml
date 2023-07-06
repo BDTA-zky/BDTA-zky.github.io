@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-05-06T02:46:10.235Z</updated>
+  <updated>2023-07-06T03:40:21.283Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GCD（JAVA）</title>
+    <link href="http://example.com/2023/05/07/GCD%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>http://example.com/2023/05/07/GCD%EF%BC%88JAVA%EF%BC%89/</id>
+    <published>2023-05-07T05:06:27.000Z</published>
+    <updated>2023-07-06T03:40:21.283Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定两个不同的正整数 a,b, 求一个正整数 k 使得 gcd(a+k,b+k) 尽可能 大, 其中 gcd(a,b) 表示 aa 和 bb 的最大公约数, 如果存在多个 k, 请输出所有满 足条件的 k 中最小的那个。</p><p><strong>输入格式</strong><br>输入一行包含两个正整数 a,b, 用一个空格分隔。</p><p><strong>输出格式</strong><br>输出一行包含一个正整数 k 。</p><p><strong>样例输入</strong><br>5 7</p><p><strong>样例输出</strong><br>1</p><p><strong>评测用例规模与约定</strong><br>对于 20% 的评测用例，a&lt;b≤105;</p><p>对于 40% 的评测用例, a&lt;b≤109;</p><p>对于所有评测用例, 1≤a&lt;b≤1018 。</p><p><strong>运行限制</strong><br>最大运行时间：1s<br>最大运行内存: 512M</p><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="comment">// 1:无需package</span></span><br><span class="line"><span class="comment">// 2: 类名必须Main, 不可修改</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">long</span> a,b;</span><br><span class="line">        a=sc.nextLong();</span><br><span class="line">        b=sc.nextLong();</span><br><span class="line">        <span class="type">long</span> c,k;</span><br><span class="line">        <span class="keyword">if</span> (a&gt;b)&#123;</span><br><span class="line">            c=a-b;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            c=b-a;</span><br><span class="line">        &#125;</span><br><span class="line">        k=c-a%c;</span><br><span class="line">        System.out.println(k);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>最大公约数因为a,b两数不相等，要加上一个相同的数k则可以求出的最大公约数必为a，b两数的差（代码也可以写成差的绝对值，我是进行比较了）。举个例子，5，7。</p><p>5和7加上同一个数因为他们的差值是2假设加上k后最大公约数可能为3，5+4=9，那么7就要加到12需要加5，就不满足条件了。</p><p>公约数我们求出来了就是差值，求最小k只需要用最大公约数减去a,b任意一个数除以最大公约数的余数即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;给定两个不同的正整数 a,b, 求一个正整数 k 使得 gcd(a+k,b+k) 尽可能 大, 其中 gcd(a,b) 表示 aa </summary>
+      
+    
+    
+    
+    <category term="java" scheme="http://example.com/categories/java/"/>
+    
+    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    
+    <category term="java" scheme="http://example.com/tags/java/"/>
+    
+    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>蓝桥杯--猜生日（python）</title>
@@ -39,9 +71,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -70,9 +102,9 @@
     <category term="结构体" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E7%BB%93%E6%9E%84%E4%BD%93/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="结构体" scheme="http://example.com/tags/%E7%BB%93%E6%9E%84%E4%BD%93/"/>
     
@@ -100,9 +132,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -128,9 +160,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -183,9 +215,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -212,9 +244,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -240,9 +272,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -268,9 +300,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -297,9 +329,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -326,9 +358,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -355,9 +387,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -384,9 +416,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -413,9 +445,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -444,9 +476,9 @@
     <category term="链表" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E9%93%BE%E8%A1%A8/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="链表" scheme="http://example.com/tags/%E9%93%BE%E8%A1%A8/"/>
     
@@ -477,9 +509,9 @@
     <category term="冒泡排序" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
     <category term="冒泡排序" scheme="http://example.com/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/"/>
     
@@ -508,9 +540,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -537,9 +569,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+    <category term="python" scheme="http://example.com/tags/python/"/>
     
   </entry>
   
@@ -566,38 +598,9 @@
     <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="python" scheme="http://example.com/tags/python/"/>
-    
     <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
-  </entry>
-  
-  <entry>
-    <title>蓝桥杯--门牌制作（python）</title>
-    <link href="http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C%EF%BC%88python%EF%BC%89/"/>
-    <id>http://example.com/2023/05/05/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C%EF%BC%88python%EF%BC%89/</id>
-    <published>2023-05-05T07:59:26.572Z</published>
-    <updated>2023-05-06T02:38:40.323Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</p><p>小蓝要为一条街的住户制作门牌号。</p><p>这条街一共有 2020 位住户，门牌号从 1 到2020 编号。</p><p>小蓝制作门牌的方法是先制作 0 到 9 这几个数字字符，最后根据需要将字符粘贴到门牌上，例如门牌 1017 需要依次粘贴字符 1、0、1、71、0、1、7，即需要 1个字符 0，2 个字符 1，1 个字符 7。</p><p>请问要制作所有的 1 到 2020 号门牌，总共需要多少个字符 2？</p><h3 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="comment"># 请在此输入您的代码</span></span><br><span class="line">b = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, <span class="number">2021</span>):    <span class="comment"># range（1,2021）代表的是从1到2021的数，不包括2021</span></span><br><span class="line">    a = <span class="built_in">str</span>(i).count(<span class="string">&#x27;2&#x27;</span>)   <span class="comment"># 在字符串中有个操作是统计指定字符串的数量，那么就需要先将i转换为字符串</span></span><br><span class="line">    b += a                  <span class="comment"># 依次累加得到最终结果</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure><p>解题思路：遍历着2020个数字，找到每个数字中含有几个2，将他们累加即可</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h3&gt;&lt;p&gt;本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。&lt;/p&gt;
-&lt;p&gt;小蓝要为一条街的住户制作门牌号。&lt;/</summary>
-      
-    
-    
-    
-    <category term="python" scheme="http://example.com/categories/python/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    
     <category term="python" scheme="http://example.com/tags/python/"/>
-    
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
