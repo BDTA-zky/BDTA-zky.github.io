@@ -3,11 +3,11 @@
   <title>大数据科技协会-zky</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://bdta-zky.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://bdta-zky.github.io/"/>
   <updated>2023-07-06T10:36:32.203Z</updated>
-  <id>http://example.com/</id>
+  <id>https://bdta-zky.github.io/</id>
   
   <author>
     <name>刘浩龙</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hexo-offline-popup（提升hexo框架博客访问速度）</title>
-    <link href="http://example.com/2023/07/06/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/"/>
-    <id>http://example.com/2023/07/06/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/07/06/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/07/06/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/</id>
     <published>2023-07-06T10:32:54.000Z</published>
     <updated>2023-07-06T10:36:32.203Z</updated>
     
@@ -34,17 +34,17 @@
     
     
     
-    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://bdta-zky.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="资源教程" scheme="http://example.com/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
+    <category term="资源教程" scheme="https://bdta-zky.github.io/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>Tomcat部署项目后，验证码不显示问题</title>
-    <link href="http://example.com/2023/07/06/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
-    <id>http://example.com/2023/07/06/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
+    <link href="https://bdta-zky.github.io/2023/07/06/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
+    <id>https://bdta-zky.github.io/2023/07/06/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
     <published>2023-07-06T09:26:53.000Z</published>
     <updated>2023-07-06T10:16:37.157Z</updated>
     
@@ -59,17 +59,17 @@
     
     
     
-    <category term="教程" scheme="http://example.com/categories/%E6%95%99%E7%A8%8B/"/>
+    <category term="教程" scheme="https://bdta-zky.github.io/categories/%E6%95%99%E7%A8%8B/"/>
     
     
-    <category term="资源教程" scheme="http://example.com/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
+    <category term="资源教程" scheme="https://bdta-zky.github.io/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
   <entry>
     <title>合根植物（JAVA）</title>
-    <link href="http://example.com/2023/06/09/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/06/09/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/06/09/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/06/09/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-06-09T08:34:45.000Z</published>
     <updated>2023-07-06T07:34:59.736Z</updated>
     
@@ -84,25 +84,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>方格填数（JAVA）</title>
-    <link href="http://example.com/2023/06/07/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/06/07/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/06/07/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/06/07/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-06-07T09:30:15.000Z</published>
     <updated>2023-07-06T07:23:17.461Z</updated>
     
@@ -118,25 +118,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>本质上升序列（JAVA）</title>
-    <link href="http://example.com/2023/05/28/%E6%9C%AC%E8%B4%A8%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/28/%E6%9C%AC%E8%B4%A8%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/28/%E6%9C%AC%E8%B4%A8%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/28/%E6%9C%AC%E8%B4%A8%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-28T09:30:51.000Z</published>
     <updated>2023-07-06T07:20:04.141Z</updated>
     
@@ -151,25 +151,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>蓝肽子序列（JAVA）</title>
-    <link href="http://example.com/2023/05/26/%E8%93%9D%E8%82%BD%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/26/%E8%93%9D%E8%82%BD%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/26/%E8%93%9D%E8%82%BD%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/26/%E8%93%9D%E8%82%BD%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-26T11:52:55.000Z</published>
     <updated>2023-07-06T07:24:14.955Z</updated>
     
@@ -184,25 +184,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>左移右移（JAVA）</title>
-    <link href="http://example.com/2023/05/22/%E5%B7%A6%E7%A7%BB%E5%8F%B3%E7%A7%BB%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/22/%E5%B7%A6%E7%A7%BB%E5%8F%B3%E7%A7%BB%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/22/%E5%B7%A6%E7%A7%BB%E5%8F%B3%E7%A7%BB%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/22/%E5%B7%A6%E7%A7%BB%E5%8F%B3%E7%A7%BB%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-22T11:01:01.000Z</published>
     <updated>2023-07-06T07:25:32.915Z</updated>
     
@@ -217,25 +217,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>重合次数（JAVA）</title>
-    <link href="http://example.com/2023/05/16/%E9%87%8D%E5%90%88%E6%AC%A1%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/16/%E9%87%8D%E5%90%88%E6%AC%A1%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/16/%E9%87%8D%E5%90%88%E6%AC%A1%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/16/%E9%87%8D%E5%90%88%E6%AC%A1%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-16T10:45:09.000Z</published>
     <updated>2023-07-06T07:25:18.930Z</updated>
     
@@ -249,25 +249,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>回文日期（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88JAVA%EF%BC%89-1/"/>
-    <id>http://example.com/2023/05/07/%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88JAVA%EF%BC%89-1/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88JAVA%EF%BC%89-1/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88JAVA%EF%BC%89-1/</id>
     <published>2023-05-07T05:22:22.000Z</published>
     <updated>2023-07-06T07:23:30.525Z</updated>
     
@@ -281,25 +281,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>七段码（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E4%B8%83%E6%AE%B5%E7%A0%81%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E4%B8%83%E6%AE%B5%E7%A0%81%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E4%B8%83%E6%AE%B5%E7%A0%81%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E4%B8%83%E6%AE%B5%E7%A0%81%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T05:18:36.000Z</published>
     <updated>2023-07-06T07:30:03.460Z</updated>
     
@@ -314,25 +314,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>最优清零方案（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E6%9C%80%E4%BC%98%E6%B8%85%E9%9B%B6%E6%96%B9%E6%A1%88%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E6%9C%80%E4%BC%98%E6%B8%85%E9%9B%B6%E6%96%B9%E6%A1%88%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E6%9C%80%E4%BC%98%E6%B8%85%E9%9B%B6%E6%96%B9%E6%A1%88%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E6%9C%80%E4%BC%98%E6%B8%85%E9%9B%B6%E6%96%B9%E6%A1%88%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T05:14:44.000Z</published>
     <updated>2023-07-06T07:25:28.093Z</updated>
     
@@ -347,25 +347,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>全排列的价值（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E5%85%A8%E6%8E%92%E5%88%97%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E5%85%A8%E6%8E%92%E5%88%97%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E5%85%A8%E6%8E%92%E5%88%97%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E5%85%A8%E6%8E%92%E5%88%97%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T05:11:03.000Z</published>
     <updated>2023-07-06T07:24:39.139Z</updated>
     
@@ -379,25 +379,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>GCD（JAVA）</title>
-    <link href="http://example.com/2023/05/07/GCD%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/GCD%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/GCD%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/GCD%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T05:06:27.000Z</published>
     <updated>2023-07-06T03:40:21.283Z</updated>
     
@@ -411,25 +411,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>数组切分（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E6%95%B0%E7%BB%84%E5%88%87%E5%88%86%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E6%95%B0%E7%BB%84%E5%88%87%E5%88%86%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E6%95%B0%E7%BB%84%E5%88%87%E5%88%86%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E6%95%B0%E7%BB%84%E5%88%87%E5%88%86%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T05:02:30.000Z</published>
     <updated>2023-07-06T07:24:55.139Z</updated>
     
@@ -443,25 +443,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>求阶乘（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E6%B1%82%E9%98%B6%E4%B9%98%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E6%B1%82%E9%98%B6%E4%B9%98%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E6%B1%82%E9%98%B6%E4%B9%98%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E6%B1%82%E9%98%B6%E4%B9%98%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T04:58:51.000Z</published>
     <updated>2023-07-06T07:16:45.376Z</updated>
     
@@ -477,25 +477,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>最少刷题数（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T04:55:20.000Z</published>
     <updated>2023-07-06T07:38:29.545Z</updated>
     
@@ -510,25 +510,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>山（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E5%B1%B1%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E5%B1%B1%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E5%B1%B1%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E5%B1%B1%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T04:52:26.000Z</published>
     <updated>2023-07-06T07:24:42.267Z</updated>
     
@@ -543,25 +543,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>双向排序（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E5%8F%8C%E5%90%91%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E5%8F%8C%E5%90%91%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E5%8F%8C%E5%90%91%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E5%8F%8C%E5%90%91%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T04:46:34.000Z</published>
     <updated>2023-07-06T07:24:59.589Z</updated>
     
@@ -576,25 +576,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>杨辉三角形（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T04:37:53.000Z</published>
     <updated>2023-07-06T07:38:21.256Z</updated>
     
@@ -608,25 +608,25 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
   <entry>
     <title>路径（JAVA）</title>
-    <link href="http://example.com/2023/05/07/%E8%B7%AF%E5%BE%84%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>http://example.com/2023/05/07/%E8%B7%AF%E5%BE%84%EF%BC%88JAVA%EF%BC%89/</id>
+    <link href="https://bdta-zky.github.io/2023/05/07/%E8%B7%AF%E5%BE%84%EF%BC%88JAVA%EF%BC%89/"/>
+    <id>https://bdta-zky.github.io/2023/05/07/%E8%B7%AF%E5%BE%84%EF%BC%88JAVA%EF%BC%89/</id>
     <published>2023-05-07T04:34:44.000Z</published>
     <updated>2023-07-06T07:24:18.615Z</updated>
     
@@ -641,18 +641,18 @@
     
     
     
-    <category term="java" scheme="http://example.com/categories/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
     
-    <category term="算法" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
     
-    <category term="java" scheme="http://example.com/tags/java/"/>
+    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
-    <category term="算法" scheme="http://example.com/tags/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
-    <category term="蓝桥杯" scheme="http://example.com/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   
