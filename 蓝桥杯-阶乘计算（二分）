@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>蓝桥杯-阶乘计算（二分） | 大数据科技协会-zky</title><meta name="author" content="刘浩龙"><meta name="copyright" content="刘浩龙"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="题目描述满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少?  如果这样的 N 不存在输出 −1。 输入格式一个整数 K。 输出格式一个整数代表答案。  样例输入2  样例输出10  提示对于 30% 的数据，1 ≤ K ≤ 106 . 对于 100% 的数据，1 ≤ K ≤ 1018  代码1：暴力解法利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否">
+<meta property="og:type" content="article">
+<meta property="og:title" content="蓝桥杯-阶乘计算（二分）">
+<meta property="og:url" content="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89">
+<meta property="og:site_name" content="大数据科技协会-zky">
+<meta property="og:description" content="题目描述满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少?  如果这样的 N 不存在输出 −1。 输入格式一个整数 K。 输出格式一个整数代表答案。  样例输入2  样例输出10  提示对于 30% 的数据，1 ≤ K ≤ 106 . 对于 100% 的数据，1 ≤ K ≤ 1018  代码1：暴力解法利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img0.baidu.com/it/u=2334317458,3571958527&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800">
+<meta property="article:published_time" content="2023-04-22T11:31:19.000Z">
+<meta property="article:modified_time" content="2023-05-06T02:36:44.487Z">
+<meta property="article:author" content="刘浩龙">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="蓝桥杯">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img0.baidu.com/it/u=2334317458,3571958527&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800"><link rel="shortcut icon" href="https://s1.ax1x.com/2023/07/06/pC6tvad.png"><link rel="canonical" href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 刘浩龙","link":"链接: ","source":"来源: 大数据科技协会-zky","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '蓝桥杯-阶乘计算（二分）',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-06 10:36:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="大数据科技协会-zky" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="http://mms0.baidu.com/it/u=2453456125,3436738088&amp;fm=253&amp;app=138&amp;f=JPEG&amp;fmt=auto&amp;q=75?w=500&amp;h=523" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">91</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img0.baidu.com/it/u=2334317458,3571958527&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1422&amp;h=800')"><nav id="nav"><span id="blog-info"><a href="/" title="大数据科技协会-zky"><span class="site-name">大数据科技协会-zky</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">蓝桥杯-阶乘计算（二分）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-04-22T11:31:19.000Z" title="发表于 2023-04-22 19:31:19">2023-04-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-05-06T02:36:44.487Z" title="更新于 2023-05-06 10:36:44">2023-05-06</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/java/">java</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF/">蓝桥杯</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">683</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="蓝桥杯-阶乘计算（二分）"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少? </p>
+<p>如果这样的 N 不存在输出 −1。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 K。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一个整数代表答案。 </p>
+<h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure>
+
+<h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>对于 30% 的数据，1 ≤ K ≤ 106 .</p>
+<p>对于 100% 的数据，1 ≤ K ≤ 1018 </p>
+<h3 id="代码1：暴力解法"><a href="#代码1：暴力解法" class="headerlink" title="代码1：暴力解法"></a>代码1：暴力解法</h3><p>利用取余，遍历1~10^18（题目中100%的数据规模）内所有数，对每个数取余判断是否为K个0，很明显是超时了。但可以得到部分的分数，没有时间的话可以这样简单处理。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; k; i++) &#123;</span><br><span class="line">            n*=<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">long</span> sum=<span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> flag=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i&lt;<span class="number">1000000</span>; i++) &#123;</span><br><span class="line">            sum*=i;</span><br><span class="line">            <span class="keyword">if</span>(sum%n==<span class="number">0</span>)&#123;</span><br><span class="line">                flag=<span class="number">1</span>;</span><br><span class="line">                System.out.println(i);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag==<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(-<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>​    代码分析：这个是计算末尾0的个数的代码，很明显在这个环节就没办法达到100%数据的要求，因为1≤K≤10^18，而这个代码复杂度是O(n),要计算10^18次，但蓝桥杯计算量一般不超过10^8，所以用暴力法计算是超时的。</p>
+<h3 id="代码2：二分法求解"><a href="#代码2：二分法求解" class="headerlink" title="代码2：二分法求解"></a>代码2：二分法求解</h3><p>直接算出k个0的N!很难。N! 末尾的 0 取决于1 到 N 各因子2 和 5 的组合个数，但是实际上5的个数小于2的个数，所以末尾0的个数实际取决于 5 的个数。</p>
+<blockquote>
+<p><strong>结论：</strong><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E6%B1%82N%E7%9A%84%E9%98%B6%E4%B9%98&spm=1001.2101.3001.7020">求N的阶乘</a>中因子5的个数,将N<strong>每次除以5</strong>的<strong>商****求和</strong>即可。</p>
+</blockquote>
+<p> <strong>由此可编写一个统计0的个数的方法为：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2674new</span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">sc</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//输入的数字应为long。原因是阶乘算出的结果较大，用int会溢出。</span></span><br><span class="line">        <span class="type">long</span> k=sc.nextLong();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//利用二分查找，找到符合0个数的最小数字</span></span><br><span class="line">        <span class="type">long</span> left=<span class="number">0</span>,right=Long.MAX_VALUE;</span><br><span class="line">        <span class="keyword">while</span>(left&lt;right)&#123;</span><br><span class="line">            <span class="type">long</span> mid=left+(right-left)/<span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span>(zero(mid)&lt;k)left=mid+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">else</span> right=mid;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//此时left就是我们求出的结果</span></span><br><span class="line">        <span class="type">long</span> res=zero(left);<span class="comment">//可能不为k。</span></span><br><span class="line">        <span class="keyword">if</span>(res==k)System.out.println(left);<span class="comment">//若和k相等，则是找到了数字left的阶乘结果又k个0。</span></span><br><span class="line">        <span class="keyword">else</span> System.out.println(-<span class="number">1</span>);<span class="comment">//不相等则返回-1;</span></span><br><span class="line">        sc.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//统计0的个数的函数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">long</span> <span class="title function_">zero</span><span class="params">(<span class="type">long</span> n)</span>&#123;</span><br><span class="line">        <span class="type">long</span> res=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(n!=<span class="number">0</span>)&#123;</span><br><span class="line">            res+=n/<span class="number">5</span>;</span><br><span class="line">            n/=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>关于二分法，可看此篇文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_53060585/article/details/122735971">二分法总结（超级详细）附带图解_友人苏的博客-CSDN博客</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://bdta-zky.github.io">刘浩龙</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89">https://bdta-zky.github.io/蓝桥杯-阶乘计算（二分）</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bdta-zky.github.io" target="_blank">大数据科技协会-zky</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/java/">java</a><a class="post-meta__tags" href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">蓝桥杯</a></div><div class="post_share"><div class="social-share" data-image="https://img0.baidu.com/it/u=2334317458,3571958527&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1422&amp;h=800" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89" title="蓝桥杯-单词分析（java）"><img class="cover" src="https://img2.baidu.com/it/u=2988589017,2923917558&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1280&amp;h=800" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">蓝桥杯-单词分析（java）</div></div></a></div><div class="next-post pull-right"><a href="/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89" title="验证码（random类）"><img class="cover" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2Fd87435db-8bb4-46f0-86e2-dcc2c178edc0%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&amp;refer=http%3A%2F%2Fsafe-img.xhscdn.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1684753182&amp;t=fadc75819f282cc582f20129bb3a84fc" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">验证码（random类）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%93%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%82%E5%92%8C%E6%93%8D%E4%BD%9C" title="蓝桥杯-链表数据求和操作"><img class="cover" src="https://img1.baidu.com/it/u=1360876296,3965789198&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="title">蓝桥杯-链表数据求和操作</div></div></a></div><div><a href="/%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F%EF%BC%88java%EF%BC%89" title="成绩排序（java）"><img class="cover" src="https://img1.baidu.com/it/u=920818562,931035931&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="title">成绩排序（java）</div></div></a></div><div><a href="/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0" title="蓝桥杯-蛇形填数"><img class="cover" src="https://img2.baidu.com/it/u=396343075,2820833643&fm=253&fmt=auto&app=120&f=JPEG?w=1422&h=800" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="title">蓝桥杯-蛇形填数</div></div></a></div><div><a href="/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%A2%E7%BA%A6%E5%88%86%E6%95%B0" title="蓝桥杯-既约分数"><img class="cover" src="https://img1.baidu.com/it/u=2156326257,3382221139&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=281" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="title">蓝桥杯-既约分数</div></div></a></div><div><a href="/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88java%EF%BC%89" title="蓝桥杯-数字三角形（java）"><img class="cover" src="https://img2.baidu.com/it/u=2194479489,3880149077&fm=253&fmt=auto&app=138&f=JPEG?w=800&h=500" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="title">蓝桥杯-数字三角形（java）</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://mms0.baidu.com/it/u=2453456125,3436738088&amp;fm=253&amp;app=138&amp;f=JPEG&amp;fmt=auto&amp;q=75?w=500&amp;h=523" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">刘浩龙</div><div class="author-info__description">大数据科技协会官方博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">91</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://qm.qq.com/q/GGqESJxMiu&amp;personal_qrcode_source=3" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://pic.imgdb.cn/item/64a914651ddac507ccca84a8.jpg" target="_blank" title="WeChat"><i class="fa-brands fa-weixin"></i></a><a class="social-icon" href="mailto:2793217027.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎进入大数据科技协会官方博客！! <style>.card-announcement .social-button {margin:0.6rem 0 0 0; text-align:center;} .card-announcement .social-button a {display:block; background-color:var(--btn-bg); color:var(--btn-color); text-align:center; line-height:2.4; margin:4px 0;}</style> <div class="social-button"> <a class="button--animated" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=h8DshHc1A-SWoJAQl_VwWyJ4dHJKUlyy&authKey=NROFgL8YFUlvEn6SK5rrIPciJyzu1%2Bcubvgiafe1edz5MmWPEe4NJsGB%2FGuw%2BE4m&noverify=0&group_code=675710085" target="_blank">👉 22级成员群 👈</a> <a class="button--animated" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=oIqDFvZHADN1A4WvSsl_agftsupd6DY0&authKey=3gEv2PS3IIfC0U0ST9EjM4bY52lS%2Bh8OUZjUPniyqzCDEnXgZytvSNLgWZaoYBg4&noverify=0&group_code=883850079" target="_blank">👉 23级成员群 👈</a> <a class="button--animated" href="https://qm.qq.com/q/GGqESJxMiu&personal_qrcode_source=3" rel="external nofollow noreferrer" target="_blank"> 👉 21级会长QQ 👈</a> <a class="button--animated" href="https://qm.qq.com/q/GzQREYtbOu&personal_qrcode_source=4" rel="external nofollow noreferrer" target="_blank"> 👉 22级会长QQ 👈</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A0%BC%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">输入格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">输出格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%85%A5"><span class="toc-number">4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B7%E4%BE%8B%E8%BE%93%E5%87%BA"><span class="toc-number">5.</span> <span class="toc-text">样例输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">提示</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%811%EF%BC%9A%E6%9A%B4%E5%8A%9B%E8%A7%A3%E6%B3%95"><span class="toc-number">6.1.</span> <span class="toc-text">代码1：暴力解法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%812%EF%BC%9A%E4%BA%8C%E5%88%86%E6%B3%95%E6%B1%82%E8%A7%A3"><span class="toc-number">6.2.</span> <span class="toc-text">代码2：二分法求解</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day02" title="Python150题day02"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day02"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day02" title="Python150题day02">Python150题day02</a><time datetime="2023-09-15T07:59:10.000Z" title="发表于 2023-09-15 15:59:10">2023-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day01" title="Python150题day01"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day01"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day01" title="Python150题day01">Python150题day01</a><time datetime="2023-09-14T10:42:50.000Z" title="发表于 2023-09-14 18:42:50">2023-09-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/CentOS7%E5%AE%89%E8%A3%85%E6%97%B6%E7%9B%B4%E6%8E%A5%E8%B7%B3%E8%BF%87%E4%BA%86%E5%AE%89%E8%A3%85%E4%BF%A1%E6%81%AF%E6%91%98%E8%A6%81%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95" title="CentOS7安装时直接跳过了安装信息摘要页面的解决方法"><img src="https://img2.baidu.com/it/u=4277327820,1133615025&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=608&amp;h=339" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="CentOS7安装时直接跳过了安装信息摘要页面的解决方法"/></a><div class="content"><a class="title" href="/CentOS7%E5%AE%89%E8%A3%85%E6%97%B6%E7%9B%B4%E6%8E%A5%E8%B7%B3%E8%BF%87%E4%BA%86%E5%AE%89%E8%A3%85%E4%BF%A1%E6%81%AF%E6%91%98%E8%A6%81%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95" title="CentOS7安装时直接跳过了安装信息摘要页面的解决方法">CentOS7安装时直接跳过了安装信息摘要页面的解决方法</a><time datetime="2023-09-04T23:36:54.000Z" title="发表于 2023-09-05 07:36:54">2023-09-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88" title="案例2-2 小明都可以买什么"><img src="https://img2.baidu.com/it/u=3790341833,2407789859&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1422&amp;h=800" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="案例2-2 小明都可以买什么"/></a><div class="content"><a class="title" href="/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88" title="案例2-2 小明都可以买什么">案例2-2 小明都可以买什么</a><time datetime="2023-07-09T13:41:12.000Z" title="发表于 2023-07-09 21:41:12">2023-07-09</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86" title="数字加密和解密"><img src="https://img1.baidu.com/it/u=3057508428,3005388237&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1280&amp;h=800" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数字加密和解密"/></a><div class="content"><a class="title" href="/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86" title="数字加密和解密">数字加密和解密</a><time datetime="2023-07-08T13:56:43.000Z" title="发表于 2023-07-08 21:56:43">2023-07-08</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://img0.baidu.com/it/u=2334317458,3571958527&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=1422&amp;h=800')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 刘浩龙</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>
