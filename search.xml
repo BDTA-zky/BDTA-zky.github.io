@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hexo+GitHub搭建个人博客</title>
-    <url>/Hexo-GitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p><strong>无需服务器！！小白也能学会！！利用hexo+GitHub搭建个人博客教程，想拥有类似的个人博客吗？快来一起学习一下吧！</strong></p>
 <h1 id="一、准备环境"><a href="#一、准备环境" class="headerlink" title="一、准备环境"></a>一、准备环境</h1><h4 id="1、node环境"><a href="#1、node环境" class="headerlink" title="1、node环境"></a>1、node环境</h4><p>首先，安装 nodejs， 因为Hexo是基于 Node.js 驱动的一款博客框架。<br>⭐<a href="http://nodejs.cn/">nodejs下载地址</a>    </p>
 <h4 id="2、git-环境"><a href="#2、git-环境" class="headerlink" title="2、git 环境"></a>2、git 环境</h4><p>然后，安装git, 一个分布式版本控制系统，用于项目的版本控制管理，作者是 Linux 之父。</p>
@@ -114,7 +114,7 @@
   </entry>
   <entry>
     <title>Python150题day02</title>
-    <url>/Python150%E9%A2%98day02/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="②数据类型考察"><a href="#②数据类型考察" class="headerlink" title="②数据类型考察"></a>②数据类型考察</h1><p><strong>请说出下面表达式结果的类型</strong></p>
 <blockquote>
 <p>\1. “True”<br>\2. “Flase”<br>\3. 4 &gt;= 5<br>\4. 5<br>\5. 5.0<br>\6. True</p>
@@ -149,7 +149,7 @@
   </entry>
   <entry>
     <title>Python150题day01</title>
-    <url>/Python150%E9%A2%98day01/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="1-1基本数据类型"><a href="#1-1基本数据类型" class="headerlink" title="1.1基本数据类型"></a>1.1基本数据类型</h1><p><strong>①逻辑推理联系（类型转换）</strong></p>
 <blockquote>
 <p>\1. 4.0 == 4</p>
@@ -235,7 +235,7 @@
   </entry>
   <entry>
     <title>CentOS7安装时直接跳过了安装信息摘要页面的解决方法</title>
-    <url>/CentOS7%E5%AE%89%E8%A3%85%E6%97%B6%E7%9B%B4%E6%8E%A5%E8%B7%B3%E8%BF%87%E4%BA%86%E5%AE%89%E8%A3%85%E4%BF%A1%E6%81%AF%E6%91%98%E8%A6%81%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p>最近在配置Hadoop虚拟机的时候，创建的centos7虚拟机在安装信息摘要时直接自动跳过，直接跳到设置用户名和密码，在重复多次的重新删除安装后发现了问题所在：</p>
 <p>在进行到选择操作系统来源时，注意是否出现<strong>“该操作系统将使用简易安装”</strong>的字样，</p>
 <p><img src="https://s1.ax1x.com/2023/09/05/pPrDtHA.png" alt="pPrDtHA.png"></p>
@@ -254,7 +254,7 @@
   </entry>
   <entry>
     <title>案例2-2 小明都可以买什么</title>
-    <url>/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>编写一个智能购物计算小程序，在一家商店有书本、铅笔、橡皮、可乐、零食5种商品，商品价格如表</p>
 <p><img src="https://s1.ax1x.com/2023/07/09/pC2MT6e.png" alt="pC2MT6e.png"></p>
 <p>假如你带了20元，且必须购买一本书，剩余的钱还可以购买哪种商品？可以购买几件，购买完后又能剩余多少钱？</p>
@@ -296,7 +296,7 @@
   </entry>
   <entry>
     <title>数字加密和解密</title>
-    <url>/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h1><p>某系统的数字密码(大于0) 比如1983，采用加密方式进行传输</p>
 <h2 id="规则如下"><a href="#规则如下" class="headerlink" title="规则如下:"></a>规则如下:</h2><p>每位数加上5</p>
 <p>再对10求余</p>
@@ -329,7 +329,7 @@
   </entry>
   <entry>
     <title>计算球体积</title>
-    <url>/%E8%AE%A1%E7%AE%97%E7%90%83%E4%BD%93%E7%A7%AF/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>根据输入的半径值，计算球的体积。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入数据有多组，每组占一行，每行包括一个实数，表示球的半径。</p>
 <h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出对应的球的体积，对于每组输入数据，输出一行，计算结果保留三位小数。</p>
@@ -362,7 +362,7 @@
   </entry>
   <entry>
     <title>计算矩阵边缘元素之和（java算法优化）</title>
-    <url>/%E8%AE%A1%E7%AE%97%E7%9F%A9%E9%98%B5%E8%BE%B9%E7%BC%98%E5%85%83%E7%B4%A0%E4%B9%8B%E5%92%8C%EF%BC%88java%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入一个整数矩阵，计算位于矩阵边缘的元素之和。所谓矩阵边缘的元素，就是第一行和最后一行的元素以及第一列和最后一列的元素。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行分别为矩阵的行数m和列数n（m &lt; 100，n &lt; 100），两者之间以一个空格分开。</p>
 <p>接下来输入的m行数据中，每行包含n个整数，整数之间以一个空格分开。</p>
@@ -396,7 +396,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-链表数据求和操作</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%93%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%82%E5%92%8C%E6%93%8D%E4%BD%9C/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>读入10个复数，建立对应<a href="https://so.csdn.net/so/search?q=%E9%93%BE%E8%A1%A8&spm=1001.2101.3001.7020">链表</a>，然后求所有复数的和。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>无</p>
 <h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>无</p>
@@ -426,7 +426,7 @@
   </entry>
   <entry>
     <title>成绩排序（java）</title>
-    <url>/%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F%EF%BC%88java%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给出班里某门课程的成绩单，请你按成绩从高到低对成绩单排序输出，如果有相同分数则名字字典序小的在前。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行为n (0 &lt; n &lt; 20)，表示班里的学生数目；</p>
 <p>接下来的n行，每行为每个学生的名字和他的成绩, 中间用单个空格隔开。名字只包含字母且长度不超过20，成绩为一个不大于100的非负整数。</p>
@@ -463,7 +463,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-蛇形填数</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><strong>题目描述</strong></h1><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>如下图所示，小明用从 11 开始的正整数“蛇形”填充无限大的矩阵。</p>
 <blockquote>
@@ -483,7 +483,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-既约分数</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%A2%E7%BA%A6%E5%88%86%E6%95%B0/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p>如果一个分数的分子和分母的最大公约数是 1，这个分数称为既约分数。</p>
 <p>例如4/3,8/1,1/7， 都是既约分数。</p>
 <p>请问，有多少个既约分数，分子和分母都是 1 到 2020 之间的整数（包括 1和2020）？</p>
@@ -503,7 +503,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-数字三角形（java）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88java%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><strong>题目描述</strong></h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgUJ0O.png" alt="pCgUJ0O.png"></p>
 <p>上图给出了一个数字三角形。从三角形的顶部到底部有很多条不同的路径。对于每条路径，把路径上面的数加起来可以得到一个和，你的任务就是找到最大的和。</p>
 <p>路径上的每一步只能从一个数走到下一层和它最近的左边的那个数或者右 边的那个数。此外，向左下走的次数与向右下走的次数相差不能超过 1。</p>
@@ -545,7 +545,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-数列求值</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%88%97%E6%B1%82%E5%80%BC/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>给定数列 1,1,1,3,5,9,17,⋯1,1,1,3,5,9,17,⋯，从第 4项开始，每项都是前 3 项的和。</p>
 <p>求第 2019032420190324 项的最后 4 位数字。</p>
@@ -572,7 +572,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-字符统计</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个只包含大写字母的字符串 S，请你输出其中出现次数最多的字母。</p>
 <p>如果有多个字母均出现了最多次，按字母表顺序依次输出所有这些字母。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个只包含大写字母的字符串 S .</p>
@@ -598,7 +598,7 @@
   </entry>
   <entry>
     <title>案例3-1 基于控制台的购书系统</title>
-    <url>/%E6%A1%88%E4%BE%8B3-1-%E5%9F%BA%E4%BA%8E%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%9A%84%E8%B4%AD%E4%B9%A6%E7%B3%BB%E7%BB%9F/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p>伴随互联网的蓬勃发展，网络购书系统作为电子商务的一种形式正以其高效、低成本的优势逐步成为新兴的经营模式，人们已经不再满足互联网的用途仅仅局限于信息的浏览和发布，更渴望着能够充分享受互联网带来的更多便利。网络购书系统正适应了当今社会快节奏地生活，使顾客足不出户便可以方便快捷轻松地选购自己喜欢的图书</p>
 <p>本案例要求，使用所学知识编写一个基于控制台的购书系统，实现购书功能。程序输出所有图书的信息，包括每本书的编号、书名、单价、库存顾客购书时，根据提示输入图书编号选购需要的书，并根据提示输入购买书的的数量。购买完毕后输出顾客的订单信息，包括订单号、订单明细、订单总额。</p>
 <h1 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">book</span>   &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> number;   <span class="comment">// 编号</span></span><br><span class="line">    <span class="keyword">private</span> String name;   <span class="comment">// 书名</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">double</span> price;  <span class="comment">// 单价</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> kucun;      <span class="comment">// 库存</span></span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">book</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">book</span><span class="params">(<span class="type">int</span> number, String name, <span class="type">double</span> price, <span class="type">int</span> kucun)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.number = number;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.price = price;</span><br><span class="line">        <span class="built_in">this</span>.kucun = kucun;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getNumber</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> number;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">getPrice</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> price;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getKucun</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> kucun;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setKucun</span><span class="params">(<span class="type">int</span> kucun)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.kucun = kucun;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Tushu</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Tushu</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Tushu</span>();   <span class="comment">// 创建对象</span></span><br><span class="line"> </span><br><span class="line">        book[] books = <span class="keyword">new</span> <span class="title class_">book</span>[<span class="number">3</span>];   <span class="comment">// 定义数组</span></span><br><span class="line">        books[<span class="number">0</span>] = <span class="keyword">new</span> <span class="title class_">book</span>(<span class="number">01</span>, <span class="string">&quot;java基础&quot;</span>, <span class="number">29.9</span>, <span class="number">100</span>);</span><br><span class="line">        books[<span class="number">1</span>] = <span class="keyword">new</span> <span class="title class_">book</span>(<span class="number">02</span>, <span class="string">&quot;数据结构&quot;</span>, <span class="number">39.9</span>, <span class="number">200</span>);</span><br><span class="line">        books[<span class="number">2</span>] = <span class="keyword">new</span> <span class="title class_">book</span>(<span class="number">03</span>, <span class="string">&quot;操作系统&quot;</span>, <span class="number">49.9</span>, <span class="number">500</span>);</span><br><span class="line"> </span><br><span class="line">        d.Put(books);     <span class="comment">// 将数组元素添加到方法中</span></span><br><span class="line">        d.Order(books);     <span class="comment">//订单</span></span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 输出图书信息</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">Put</span><span class="params">(book[] ts)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;图书编号\t图书名称\t\t图书单价\t库存&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; ts.length ; i++)&#123;   <span class="comment">// 遍历数组,输出图书信息</span></span><br><span class="line">            System.out.println(ts[i].getNumber() + <span class="string">&quot;\t\t&quot;</span> + ts[i].getName() + <span class="string">&quot;\t\t&quot;</span> + ts[i].getPrice() + <span class="string">&quot;\t&quot;</span> +ts[i].getKucun());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;----------------------------------&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 订单方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">Order</span><span class="params">(book[] books)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">b</span> <span class="operator">=</span> <span class="literal">true</span>;   <span class="comment">// 定义一个boolean变量</span></span><br><span class="line">        <span class="type">double</span> <span class="variable">ZongJinEr</span> <span class="operator">=</span> <span class="number">0</span>;   <span class="comment">// 记录商品总额</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">Sum</span> <span class="operator">=</span> <span class="number">0</span>;     <span class="comment">// 记录购买书本件数</span></span><br><span class="line">        <span class="keyword">while</span> (b) &#123;   <span class="comment">// 使用循环使购买图书可以重复购买</span></span><br><span class="line">            <span class="type">int</span> flag=<span class="number">0</span>;     <span class="comment">//定义一个变量作为合法编号判断</span></span><br><span class="line">            System.out.println(<span class="string">&quot;请输入要购买图书的编号:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> <span class="variable">Bian</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入购买数量:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; books.length ; i++)&#123;</span><br><span class="line">                <span class="comment">// 遍历数组</span></span><br><span class="line">                <span class="keyword">if</span> (Bian == books[i].getNumber())&#123;</span><br><span class="line">                    <span class="comment">// 寻找图书对应的编号</span></span><br><span class="line">                    <span class="keyword">if</span>(num&lt;=<span class="number">0</span>||num&gt;books[i].getKucun())&#123;</span><br><span class="line">                        System.out.println(<span class="string">&quot;该图书库存量为&quot;</span>+books[i].getKucun()+<span class="string">&quot;\n请重新输入！&quot;</span>);</span><br><span class="line">                        <span class="keyword">continue</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    books[i].setKucun(books[i].getKucun()-num);</span><br><span class="line">                    System.out.println(<span class="string">&quot;订单编号:&quot;</span> + Bian);</span><br><span class="line">                    System.out.println(<span class="string">&quot;购买书名:&quot;</span> + books[i].getName() + <span class="string">&quot;\n订单总额:&quot;</span> + num*books[i].getPrice() + <span class="string">&quot;\n交易明细,购买:&quot;</span> + books[i].getName() + num + <span class="string">&quot;本&quot;</span>);</span><br><span class="line">                    ZongJinEr += num*books[i].getPrice();   <span class="comment">// 商品价格相加</span></span><br><span class="line">                    Sum += num;    <span class="comment">// 购买件数相加</span></span><br><span class="line">                    flag++;</span><br><span class="line">                &#125;</span><br><span class="line"> </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(flag==<span class="number">0</span>) System.out.println(<span class="string">&quot;非法编号！&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;是否继续购买:&quot;</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> in.next();</span><br><span class="line">            <span class="keyword">if</span> (s.equals(<span class="string">&quot;否&quot;</span>))&#123;   <span class="comment">// 输入否循环结束</span></span><br><span class="line">                b = <span class="literal">false</span>;</span><br><span class="line">                System.out.println(<span class="string">&quot;一共购买:&quot;</span> + Sum + <span class="string">&quot;本,共消费:&quot;</span> + ZongJinEr);   <span class="comment">// 打印购买件数,与总额</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -614,7 +614,7 @@
   </entry>
   <entry>
     <title>经理与员工工资案例（java）</title>
-    <url>/%E6%A1%88%E4%BE%8B4-7-%E7%BB%8F%E7%90%86%E4%B8%8E%E5%91%98%E5%B7%A5%E5%B7%A5%E8%B5%84%E6%A1%88%E4%BE%8B/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="案例描述"><a href="#案例描述" class="headerlink" title="案例描述:"></a>案例描述:</h2><p>某公司的人员分为员工和经理两种，但经理也属于员工中的一种，公司的人员都有自己的姓名和地址，员工和经理都有自己的工号、工资、工龄等属性，但经理不同员工的是，经理有自己在公司对应的级别。假设每次给员工涨工资一次能涨10，经理能涨20%。本案例要求利用多态实现给员工和经理涨工资。</p>
 <h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//父类:公司人员类</span></span><br><span class="line"><span class="keyword">abstract</span> <span class="keyword">class</span> <span class="title class_">person</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> String name;     <span class="comment">//姓名</span></span><br><span class="line">    <span class="keyword">public</span> String address;  <span class="comment">//地址</span></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">person</span><span class="params">(String name, String address)</span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.name=name;</span><br><span class="line">        <span class="built_in">this</span>.address=address;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setName</span><span class="params">(String name)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAddress</span><span class="params">(String address)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.address = address;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getAddress</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> address;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">()</span>&#123;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="comment">//子类:员工类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">employee</span> <span class="keyword">extends</span> <span class="title class_">person</span> &#123;</span><br><span class="line">        <span class="keyword">public</span> String id;</span><br><span class="line">        <span class="keyword">public</span> <span class="type">double</span> salary;</span><br><span class="line">        <span class="keyword">public</span> <span class="type">int</span> age;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">employee</span><span class="params">(String name, String address,String id,<span class="type">double</span> salary,<span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(name, address);</span><br><span class="line">        <span class="built_in">this</span>.id=id;</span><br><span class="line">        <span class="built_in">this</span>.salary =salary;</span><br><span class="line">        <span class="built_in">this</span>.age=age;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getId</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">getSalary</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> salary;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getAge</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> age;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setId</span><span class="params">(String id)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.id = id;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setSalary</span><span class="params">(<span class="type">double</span> salary)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.salary = salary;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setAge</span><span class="params">(<span class="type">int</span> age)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">()</span>&#123;</span><br><span class="line">        salary*=<span class="number">1.1</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getID</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> id;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//子类:经理类</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">manager</span> <span class="keyword">extends</span> <span class="title class_">employee</span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String rank;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">manager</span><span class="params">(String name, String address, String id, <span class="type">double</span> salary, <span class="type">int</span> age,String rank)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(name, address, id, salary, age);</span><br><span class="line">        <span class="built_in">this</span>.rank=rank;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getRank</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> rank;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setRank</span><span class="params">(String rank)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.rank = rank;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">()</span>&#123;</span><br><span class="line">        salary*=<span class="number">1.2</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Ex4_7</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">employee</span> <span class="variable">worker</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">employee</span>(<span class="string">&quot;张三&quot;</span>, <span class="string">&quot;郑州&quot;</span>, <span class="string">&quot;1001&quot;</span>, <span class="number">4000.0</span>, <span class="number">2</span>);</span><br><span class="line">        <span class="type">manager</span> <span class="variable">manager1</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">manager</span>(<span class="string">&quot;李四&quot;</span>, <span class="string">&quot;郑州&quot;</span>, <span class="string">&quot;1122&quot;</span>, <span class="number">8000.0</span>, <span class="number">5</span>, <span class="string">&quot;经理&quot;</span>);</span><br><span class="line">        <span class="type">manager</span> <span class="variable">manager2</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">manager</span>(<span class="string">&quot;王五&quot;</span>, <span class="string">&quot;郑州&quot;</span>, <span class="string">&quot;1100&quot;</span>, <span class="number">10000.0</span>, <span class="number">4</span>, <span class="string">&quot;高级经理&quot;</span>);</span><br><span class="line">        print(worker);</span><br><span class="line">        print(manager1);</span><br><span class="line">        print(manager2);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">print</span><span class="params">(employee a)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;----------------------普通员工信息表---------------------&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;|姓名|\t\t&quot;</span>+<span class="string">&quot;|工号|\t\t&quot;</span>+<span class="string">&quot;|工资|\t\t&quot;</span>+<span class="string">&quot;|工龄|\t\t&quot;</span>+<span class="string">&quot;|地址|&quot;</span>);</span><br><span class="line">        System.out.println(a.getName() + <span class="string">&quot;\t\t\t&quot;</span>+a.getID()+<span class="string">&quot;\t\t&quot;</span>+a.getSalary()+<span class="string">&quot;\t\t &quot;</span>+a.getAge()+<span class="string">&quot;\t\t\t&quot;</span>+a.getAddress());</span><br><span class="line">        a.add();</span><br><span class="line">        System.out.println(<span class="string">&quot;-------------------------------------------------------&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;由于&quot;</span>+a.getName()+ <span class="string">&quot;在公司辛勤工作,因此公司决定鼓励,涨薪为:&quot;</span> + a.getSalary());</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">print</span><span class="params">(manager a)</span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;----------------------经理阶层信息表----------------------------&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;|姓名|  \t&quot;</span>+<span class="string">&quot;|工号|  \t&quot;</span>+<span class="string">&quot;|职称|  \t&quot;</span>+<span class="string">&quot;|工资|  \t&quot;</span>+<span class="string">&quot;|工龄|  \t&quot;</span>+<span class="string">&quot;|地址|&quot;</span>);</span><br><span class="line">        System.out.println(a.getName() + <span class="string">&quot;   \t&quot;</span>+a.getID()+<span class="string">&quot; \t&quot;</span>+a.getRank()+<span class="string">&quot; \t&quot;</span>+a.getSalary()+<span class="string">&quot;\t &quot;</span>+a.getAge()+<span class="string">&quot;   \t&quot;</span>+a.getAddress());</span><br><span class="line">        a.add();</span><br><span class="line">        System.out.println(<span class="string">&quot;-------------------------------------------------------------&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;由于&quot;</span>+a.getName()+ <span class="string">&quot;在公司辛勤工作,因此公司决定鼓励,涨薪为:&quot;</span> + a.getSalary());</span><br><span class="line">        System.out.println();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -629,7 +629,7 @@
   </entry>
   <entry>
     <title>hexo-offline-popup（提升hexo框架博客访问速度）</title>
-    <url>/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p>采用hexo+github的方式搭建博客的，访问速度是比较慢的。部署后访问有些甚至要加载十几秒，这对用户来说，是非常伤脑筋的，因为托管网站github是外网，所以访问慢是必然的。怎样解决这个问题，提升我们的访问速度呢?</p>
 <p>最近在GitHub上发现一个名为hexo-offline-popup的插件，可以加快hexo的加载速度，解决这种问题。</p>
 <h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a><strong>官方介绍</strong></h2><p><strong>hexo-offline-popup</strong> 是一个 hexo 插件， 它可加速您的Hexo网站的加载速度，以及网站内容更新弹窗提示。</p>
@@ -669,7 +669,7 @@
   </entry>
   <entry>
     <title>Tomcat部署项目后，验证码不显示问题</title>
-    <url>/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p> <strong>在使用Tomcat服务器部署项目后，发现验证码不显示，在浏览器按f12查询后出现以下页面</strong></p>
 <p><img src="https://s1.ax1x.com/2023/07/06/pC6BuW9.png" alt="pC6BuW9.png" style="zoom:33%;"><img src="https://s1.ax1x.com/2023/07/06/pC6BKzR.png" alt="pC6BKzR.png"></p>
 <p><strong>查看源码发现一切正常</strong><img src="https://s1.ax1x.com/2023/07/06/pC6Blsx.png" alt="pC6Blsx.png"></p>
@@ -698,7 +698,7 @@
   </entry>
   <entry>
     <title>合根植物（JAVA）</title>
-    <url>/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>w 星球的一个种植园，被分成 m×n 个小格子（东西方向 m 行，南北方向 n 列）。每个格子里种了一株合根植物。</p>
 <p>这种植物有个特点，它的根可能会沿着南北或东西方向伸展，从而与另一个格子的植物合成为一体。</p>
 <p>如果我们告诉你哪些小格子间出现了连根现象，你能说出这个园中一共有多少株合根植物吗？</p>
@@ -741,7 +741,7 @@
   </entry>
   <entry>
     <title>方格填数（JAVA）</title>
-    <url>/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</p>
 <p>如下的 10个格子</p>
 <blockquote>
@@ -774,7 +774,7 @@
   </entry>
   <entry>
     <title>本质上升序列（JAVA）</title>
-    <url>/%E6%9C%AC%E8%B4%A8%E4%B8%8A%E5%8D%87%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小蓝特别喜欢单调递增的事物。</p>
 <p>在一个字符串中，如果取出若干个字符，将这些字符按照在字符串中的顺序排列后是单调递增的，则成为这个字符串中的一个单调递增子序列。</p>
@@ -821,7 +821,7 @@
   </entry>
   <entry>
     <title>蓝肽子序列（JAVA）</title>
-    <url>/%E8%93%9D%E8%82%BD%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>L 星球上的生物由蛋蓝质组成，每一种蛋蓝质由一类称为蓝肽的物资首尾连接成一条长链后折叠而成。</p>
 <p>生物学家小乔正在研究 L 星球上的蛋蓝质。她拿到两个蛋蓝质的蓝肽序列，想通过这两条蓝肽序列的共同特点来分析两种蛋蓝质的相似性。</p>
 <p>具体的，一个蓝肽可以使用 1 至 5 个英文字母表示，其中第一个字母大写，后面的字母小写。一个蛋蓝质的蓝肽序列可以用蓝肽的表示顺序拼接而成。</p>
@@ -870,7 +870,7 @@
   </entry>
   <entry>
     <title>左移右移（JAVA）</title>
-    <url>/%E5%B7%A6%E7%A7%BB%E5%8F%B3%E7%A7%BB%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小蓝有一个长度为 N 的数组, 初始时从左到右依次是 1,2,3,…N 。</p>
 <p>之后小蓝对这个数组进行了 M 次操作, 每次操作可能是以下 2 种之一:</p>
 <p>左移 x, 即把 x 移动到最左边。</p>
@@ -922,7 +922,7 @@
   </entry>
   <entry>
     <title>重合次数（JAVA）</title>
-    <url>/%E9%87%8D%E5%90%88%E6%AC%A1%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>在同一天中, 从上午 6 点 13 分 22 秒到下午 14 点 36 分 20 秒, 钟表上的 分针和秒针一共重合了多少次?</p>
 <p>注意时针、分针、秒针都围绕中心敳匀速运动。</p>
 <p><strong>答案提交</strong></p>
@@ -950,7 +950,7 @@
   </entry>
   <entry>
     <title>回文日期（JAVA）</title>
-    <url>/%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88JAVA%EF%BC%89-1/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>2020 年春节期间，有一个特殊的日期引起了大家的注意：2020 年 2 月 2 日。因为如果将这个日期按 “yyyymmdd” 的格式写成一个 8 位数是 20200202，恰好是一个回文数。我们称这样的日期是回文日期。</p>
 <p>有人表示 20200202 是 “千年一遇” 的特殊日子。对此小明很不认同，因为不到 2 年之后就是下一个回文日期：20211202 即 2021 年 12 月 2 日。</p>
 <p>也有人表示 20200202 并不仅仅是一个回文日期，还是一个 ABABBABA 型的回文日期。对此小明也不认同，因为大约 100 年后就能遇到下一个 ABABBABA 型的回文日期：21211212 即 2121 年 12 月 12 日。算不上 “千年一遇”，顶多算 “千年两遇”。</p>
@@ -987,7 +987,7 @@
   </entry>
   <entry>
     <title>七段码（JAVA）</title>
-    <url>/%E4%B8%83%E6%AE%B5%E7%A0%81%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小蓝要用<a href="https://so.csdn.net/so/search?q=%E4%B8%83%E6%AE%B5%E7%A0%81&spm=1001.2101.3001.7020">七段码</a>数码管来表示一种特殊的文字。</p>
 <p><img src="https://s1.ax1x.com/2023/07/06/pC6G728.jpg" alt="pC6G728.jpg"></p>
@@ -1018,7 +1018,7 @@
   </entry>
   <entry>
     <title>最优清零方案（JAVA）</title>
-    <url>/%E6%9C%80%E4%BC%98%E6%B8%85%E9%9B%B6%E6%96%B9%E6%A1%88%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定一个长度为 N 的数列 A1,A2,⋯,AN 。现在小蓝想通过若干次操作将 这个数列中每个数字清零。</p>
 <p>每次操作小蓝可以选择以下两种之一:</p>
 <p>选择一个大于 0 的整数, 将它减去 1 ;<br>选择连续 K 个大于 0 的整数, 将它们各减去 1 。<br>小蓝最少经过几次操作可以将整个数列清零?</p>
@@ -1076,7 +1076,7 @@
   </entry>
   <entry>
     <title>全排列的价值（JAVA）</title>
-    <url>/%E5%85%A8%E6%8E%92%E5%88%97%E7%9A%84%E4%BB%B7%E5%80%BC%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>对于一个排列 A=(a1,a2,⋯,an), 定义价值ci 为a1 至ai−1 中小于ai 的数 的个数, 即ci=∣{aj∣j&lt;i,aj&lt;ai}∣。 </p>
 <p>定义 A 的价值为  c_{i}∑i=1nci 。</p>
 <p>给定 n, 求 1 至 n 的全排列中所有排列的价值之和。</p>
@@ -1135,7 +1135,7 @@
   </entry>
   <entry>
     <title>GCD（JAVA）</title>
-    <url>/GCD%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定两个不同的正整数 a,b, 求一个正整数 k 使得 gcd(a+k,b+k) 尽可能 大, 其中 gcd(a,b) 表示 aa 和 bb 的最大公约数, 如果存在多个 k, 请输出所有满 足条件的 k 中最小的那个。</p>
 <p><strong>输入格式</strong><br>输入一行包含两个正整数 a,b, 用一个空格分隔。</p>
 <p><strong>输出格式</strong><br>输出一行包含一个正整数 k 。</p>
@@ -1164,7 +1164,7 @@
   </entry>
   <entry>
     <title>数组切分（JAVA）</title>
-    <url>/%E6%95%B0%E7%BB%84%E5%88%87%E5%88%86%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>已知一个长度为 N 的数组:A1,A2,A3,…AN 恰好是 1∼N 的一个排列。现 在要求你将 A 数组切分成若干个 (最少一个, 最多 N 个) 连续的子数组, 并且 每个子数组中包含的整数恰好可以组成一段连续的自然数。</p>
 <p>例如对于 A=1,3,2,4, 一共有 5 种切分方法:</p>
 <p>1324 : 每个单独的数显然是 (长度为 1 的) 一段连续的自然数。</p>
@@ -1209,7 +1209,7 @@
   </entry>
   <entry>
     <title>求阶乘（JAVA）</title>
-    <url>/%E6%B1%82%E9%98%B6%E4%B9%98%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>满足 N ! 的末尾恰好有 K 个 0 的最小的 N 是多少?</p>
 <p>如果这样的 N 不存在输出 −1 。</p>
 <p><strong>输入格式</strong><br>一个整数 K 。</p>
@@ -1255,7 +1255,7 @@
   </entry>
   <entry>
     <title>最少刷题数（JAVA）</title>
-    <url>/%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小蓝老师教的编程课有 N 名学生, 编号依次是 1…N 。第 i 号学生这学期 刷题的数量是Ai 。</p>
 <p>对于每一名学生, 请你计算他至少还要再刷多少道题, 才能使得全班刷题 比他多的学生数不超过刷题比他少的学生数。</p>
 <p><strong>输入格式</strong><br>第一行包含一个正整数 N 。</p>
@@ -1296,7 +1296,7 @@
   </entry>
   <entry>
     <title>山（JAVA）</title>
-    <url>/%E5%B1%B1%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>这天小明正在学数数。</p>
 <p>他突然发现有些止整数的形状像一挫 “山”, 比如 123565321 ，145541, 它 们左右对称 (回文) 且数位上的数字先单调不减, 后单调不增。</p>
@@ -1325,7 +1325,7 @@
   </entry>
   <entry>
     <title>双向排序（JAVA）</title>
-    <url>/%E5%8F%8C%E5%90%91%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定序列(a1,a2,⋅⋅⋅,an)=(1,2,⋅⋅⋅,n)，即 ai=i。</p>
 <p>小蓝将对这个序列进行 m 次操作，每次可能是将 a1,a2,⋯,aqi 降序排列，或者将aqi,aqi+1,⋯,an 升序排列。</p>
 <p>请求出操作完成后的序列。</p>
@@ -1374,7 +1374,7 @@
   </entry>
   <entry>
     <title>杨辉三角形（JAVA）</title>
-    <url>/%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>下面的图形是著名的<a href="https://so.csdn.net/so/search?q=%E6%9D%A8%E8%BE%89%E4%B8%89%E8%A7%92%E5%BD%A2&spm=1001.2101.3001.7020">杨辉三角形</a>：</p>
 <p><img src="https://s1.ax1x.com/2023/07/06/pC6JFr4.jpg" alt="pC6JFr4.jpg"></p>
 <p>如果我们按从上到下、从左到右的顺序把所有数排成一列，可以得到如下数列：1,1,1,1,2,1,1,3,3,1,1,4,6,4,1,⋯</p>
@@ -1416,7 +1416,7 @@
   </entry>
   <entry>
     <title>路径（JAVA）</title>
-    <url>/%E8%B7%AF%E5%BE%84%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小蓝学习了最短路径之后特别高兴，他定义了一个特别的图，希望找到图 中的最短路径。</p>
 <p>小蓝的图由 2021 个结点组成，依次编号 1 至 2021。</p>
@@ -1451,7 +1451,7 @@
   </entry>
   <entry>
     <title>牌型种数（JAVA）</title>
-    <url>/%E7%89%8C%E5%9E%8B%E7%A7%8D%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小明被劫持到X 赌城，被迫与其他 3 人玩牌一副扑克牌 (去掉大小王牌，共 52 张)，均发给 4个人，每个人 13 张.这时，小明脑子里突然冒出一个问题:如果不考虑花色，只考虑点数，也不考虑自己得到的牌的先后顺序，自已手里能拿到的初始牌型组合一共有多少种呢?</p>
 <p>请填写该整数，不要填写任何多余的内容或说明文字</p>
 <h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> result=<span class="number">0</span>;                <span class="comment">//储存结果种数</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        select(<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">select</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span>&#123;   <span class="comment">//递归</span></span><br><span class="line">        <span class="keyword">if</span> (x&gt;<span class="number">13</span>||y&gt;<span class="number">13</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (x==<span class="number">13</span>&amp;&amp;y==<span class="number">13</span>)&#123;</span><br><span class="line">            result++;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;       <span class="comment">//0，1，2，3，4，共五种情况</span></span><br><span class="line">            select(x+<span class="number">1</span>,y+i);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1477,7 +1477,7 @@
   </entry>
   <entry>
     <title>数位排序（JAVA）</title>
-    <url>/%E6%95%B0%E4%BD%8D%E6%8E%92%E5%BA%8F%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小蓝对一个数的数位之和很感兴趣, 今天他要按照数位之和给数排序。当 两个数各个数位之和不同时, 将数位和较小的排在前面, 当数位之和相等时, 将数值小的排在前面。</p>
 <p>例如, 2022 排在 409 前面, 因为 2022 的数位之和是 6, 小于 409 的数位 之和 13 。</p>
 <p>又如, 6 排在 2022 前面, 因为它们的数位之和相同, 而 6 小于 2022 。</p>
@@ -1518,7 +1518,7 @@
   </entry>
   <entry>
     <title>青蛙过河（JAVA）</title>
-    <url>/%E9%9D%92%E8%9B%99%E8%BF%87%E6%B2%B3%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小青蛙住在一条河边, 它想到河对岸的学校去学习。小青蛙打算经过河里 的石头跳到对岸。</p>
 <p>河里的石头排成了一条直线, 小青蛙每次跳跃必须落在一块石头或者岸上。 不过, 每块石头有一个高度, 每次小青蛙从一块石头起跳, 这块石头的高度就 会下降 1 , 当石头的高度下降到 0 时小青蛙不能再跳到这块石头上（某次跳跃 后使石头高度下降到 0 是允许的)。</p>
 <p>小青蛙一共需要去学校上 x 天课, 所以它需要往返2x 次。当小青蛙具有 一个跳跃能力 y 时, 它能跳不超过 y 的距离。</p>
@@ -1559,7 +1559,7 @@
   </entry>
   <entry>
     <title>求和（JAVA）</title>
-    <url>/%E6%B1%82%E5%92%8C%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定 n 个整数 a1,a2,⋅⋅⋅,an ，求它们两两相乘再相加的和，即：</p>
 <p>S=a1⋅a2+a1⋅a3+⋯+a1⋅an+a2⋅a3+⋯+an−2⋅an−1+an−2⋅an+an−1⋅an</p>
 <p><strong>输入格式</strong><br>输入的第一行包含一个整数 n。</p>
@@ -1598,7 +1598,7 @@
   </entry>
   <entry>
     <title>猜字母（JAVA）</title>
-    <url>/%E7%8C%9C%E5%AD%97%E6%AF%8D%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>把 abcd…s 共19个字母组成的序列重复拼接 106 次，得到长度为 2014 的串。</p>
 <p>接下来删除第 1 个字母（即开头的字母 a），以及第 3 个，第 5 个等所有奇数位置的字母。</p>
@@ -1628,7 +1628,7 @@
   </entry>
   <entry>
     <title>四平方和（JAVA）</title>
-    <url>/%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>四平方和定理，又称为拉格朗日定理：</p>
 <p>每个正整数都可以表示为至多 4 个正整数的平方和。</p>
 <p>如果把 0 包括进去，就正好可以表示为 4 个数的平方和。</p>
@@ -1671,7 +1671,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--猜生日（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%8C%9C%E7%94%9F%E6%97%A5%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/16.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>今年的植树节（2012 年 3 月 12 日），小明和他的叔叔还有小伙伴们一起去植树。休息的时候，小明的同学问他叔叔多大年纪，他叔叔说：“我说个题目，看你们谁先猜出来！”</p>
 <p>“把我出生的年月日连起来拼成一个 8 位数（月、日不足两位前补 0）正好可以被今天的年、月、日整除！”</p>
@@ -1696,7 +1696,7 @@
   </entry>
   <entry>
     <title>取球博弈（JAVA）</title>
-    <url>/%E5%8F%96%E7%90%83%E5%8D%9A%E5%BC%88%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>两个人玩取球的游戏。</p>
 <p>一共有 N 个球，每人轮流取球，每次可取集合 n1,n2,n3中的任何一个数目。</p>
 <p>如果无法继续取球，则游戏结束。</p>
@@ -1748,7 +1748,7 @@
   </entry>
   <entry>
     <title>包子凑数（JAVA）</title>
-    <url>/%E5%8C%85%E5%AD%90%E5%87%91%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>小明几乎每天早晨都会在一家包子铺吃早餐。他发现这家包子铺有 N 种蒸笼，其中第 i 种蒸笼恰好能放Ai 个包子。每种蒸笼都有非常多笼，可以认为是无限笼。</p>
 <p>每当有顾客想买 X 个包子，卖包子的大叔就会迅速选出若干笼包子来，使得这若干笼中恰好一共有 X 个包子。比如一共有 3 种蒸笼，分别能放 3、4 和 5 个包子。当顾客想买 11 个包子时，大叔就会选 2 笼 3 个的再加 1 笼 5 个的（也可能选出 1 笼 3 个的再加 2 笼 4 个的）。</p>
 <p>当然有时包子大叔无论如何也凑不出顾客想买的数量。比如一共有 3 种蒸笼，分别能放 4、5 和 6 个包子。而顾客想买 7 个包子时，大叔就凑不出来了。</p>
@@ -1801,7 +1801,7 @@
   </entry>
   <entry>
     <title>等差数列（JAVA）</title>
-    <url>/%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>数学老师给小明出了一道等差数列求和的题目。但是粗心的小明忘记了一 部分的数列，只记得其中 N 个整数。</p>
 <p>现在给出这 N 个整数，小明想知道包含这 N 个整数的最短的等差数列有几项？</p>
 <p><strong>输入描述</strong><br>输入的第一行包含一个整数 N。</p>
@@ -1843,7 +1843,7 @@
   </entry>
   <entry>
     <title>质数拆分（JAVA）</title>
-    <url>/%E8%B4%A8%E6%95%B0%E6%8B%86%E5%88%86%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>将 2019 拆分为若干个两两不同的质数之和，一共有多少种不同的方法？</p>
 <p>注意交换顺序视为同一种方法，例如 2+2017=2019 与2017+2=2019 视为同一种方法。</p>
@@ -1871,7 +1871,7 @@
   </entry>
   <entry>
     <title>k倍区间（JAVA）</title>
-    <url>/k%E5%80%8D%E5%8C%BA%E9%97%B4%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>给定一个长度为 N 的数列，A1,A2,⋯AN，如果其中一段连续的子序列Ai,Ai+1,⋯Aj ( i≤j ) 之和是 K 的倍数，我们就称这个区间 [i,j] 是 K 倍区间。</p>
 <p>你能求出数列中总共有多少个 K 倍区间吗？</p>
 <p><strong>输入描述</strong><br>第一行包含两个整数 N 和 K( 1≤N,K≤100000)。</p>
@@ -1909,7 +1909,7 @@
   </entry>
   <entry>
     <title>回文日期（JAVA）</title>
-    <url>/%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<p>在日常生活中，通过年、月、日这三个要素可以表示出一个唯一确定的日期。</p>
 <p>牛牛习惯用 8 位数字表示一个日期，其中，前 4 位代表年份，接下来 2 位代表月份，最后 2 位代表日期。显然：一个日期只有一种表示方法，而两个不同的日期的表示方法不会相同。</p>
 <p>牛牛认为，一个日期是回文的，当且仅当表示这个日期的 8 位数字是回文的。现在，牛牛想知道：在他指定的两个日期之间包含这两个日期本身），有多少个真实存在的日期是回文的。</p>
@@ -1972,7 +1972,7 @@
   </entry>
   <entry>
     <title>作物杂交（JAVA）</title>
-    <url>/%E4%BD%9C%E7%89%A9%E6%9D%82%E4%BA%A4%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>作物杂交是作物栽培中重要的一步。已知有 N种作物 (编号 1至 N)，第 i种作物从播种到成熟的时间为 Ti。作物之间两两可以进行杂交，杂交时间取两种中时间较长的一方。如作物 A 种植时间为 5 天，作物 B 种植时间为 7 天，则 AB 杂交花费的时间为 7 天。作物杂交会产生固定的作物，新产生的作物仍然属于 N 种作物中的一种。</p>
 <p>初始时，拥有其中 M 种作物的种子 (数量无限，可以支持多次杂交)。同时可以进行多个杂交过程。求问对于给定的目标种子，最少需要多少天能够得到。</p>
 <p>如存在 4 种作物 ABCD，各自的成熟时间为 5 天、7 天、3 天、8 天。初始拥有 AB 两种作物的种子，目标种子为 D，已知杂交情况为 A × B → C，A × C → D。则最短的杂交过程为：</p>
@@ -2037,7 +2037,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--结构体之时间设计（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%BB%93%E6%9E%84%E4%BD%93%E4%B9%8B%E6%97%B6%E9%97%B4%E8%AE%BE%E8%AE%A1%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/26.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>定义一个结构体变量（包括年、月、日）。计算该日在本年中是第几天，注意闰年问题。</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>年月日</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>当年第几天</p>
@@ -2070,7 +2070,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--石头剪刀布（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%9F%B3%E5%A4%B4%E5%89%AA%E5%88%80%E5%B8%83%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/25.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>石头剪子布，是一种猜拳游戏。起源于中国，然后传到日本、朝鲜等地，随着亚欧贸易的不断发展它传到了欧洲，到了近现代逐渐风靡世界。简单明了的规则，使得石头剪子布没有任何规则漏洞可钻，单次玩法比拼运气，多回合玩法比拼心理博弈，使得石头剪子布这个古老的游戏同时用于“意外”与“技术”两种特性，深受世界人民喜爱。<br> 游戏规则：石头打剪刀，布包石头，剪刀剪布。<br> 现在，需要你写一个程序来判断石头剪子布游戏的结果。</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>输入包括N+1行：<br> 第一行是一个整数N，表示一共进行了N次游戏。1 &lt;= N &lt;= 100。<br> 接下来N行的每一行包括两个字符串，表示游戏参与者Player1，Player2的选择（石头、剪子或者是布）：<br> S1 S2<br> 字符串之间以空格隔开S1,S2只可能取值在{“Rock”, “Scissors”, “Paper”}（大小写敏感）中。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>输出包括N行，每一行对应一个胜利者（Player1或者Player2），或者游戏出现平局，则输出Tie。</p>
@@ -2100,7 +2100,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--猴子吃桃（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%8C%B4%E5%AD%90%E5%90%83%E6%A1%83%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/24.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>猴子吃桃问题。猴子第一天摘下若干个桃子，当即吃了一半，还不过瘾，又多吃了一个。 第二天早上又将剩下的桃子吃掉一半，又多吃一个。以后每天早上都吃了前一天剩下的一半零一个。 到第N天早上想再吃时，见只剩下一个桃子了。求第一天共摘多少桃子。</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>N</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>桃子总数</p>
@@ -2128,7 +2128,7 @@
   </entry>
   <entry>
     <title>闹钟定时程序（python）</title>
-    <url>/%E9%97%B9%E9%92%9F%E5%AE%9A%E6%97%B6%E7%A8%8B%E5%BA%8F%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/23.html</url>
     <content><![CDATA[<h3 id="闹钟"><a href="#闹钟" class="headerlink" title="闹钟"></a>闹钟</h3><p>是现在人们常备的物品之一，可以尝试用python写一个简易的闹钟程序</p>
 <p>包含以下几部分：</p>
 <h5 id="1-输入定时的时间"><a href="#1-输入定时的时间" class="headerlink" title="1.输入定时的时间"></a>1.输入定时的时间</h5><h5 id="2-获取当前的时间"><a href="#2-获取当前的时间" class="headerlink" title="2.获取当前的时间"></a>2.获取当前的时间</h5><h5 id="3-获取实时的时间"><a href="#3-获取实时的时间" class="headerlink" title="3.获取实时的时间"></a>3.获取实时的时间</h5><h5 id="4-将电脑的实时时间与设定的时间对比"><a href="#4-将电脑的实时时间与设定的时间对比" class="headerlink" title="4.将电脑的实时时间与设定的时间对比"></a>4.将电脑的实时时间与设定的时间对比</h5><p>大体的思路有了</p>
@@ -2149,7 +2149,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--字母数（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%AD%97%E6%AF%8D%E6%95%B0%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/22.html</url>
     <content><![CDATA[<h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>请找到一个大于 2022的最小数，这个数转换成十六进制之后，所有的数位（不含前导 0）都为字母（A 到 F）。</p>
 <p>请将这个数的十进制形式作为答案提交。</p>
 <h3 id="答案提交"><a href="#答案提交" class="headerlink" title="答案提交"></a>答案提交</h3><p>这是一道结果填空的题，你只需要算出结果后提交即可。本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
@@ -2172,7 +2172,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--迷宫（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%BF%B7%E5%AE%AB%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/21.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>下图给出了一个迷宫的平面图，其中标记为 11 的为障碍，标记为 00 的为可以通行的地方。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">010000</span><br><span class="line">000100</span><br><span class="line">001001</span><br><span class="line">110000</span><br></pre></td></tr></table></figure>
@@ -2210,7 +2210,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--数位排序（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%95%B0%E4%BD%8D%E6%8E%92%E5%BA%8F%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/20.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝对一个数的数位之和很感兴趣，今天他要按照数位之和给数排序。当两个数各个数位之和不同时，将数位和较小的排在前面，当数位之和相等时，将数值小的排在前面。</p>
 <p>例如，2022 排在 409 前面，因为 2022 的数位之和是 6，小于 409 的数位之和 13。</p>
 <p>又如，6 排在 2022 前面，因为它们的数位之和相同，而 6 小于 2022。</p>
@@ -2268,7 +2268,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--纸张尺寸（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%BA%B8%E5%BC%A0%E5%B0%BA%E5%AF%B8%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/19.html</url>
     <content><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>在 ISO 国际标准中定义了 A0 纸张的大小为 1189mm × 841mm，将 A0 纸沿长边对折后为 A1 纸，大小为 841mm × 594mm，在对折的过程中长度直接取下整（实际裁剪时可能有损耗）。将 A1 纸沿长边对折后为 A2 纸，依此类推。 </p>
 <p>输入纸张的名称，请输出纸张的大小。 </p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>输入一行包含一个字符串表示纸张的名称，该名称一定是 A0、A1、A2、A3、A4、A5、A6、A7、A8、A9 之一。 </p>
@@ -2298,7 +2298,7 @@
   </entry>
   <entry>
     <title>砝码称重（JAVA）</title>
-    <url>/%E7%A0%9D%E7%A0%81%E7%A7%B0%E9%87%8D%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>你有一架天平和 N个砝码，这 N 个砝码重量依次是 W1, W2, · · · , WN。</p>
 <p>请你计算一共可以称出多少种不同的重量？ 注意砝码可以放在天平两边。</p>
 <p><strong>输入格式</strong></p>
@@ -2352,7 +2352,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--等差数列（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%AD%89%E5%B7%AE%E6%95%B0%E5%88%97%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/18.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>数学老师给小明出了一道等差数列求和的题目。但是粗心的小明忘记了一 部分的数列，只记得其中 N 个整数。</p>
 <p>现在给出这 N 个整数，小明想知道包含这 N 个整数的最短的等差数列有几项？</p>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入的第一行包含一个整数 N。</p>
@@ -2393,7 +2393,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--质数（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%B4%A8%E6%95%B0%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/17.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>我们知道第一个质数是 2、第二个质数是 3、第三个质数是 5……</p>
 <p>请你计算第 2019 个质数是多少？</p>
@@ -2420,7 +2420,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--货物摆放（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%B4%A7%E7%89%A9%E6%91%86%E6%94%BE%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/15.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝有一个超大的仓库，可以摆放很多货物。</p>
 <p>现在，小蓝有 n 箱货物要摆放在仓库，每箱货物都是规则的正方体。小蓝规定了长、宽、高三个互相垂直的方向，每箱货物的边都必须严格平行于长、宽、高。</p>
 <p>小蓝希望所有的货物最终摆成一个大的长方体。即在长、宽、高的方向上分别堆 L、W、H 的货物,满足n=L×W×H。</p>
@@ -2453,7 +2453,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--递增序列（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E9%80%92%E5%A2%9E%E5%BA%8F%E5%88%97%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/14.html</url>
     <content><![CDATA[<p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>对于一个字母矩阵，我们称矩阵中的一个递增序列是指在矩阵中找到两个字母，它们在同一行，同一列，或者在同一 45 度的斜线上，这两个字母从左向右看、或者从上向下看是递增的。</p>
 <p>例如，如下矩阵中</p>
@@ -2493,7 +2493,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--跑步锻炼（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%B7%91%E6%AD%A5%E9%94%BB%E7%82%BC%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/13.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小蓝每天都锻炼身体。</p>
 <p>正常情况下，小蓝每天跑 11 千米。如果某天是周一或者月初（11 日），为了激励自己，小蓝要跑 22 千米。如果同时是周一或月初，小蓝也是跑 22 千米。</p>
@@ -2517,7 +2517,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--链表之节点删除（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E9%93%BE%E8%A1%A8%E4%B9%8B%E8%8A%82%E7%82%B9%E5%88%A0%E9%99%A4%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/12.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>有两个链表a和b，设节点中包含学号、成绩。从a链表中删去b链表中有相同学号的那些节点。</p>
 <h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>第一行有两个用空格隔开的整数n和m，分别表示a和b两个链表中的节点个数。保证n和m均不超过100。<br> 之后的n行每行有两个用空格隔开的整数，分别表示一个学生的学号和成绩。<br> 最后的m行每行有两个用空格隔开的整数，分别表示一个学生的学号和成绩。<br> a和b两个链表中的节点并不一定按照学号顺序排列。保证a链表中学号各不相同，b链表中学号各不相同。</p>
 <h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>首先输出a链表最终剩下的节点个数k。<br> 在接下来的k行，每行输出两个用空格隔开的整数，分别表示一个学生的学号和成绩。<br> 请注意行尾输出换行。</p>
@@ -2553,7 +2553,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--排序（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%8E%92%E5%BA%8F%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/11.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小蓝最近学习了一些排序算法，其中冒泡排序让他印象深刻。</p>
 <p>在冒泡排序中，每次只能交换相邻的两个元素。</p>
@@ -2589,7 +2589,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--空间（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%A9%BA%E9%97%B4%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/10.html</url>
     <content><![CDATA[<p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小蓝准备用 256MB 的内存空间开一个数组，数组的每个元素都是 32 位 二进制整数，如果不考虑程序占用的空间和维护内存需要的辅助空间，请问256MB 的空间可以存储多少个 32 位二进制整数？</p>
 <h3 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h3><ul>
@@ -2644,7 +2644,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--成绩分析（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%88%90%E7%BB%A9%E5%88%86%E6%9E%90%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/09.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
 <p>请计算这次考试的最高分、最低分和平均分。</p>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入的第一行包含一个整数 n (1≤n≤10^4)，表示考试人数。</p>
@@ -2691,7 +2691,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--购物单（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E8%B4%AD%E7%89%A9%E5%8D%95%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/08.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p>
 <p>小明刚刚找到工作，老板人很好，只是老板夫人很爱购物。老板忙的时候经常让小明帮忙到商场代为购物。小明很厌烦，但又不好推辞。</p>
 <p>这不，大促销又来了！老板夫人开出了长长的购物单，都是有打折优惠的。</p>
@@ -2728,7 +2728,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--门牌制作（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/06.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</p>
 <p>小蓝要为一条街的住户制作门牌号。</p>
 <p>这条街一共有 2020 位住户，门牌号从 1 到2020 编号。</p>
@@ -2748,7 +2748,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--回文日期（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%9B%9E%E6%96%87%E6%97%A5%E6%9C%9F%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/05.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p> 2020 年春节期间，有一个特殊的日期引起了大家的注意：2020 年 2 月 2 日。因为如果将这个日期按 “yyyymmdd” 的格式写成一个 8 位数是 20200202，恰好是一个回文数。我们称这样的日期是回文日期。</p>
 <p>有人表示 20200202 是 “千年一遇” 的特殊日子。对此小明很不认同，因为不到 2 年之后就是下一个回文日期：20211202 即 2021 年 12 月 2 日。</p>
 <p>也有人表示 20200202 并不仅仅是一个回文日期，还是一个 ABABBABA 型的回文日期。对此小明也不认同，因为大约 100 年后就能遇到下一个 ABABBABA 型的回文日期：21211212 即 2121 年 12 月 12 日。算不上 “千年一遇”，顶多算 “千年两遇”。</p>
@@ -2786,7 +2786,7 @@
   </entry>
   <entry>
     <title>数字三角形（JAVA）</title>
-    <url>/%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88JAVA%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p><img src="https://s1.ax1x.com/2023/07/06/pC6JFr4.jpg" alt="pC6JFr4.jpg"></p>
 <p>上图给出了一个数字三角形。从三角形的顶部到底部有很多条不同的路径。对于每条路径，把路径上面的数加起来可以得到一个和，你的任务就是找到最大的和。</p>
 <p>路径上的每一步只能从一个数走到下一层和它最近的左边的那个数或者右 边的那个数。此外，向左下走的次数与向右下走的次数相差不能超过 1。</p>
@@ -2830,7 +2830,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--移动距离（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%A7%BB%E5%8A%A8%E8%B7%9D%E7%A6%BB%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/02.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p> X 星球居民小区的楼房全是一样的，并且按矩阵样式排列。其楼房的编号为 1,2,3,⋯⋯</p>
 <p>当排满一行时，从下一行相邻的楼往反方向排号。</p>
 <p>比如：当小区排号宽度为 6 时，开始情形如下：</p>
@@ -2881,7 +2881,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--单词分析（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/01.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p>
 <p>现在，请你帮助小蓝，给了一个单词后，帮助他找到出现最多的字母和这 个字母出现的次数。</p>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入一行包含一个单词，单词只由小写英文字母组成。</p>
@@ -2933,7 +2933,7 @@
   </entry>
   <entry>
     <title>蓝桥杯--成绩统计（python）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/03.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
 <p>如果得分至少是 60 分，则称为及格。如果得分至少为 85 分，则称为优秀。</p>
 <p>请计算及格率和优秀率，用百分数表示，百分号前的部分四舍五入保留整 数。</p>
@@ -2990,7 +2990,7 @@
   </entry>
   <entry>
     <title>猜数字（python）</title>
-    <url>/%E7%8C%9C%E6%95%B0%E5%AD%97%EF%BC%88python%EF%BC%89/</url>
+    <url>/posts/0.html</url>
     <content><![CDATA[<h1 id="猜数字（python）"><a href="#猜数字（python）" class="headerlink" title="猜数字（python）"></a>猜数字（python）</h1><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 以下两行可以生成随机数，范围（1，100）可自拟</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line">num = random.randint(<span class="number">1</span>, <span class="number">100</span>)</span><br><span class="line"><span class="comment"># 定义一个int型变量，并初始化猜的次数</span></span><br><span class="line">x = <span class="number">0</span></span><br><span class="line"><span class="comment"># 定义一个布尔型变量</span></span><br><span class="line">flag = <span class="literal">True</span></span><br><span class="line"><span class="comment"># 在while循环中用布尔类型来控制循环，若为真则继续循环，为假则跳出循环</span></span><br><span class="line"><span class="keyword">while</span> flag:</span><br><span class="line">    <span class="comment"># 输入你所猜数字哦</span></span><br><span class="line">    n = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入:&quot;</span>))</span><br><span class="line">    <span class="comment"># 猜的次数</span></span><br><span class="line">    x += <span class="number">1</span></span><br><span class="line">    <span class="comment"># 用if循环来比较猜的对错</span></span><br><span class="line">    <span class="keyword">if</span> n == num:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;猜中了!!!&quot;</span>)</span><br><span class="line">        flag = <span class="literal">False</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> n &gt; num:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;大了~&quot;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;小了~&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&quot;恭喜你猜对啦，就是<span class="subst">&#123;n&#125;</span>啦，总共猜了<span class="subst">&#123;x&#125;</span>次 &quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <p>  猜数字的前提是有数可猜，那么就需要先来找一个数，这个数不能是确定的，需要系统随机来赋值。而random函数的作用是产生随机数的模块，需要用import来导入random库。并且猜数字的范围要确定，我这里取得范围是（1，100）；范围可按需求更改，可参考以下这位</p>
@@ -3006,7 +3006,7 @@
   </entry>
   <entry>
     <title>商品入库（java）</title>
-    <url>/%E6%A1%88%E4%BE%8B2-1%20%E5%95%86%E5%93%81%E5%85%A5%E5%BA%93%EF%BC%88java%EF%BC%89/</url>
+    <url>/posts/04.html</url>
     <content><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>现要对华为和小米两种手机产品进行入库，本案例要求编写一个模拟商品入库的程序，可以在控制台输入入库商品的数量，最后打印出仓库中所有商品详细信息以及所有商品的总库存数和库存商品总金额。<br><strong>商品信息如下：</strong><br><em>品牌型号</em><br><em>尺寸</em><br><em>价格</em><br><em>配置</em><br><em>库存</em><br><em>总价</em></p>
 <h2 id="实例代码："><a href="#实例代码：" class="headerlink" title="实例代码："></a>实例代码：</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">package text;</span><br><span class="line">import java.util.Scanner;    // 便于输入函数调用</span><br><span class="line">public class goods &#123;</span><br><span class="line">    public static void main (String[] args)&#123;</span><br><span class="line"></span><br><span class="line">        //        华为</span><br><span class="line">        String huawei = &quot;华为&quot;;    //  品牌型号</span><br><span class="line">        double cc1 = 6.1;    //  尺寸</span><br><span class="line">        double jg1 = 7999;   //  价格</span><br><span class="line">        String pz1 = &quot;8+256&quot;;   //  配置</span><br><span class="line"></span><br><span class="line">        //        小米</span><br><span class="line">        String xiaomi = &quot;小米&quot;;   //  品牌型号</span><br><span class="line">        double cc2 = 5.8;     //  尺寸</span><br><span class="line">        double jg2 = 4999;    //  价格</span><br><span class="line">        String pz2 = &quot;4+128&quot;;    //  配置</span><br><span class="line"></span><br><span class="line">        //       华为入库</span><br><span class="line">        System.out.println(&quot;品牌型号:&quot;+huawei);     </span><br><span class="line">        System.out.println(&quot;尺寸:&quot;+cc1);</span><br><span class="line">        System.out.println(&quot;价格:&quot;+jg1);</span><br><span class="line">        System.out.println(&quot;配置:&quot;+pz1);</span><br><span class="line">        System.out.println(&quot;请输入&quot;+huawei+&quot;手机库存:&quot;);</span><br><span class="line">        Scanner kc = new Scanner(System.in);      //  调用输入函数</span><br><span class="line">        int kc1 = kc.nextInt();         //   从键盘输入库存数量</span><br><span class="line">        double zj1 = kc1 * jg1;         //   该手机总价</span><br><span class="line">        System.out.println(huawei+&quot;手机总价为&quot;+zj1);</span><br><span class="line">        System.out.println(&quot;-------------------------------------------------&quot;);</span><br><span class="line"></span><br><span class="line">        //       小米入库</span><br><span class="line">        System.out.println(&quot;品牌型号:&quot;+xiaomi);</span><br><span class="line">        System.out.println(&quot;尺寸:&quot;+cc2);</span><br><span class="line">        System.out.println(&quot;价格:&quot;+jg2);</span><br><span class="line">        System.out.println(&quot;配置:&quot;+pz2);</span><br><span class="line">        System.out.println(&quot;请输入&quot;+xiaomi+&quot;手机库存:&quot;);</span><br><span class="line">        int kc2 = kc.nextInt();     //   从键盘输入库存数量</span><br><span class="line">        double zj2 = kc2 * jg2;     //   该手机总价</span><br><span class="line">        System.out.println(xiaomi+&quot;手机总价为&quot;+zj2);</span><br><span class="line"></span><br><span class="line">        //        打印</span><br><span class="line">        System.out.println(&quot;------------------商品信息打印-------------------&quot;);</span><br><span class="line">        System.out.println(&quot;品牌型号&quot;+&quot;\t&quot;+&quot;尺寸&quot;+&quot;\t\t&quot;+&quot;价格&quot;+&quot;\t\t&quot;+&quot;配置&quot;+&quot;\t\t&quot;+&quot;库存&quot;+&quot;\t\t&quot;+&quot;总价&quot;);</span><br><span class="line">        System.out.println(huawei+&quot;\t\t&quot;+cc1+&quot;\t  &quot;+jg1+&quot;\t&quot;+pz1+&quot;\t&quot;+kc1+&quot;\t  &quot;+zj1);</span><br><span class="line">        System.out.println(xiaomi+&quot;\t\t&quot;+cc2+&quot;\t  &quot;+jg2+&quot;\t&quot;+pz2+&quot;\t&quot;+kc2+&quot;\t  &quot;+zj2);</span><br><span class="line">        System.out.println(&quot;------------------商品信息打印-------------------&quot;);</span><br><span class="line">        int zkc = kc1 + kc2;</span><br><span class="line">        double zj = zj1 + zj2;</span><br><span class="line">        System.out.println(&quot;总库存数为:&quot;+zkc+&quot;\t\t\t&quot;+&quot;总金额为:&quot;+zj);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="结果演示："><a href="#结果演示：" class="headerlink" title="结果演示："></a>结果演示：</h2><p> 按题目要求可得需要记录商品信息，由常识可知：品牌型号一般为String类型；尺寸，价格为int类型；配置也可按String类型；库存为int类型；总价为double类型。可按正常赋值的一样赋予商品各类信息，并通过输出函数输出。<br>题目要求入库数量要从控制台输入，那么就需要使用输入函数</p>
@@ -3020,7 +3020,7 @@
   </entry>
   <entry>
     <title>LeetCode35：搜索插入位置（二分法---根据边界区间闭合问题的两种写法）</title>
-    <url>/LeetCode35%EF%BC%9A%E6%90%9C%E7%B4%A2%E6%8F%92%E5%85%A5%E4%BD%8D%E7%BD%AE%EF%BC%88%E4%BA%8C%E5%88%86%E6%B3%95-%E6%A0%B9%E6%8D%AE%E8%BE%B9%E7%95%8C%E5%8C%BA%E9%97%B4%E9%97%AD%E5%90%88%E9%97%AE%E9%A2%98%E7%9A%84%E4%B8%A4%E7%A7%8D%E5%86%99%E6%B3%95%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h3 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h3><p>给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。</p>
 <p>请必须使用时间复杂度为 O(log n) 的算法。</p>
 <p><strong>示例 1:</strong></p>
@@ -3065,7 +3065,7 @@
   </entry>
   <entry>
     <title>LeetCode46-全排列（dfs算法）</title>
-    <url>/LeetCode46-%E5%85%A8%E6%8E%92%E5%88%97%EF%BC%88dfs%E7%AE%97%E6%B3%95%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。</p>
 <blockquote>
 <p>示例 1：</p>
@@ -3103,7 +3103,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-山（java）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%B1%B1%EF%BC%88java%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>这天小明正在学数数。<br> 他突然发现有些正整数的形状像一座“山”，比如123565321、145541。<br> 它们左右对称（回文）且数位上的数字先单调不减，后单调不增。<br> 小明数了很久也没有数完，他想让你告诉他在区间[2022：2022222022]中有多少个数的形状像一座“山”。<br> 这是一道结果填空的题，你只需要算出结果后提交即可。<br> 本题的结果为一个整数，在提交答案时只填写这个整数，填写多余的内容将无法得分。</p>
 <h3 id="代码详解"><a href="#代码详解" class="headerlink" title="代码详解"></a>代码详解</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Main &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        int count = 0;</span><br><span class="line">        int top = 0;</span><br><span class="line">        f:</span><br><span class="line">        for (long i = 2022; i &lt;= 2022222022; i++) &#123;</span><br><span class="line">            String str = String.valueOf(i);</span><br><span class="line">            for (int j = 0; j &lt; str.length(); j++) &#123;</span><br><span class="line"></span><br><span class="line">                if (str.charAt(j) != str.charAt(str.length() - j - 1)) &#123;</span><br><span class="line">                    continue f;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                if (j&lt;str.length()/2)&#123;</span><br><span class="line">                    if ((str.charAt(j)-&#x27;0&#x27;)&gt;(str.charAt(j+1)-&#x27;0&#x27;))&#123;</span><br><span class="line">                        continue f;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line">            count++;</span><br><span class="line">            System.out.println(i);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(count);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -3120,7 +3120,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-时间显示</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%B6%E9%97%B4%E6%98%BE%E7%A4%BA/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小蓝要和朋友合作开发一个时间显示的网站。</p>
 <p>在服务器上，朋友已经获取了当前的时间，用一个整数表示，值为从 19701970 年 11 月 11 日 00:00:0000:00:00 到当前时刻经过的毫秒数。</p>
 <p>现在，小蓝要在客户端显示出这个时间。小蓝不用显示出年月日，只需要显示出时分秒即可，毫秒也不用显示，直接舍去即可。</p>
@@ -3175,7 +3175,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-跳跃（dp）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E8%B7%B3%E8%B7%83%EF%BC%88dp%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小蓝在一个 n 行 m 列的方格图中玩一个游戏。</p>
 <p>开始时，小蓝站在方格图的左上角，即第 11 行第 11 列。</p>
 <p>小蓝可以在方格图上走动，走动时，如果当前在第 r 行第 c 列，他不能走到行号比 r 小的行，也不能走到列号比 c 小的列。同时，他一步走的直线距离不超过 33。</p>
@@ -3227,7 +3227,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-最少刷题数</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%9C%80%E5%B0%91%E5%88%B7%E9%A2%98%E6%95%B0/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>小蓝老师教的编程课有 N 名学生，编号依次是 1 . . . N。第 i 号学生这学期刷题的数量是 Ai。</p>
 <p>对于每一名学生，请你计算他至少还要再刷多少道题，才能使得全班刷题比他多的学生数不超过刷题比他少的学生数。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行包含一个正整数 N。</p>
@@ -3271,7 +3271,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-特别数的和</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E7%89%B9%E5%88%AB%E6%95%B0%E7%9A%84%E5%92%8C/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>小明对数位中含有 2、0、1、9 的数字很感兴趣（不包括前导 0），在 1 到 40 中这样的数包括 1、2、9、10 至 32、39 和 40，共 28 个，他们的和是 574。</p>
 <p>请问，在 1 到 n 中，所有这样的数的和是多少？</p>
 <h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>输入一行包含一个整数 （1≤n≤10^4）。</p>
@@ -3317,7 +3317,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-592门牌制作</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-592%E9%97%A8%E7%89%8C%E5%88%B6%E4%BD%9C/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可</p>
 <p>小蓝要为一条街的住户制作门牌号。</p>
 <p>这条街一共有 20202020 位住户，门牌号从 11 到 20202020 编号。</p>
@@ -3341,7 +3341,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-成绩统计（java）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%88%90%E7%BB%A9%E7%BB%9F%E8%AE%A1(java)/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝给学生们组织了一场考试，卷面总分为 100 分，每个学生的得分都是一个 0 到 100 的整数。</p>
 <p>如果得分至少是 60 分，则称为及格。如果得分至少为 85 分，则称为优秀。</p>
 <p>请计算及格率和优秀率，用百分数表示，百分号前的部分四舍五入保留整 数。</p>
@@ -3385,7 +3385,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-单词分析（java）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%8D%95%E8%AF%8D%E5%88%86%E6%9E%90%EF%BC%88java%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>小蓝正在学习一门神奇的语言，这门语言中的单词都是由小写英文字母组 成，有些单词很长，远远超过正常英文单词的长度。小蓝学了很长时间也记不住一些单词，他准备不再完全记忆这些单词，而是根据单词中哪个字母出现得最多来分辨单词。</p>
 <p>现在，请你帮助小蓝，给了一个单词后，帮助他找到出现最多的字母和这 个字母出现的次数。</p>
 <h1 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h1><p>输入一行包含一个单词，单词只由小写英文字母组成。</p>
@@ -3439,7 +3439,7 @@
   </entry>
   <entry>
     <title>蓝桥杯-阶乘计算（二分）</title>
-    <url>/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>满足 N! 的末尾恰好有 K 个 0 的最小的 N 是多少? </p>
 <p>如果这样的 N 不存在输出 −1。</p>
 <h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个整数 K。</p>
@@ -3479,7 +3479,7 @@
   </entry>
   <entry>
     <title>验证码（random类）</title>
-    <url>/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h3 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h3><p>定义方法实现随机产生一个5位的验证码</p>
 <h3 id="验证码格式"><a href="#验证码格式" class="headerlink" title="验证码格式:"></a>验证码格式:</h3><p>1.长度为5</p>
 <p>2.前四位是大写字母或者小写字母最后一位是数字</p>
@@ -3524,7 +3524,7 @@
   </entry>
   <entry>
     <title>Typora资源及使用</title>
-    <url>/typora/</url>
+    <url>/posts/undefined.html</url>
     <content><![CDATA[<h2 id="typora破解教程："><a href="#typora破解教程：" class="headerlink" title="typora破解教程："></a>typora破解教程：</h2><p><strong>一、关闭杀毒（如果有报毒的情况）</strong></p>
 <p><strong>二、下载安装</strong></p>
 <p>链接：<a href="https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41">https://pan.baidu.com/s/196jo9vVrly-smUbKjq-kSA?pwd=hy41</a><br>提取码：hy41</p>
