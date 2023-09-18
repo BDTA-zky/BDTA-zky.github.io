@@ -6,7 +6,7 @@
   <link href="https://bdta-zky.github.io/atom.xml" rel="self"/>
   
   <link href="https://bdta-zky.github.io/"/>
-  <updated>2023-09-15T07:59:41.498Z</updated>
+  <updated>2023-09-18T12:03:03.084Z</updated>
   <id>https://bdta-zky.github.io/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python150题day05</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day05/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day05/</id>
+    <published>2023-09-18T12:00:09.000Z</published>
+    <updated>2023-09-18T12:03:03.084Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="⑤合并字符串"><a href="#⑤合并字符串" class="headerlink" title="⑤合并字符串"></a>⑤合并字符串</h1><blockquote><p>str1=“1，2，3”</p><p>str2=“4，5，6”</p></blockquote><p>请将str1合并到str2的末尾，并思考这个过程中，是否产生了新的字符串</p><p><strong>解答：</strong></p><blockquote><p>str1 += str2</p></blockquote><p>这个过程中，产生的新的字符串，字符串是不可变对象，从字面意义上理解，似乎str1的内容发生变化了， 但本质上是产生了新的字符串并赋值给str1，print（str1），合并前后的内存地址是不一样的。</p><h1 id="⑥统计练习"><a href="#⑥统计练习" class="headerlink" title="⑥统计练习"></a>⑥统计练习</h1><blockquote><p>lst = [2,5,6,7,8,9,2,9,9]</p></blockquote><p><strong>请写程序完成下列题目：</strong></p><blockquote><p>1.找出列表里的最大值</p><p>2.找出列表里的最小值</p><p>3.找出列表里最大值的个数</p><p>4.计算列表里所有元素的和</p><p>5.计算列表里元素的平均值</p><p>6.计算列表的长度</p><p>7.找出元素6在列表中的索引</p></blockquote><p><strong>解答：</strong></p><blockquote><p>\1. max(lst)</p><p>\2. min(lst)</p><p>\3. lst.count(max(lst))</p><p>\4. sum(lst)</p><p>\5. sum(lst)/float(len(lst))</p><p>\6. len(lst)</p><p>\7. lst.index(6)</p></blockquote><p><strong>第五题解析：</strong></p><blockquote><ul><li><code>sum(lst)</code>：这个部分是用来计算列表 <code>lst</code> 中所有元素的总和。</li><li><code>len(lst)</code>：这个部分是用来计算列表 <code>lst</code> 的长度，即列表中元素的个数。</li><li><code>float(len(lst))</code>：这个部分是将列表的长度转换为浮点数类型，以确保在进行除法运算时得到的结果是浮点数。</li><li><code>sum(lst)/float(len(lst))</code>：这个部分将列表的总和除以列表的长度，得到的结果就是列表元素的平均值。</li></ul><p><strong>这部分题考察的是对内置函数的理解和应用</strong></p></blockquote><p><strong>下面的题目不写代码，仅凭思考来回答</strong></p><blockquote><p>1.lst[2:4]的值是什么</p><p>2.lst[1: -3]的值是什么</p><p>3.lst[-5]的值是什么</p><p>4.lst[:-4] 的值是什么</p><p>5.lst[-4:] 的值是什么</p></blockquote><p><strong>解答：</strong></p><blockquote><p>\1. [6, 7]</p><p>\2. [5, 6, 7, 8, 9]</p><p>\3. 8</p><p>\4. [2, 5, 6, 7, 8]</p><p>\5. [9, 2, 9, 9]</p></blockquote><p>列表的切片操作，一定要记住<strong>左闭右开</strong></p><p><strong>注意第三和第四个的区别，少一个符号的区别很大</strong></p><h1 id="⑦列表操作练习"><a href="#⑦列表操作练习" class="headerlink" title="⑦列表操作练习"></a><strong>⑦列表操作练习</strong></h1><blockquote><p>lst = [2, 5, 6, 7, 8, 9, 2, 9, 9]</p></blockquote><p><strong>请写程序完成下列题目：</strong></p><blockquote><p>请写程序完成下列操作<br>1.在列表的未尾增加元素15<br>2.在列表的中间位置插入元素20</p><p>3.将列表[2，5，6]合并到Ist中<br>4.移除列表中索引为3的元素<br>5.翻转列表里的所有元素<br>6.对列表里的元素进行排序，从小到大一次，从大到小一次</p></blockquote><p><strong>解答：</strong></p><blockquote><p>\1. lst.append(15)</p><p>\2. lst.insert(len(lst)//2, 20)</p><p>\3. lst.extend([2, 5, 6])</p><p>\4. lst.remove(lst[3])</p><p>\5. lst = lst[::-1]</p><p>\6. lst.sort() lst.sort(reverse=True)</p></blockquote><p><strong>第二题解析：</strong></p><blockquote><p><code>len(lst)//2</code> 表示列表 <code>lst</code> 的长度除以2，即中间位置的索引。然后，<code>lst.insert()</code> 方法用于在指定的索引位置插入一个元素，这里的索引位置是中间位置，元素是 20。这样，执行完这段代码后，列表 <code>lst</code> 中就会在中间位置插入一个元素 20。</p></blockquote><p><strong>第五题解析：</strong></p><blockquote><p><code>lst[::-1]</code> 是 Python 中的切片操作，用于创建一个与原列表 <code>lst</code> 具有相同元素但顺序相反的新列表。具体来说：</p><ul><li><code>[::-1]</code>：这部分表示切片操作，其中的 <code>::</code> 表示从列表的起始位置到结束位置，而 <code>-1</code> 表示步长为 -1，即逆序遍历列表。</li></ul><p>通过将列表 <code>lst</code> 进行切片操作 <code>[::-1]</code>，代码将创建一个新的列表，其中的元素顺序与原列表 <code>lst</code> 相反。</p><p>例如，如果原列表 <code>lst</code> 是 <code>[1, 2, 3, 4, 5]</code>，那么 <code>lst[::-1]</code> 将返回一个新的列表 <code>[5, 4, 3, 2, 1]</code>，即原列表的逆序。</p><p>所以，<code>lst = lst[::-1]</code> 这段代码的作用是将列表 <code>lst</code> 中的元素顺序反转，并将结果保存回原列表 <code>lst</code> 中。</p></blockquote><p><strong>第六题解析：</strong></p><blockquote><p><code>lst.sort()</code> 是一个用于列表排序的方法。它会按照默认的升序方式对列表进行排序。例如，如果列表 <code>lst</code> 是 <code>[3, 1, 2]</code>，那么调用 <code>lst.sort()</code> 之后，列表 <code>lst</code> 将变为 <code>[1, 2, 3]</code>。</p><p><code>lst.sort(reverse=True)</code> 是对列表进行降序排序的方法。它会按照降序的方式对列表进行排序。例如，如果列表 <code>lst</code> 是 <code>[3, 1, 2]</code>，那么调用 <code>lst.sort(reverse=True)</code> 之后，列表 <code>lst</code> 将变为 <code>[3, 2, 1]</code>。</p><p>需要注意的是，这两个方法会直接修改原始列表，而不会返回一个新的排序后的列表。如果你想要获得一个新的排序后的列表，可以使用 <code>sorted()</code> 函数。例如，<code>sorted_lst = sorted(lst)</code> 会返回一个新的已排序列表，而不会修改原始列表 <code>lst</code>。</p></blockquote><h1 id="⑧复杂列表练习"><a href="#⑧复杂列表练习" class="headerlink" title="⑧复杂列表练习"></a><strong>⑧复杂列表练习</strong></h1><blockquote><p>lst = [1, 4, 5, [1, 3, 5, 6, [8, 9, 10, 12]]]</p></blockquote><p><strong>不写代码，仅凭思考来回答</strong></p><blockquote><p>1.列表Ist的长度是多少<br>2.列表Ist中有几个元素<br>3.lst[1] 的数据类型是什么<br>4.lst[3]的数据类型是什么<br>5.lst[3][4] 的值是什么<br>6.如果才能访问到 9 这个值<br>7.执行lst[3][4].append([5,6])后，列表lst的内容是什么，手写出来<br>8.lst[-1][-1][-2]的值是什么<br>9.lst[-2]的值是什么<br>10.len(lst[-1]) 的值是什么<br>11.len(lst[-1][-1])的值是什么<br>12.lst[-1][1:3] 的值是什么<br>13.lst[-1][-1][1:-2]的值是什么</p></blockquote><p><strong>解答：</strong></p><p>第1题和第2题其实是一个意思，原本统计列表里数据个数不是什么难事，可一旦出现了嵌套列表的情况，有人就分不清了，列表里的数据是以逗号分隔的，lst[3] 是一个列表，其余都是int类型数据，因此lst的长度是4<br>第3题，lst[1] = 4,是int类型数据<br>第4题，lst[3] 的数据类型是列表<br>第5题，lst[3]的值是[1,3,5,6,[8,9,10,12]]，仍然是一个列表，其索引为4的数据是[8,9,10,12]，是列表<br>第6题，lst[3][4][1]第7题，[1,4,5,[1,3,5,6,[8,9,10,12,[5,6]]]],参考5，6两个题目的解答第8题，Ist[-1]的值是[1,3,5,6,[8,9,10,12]]， 再次取索引为-1的数据为[8,9,10,12]，取索引为-2的数据为10<br>第9题，5<br>第10题，5<br>第11题，4<br>第12题，[3,5]， lst[-1]的值是[1,3,5,6,[8,9,10,12]]第13题，[9]， lst[-1][-1]的值是[8,9,10,12]，切片起始位置索引是1，值为9，结束位置是-2，值为10，由于左闭右开，最终结果是[9]</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;⑤合并字符串&quot;&gt;&lt;a href=&quot;#⑤合并字符串&quot; class=&quot;headerlink&quot; title=&quot;⑤合并字符串&quot;&gt;&lt;/a&gt;⑤合并字符串&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;str1=“1，2，3”&lt;/p&gt;
+&lt;p&gt;str2=“4，5，6”&lt;/p&gt;
+&lt;/bl</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day04</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day04/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day04/</id>
+    <published>2023-09-17T12:00:02.000Z</published>
+    <updated>2023-09-18T12:01:43.918Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-3列表与元组练习题"><a href="#1-3列表与元组练习题" class="headerlink" title="1.3列表与元组练习题"></a>1.3列表与元组练习题</h1><h1 id="①列表基础考察"><a href="#①列表基础考察" class="headerlink" title="①列表基础考察"></a>①列表基础考察</h1><p>已知一个列表<strong>lst = [1,2,3,4,5]</strong><br>1.求列表的长度<br>2.判断6 是否在列表中<br>3.lst + [6,7,8] 的结果是什么?<br>4.lst*2 的结果是什么<br>5.列表里元素的最大值是多少<br>6.列表里元素的最小值是多少<br>7.列表里所有元素的和是多少<br>8.在索引1的后面新增一个的元素109.在列表的未尾新增一个元素20</p><p><strong>解答：</strong></p><blockquote><p>\1. len(lst)</p><p>\2. 6 in lst</p><p>\3. [1,2,3,4,5,6,7,8]</p><p>\4. [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]</p><p>\5. max(lst)</p><p>\6. min(lst)</p><p>\7. sum(lst)</p><p>\8. lst.insert(1, 10)</p><p>\9. lst.append(20)</p></blockquote><h1 id="②修改列表"><a href="#②修改列表" class="headerlink" title="②修改列表"></a>②修改列表</h1><p><strong>lst = [1, [4, 6],True]</strong></p><p><strong>请将列表里所有数字修改成原来的两倍</strong></p><p>答案：</p><blockquote><p>lst[0] = 2</p><p>lst[1][0] = 4</p><p>lst[1][1] = 12</p></blockquote><p><strong>你以为存在一个函数，其功能便是将列表里所有的数据都变成原来的两倍，这样才显得变成语言是一个非常神奇的东西，但是很遗憾的告诉你，那些神奇的东西都是程序员自己实现的。</strong></p><p><strong>想要修改列表里的数据，必须通过索引对其重新赋值，上面的方法很low，你也可以写一个区数来实现这个功能，我们假设要处理的列表里只int,float,bool,和list数据，不管嵌套基层list.这个函数都应该能正确处理，下面是一段示例代码</strong></p><blockquote><p>def double_list(lst):</p><p>​    for index,item in enumerate(lst):<br>​        if isinstance(item,bool):</p><p>​            continue</p><p>​        if isinstance(item,(int,float)):</p><p>​            lst[index]*=2</p><p>​        if isinstance(item,list):</p><p>​            double_list(item)</p><p>if <em>name</em> == ‘<em>main</em>‘:</p><p>​    lst = [1,[4,6],True]</p><p>​    double_list(lst)</p><p>​    print(lst)</p></blockquote><h1 id="③元组概念考察"><a href="#③元组概念考察" class="headerlink" title="③元组概念考察"></a>③元组概念考察</h1><p><strong>写出下面代码的执行结果和最终结果的类型</strong></p><p>\1. (1,2)*2</p><p>\2. (1,)*2</p><p>\3. (1)*2</p><p><strong>解答：</strong></p><blockquote><p>\1. (1, 2, 1, 2)</p><p>\2. (1, 1)</p><p>\3. 2</p></blockquote><p>注意第2和第3个，当元组里只有一个数据时，必须有逗号，否则就变成了第三题的形式：<strong>1*2</strong></p><p><strong>当元组中只有一个数据时，如果不省略了逗号，那么小括号的作用就不再是表示元组，而是表示运算优先级</strong></p><h1 id="④合并列表"><a href="#④合并列表" class="headerlink" title="④合并列表"></a><strong>④合并列表</strong></h1><p>lst = [1,2,3]</p><p>lst2 = [4,5,6]</p><p><strong>不使用＋号运算符，将lst2合并到lst的末尾，并思考，这个过程中，是否产生了新的列表</strong></p><p><strong>解答：</strong></p><blockquote><p>lst.extend(lst2)</p></blockquote><p><strong>这个过程中不会产生新的列表，最直观的检验方式就是print(id(lst)),合并前后，lst的内存地址都没有发生变化，只是列表里的内容发生了变化</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-3列表与元组练习题&quot;&gt;&lt;a href=&quot;#1-3列表与元组练习题&quot; class=&quot;headerlink&quot; title=&quot;1.3列表与元组练习题&quot;&gt;&lt;/a&gt;1.3列表与元组练习题&lt;/h1&gt;&lt;h1 id=&quot;①列表基础考察&quot;&gt;&lt;a href=&quot;#①列表基础考察&quot; c</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day03</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day03/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day03/</id>
+    <published>2023-09-16T11:59:35.000Z</published>
+    <updated>2023-09-18T12:01:08.594Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-2字符串练习题"><a href="#1-2字符串练习题" class="headerlink" title="1.2字符串练习题"></a>1.2字符串练习题</h1><h1 id="①字符串内置方法练习"><a href="#①字符串内置方法练习" class="headerlink" title="①字符串内置方法练习"></a>①字符串内置方法练习</h1><blockquote><p><strong>在交互式解释器中完成下列题目</strong><br>1.将字符串“abcd”转成大写<br>2.计算字符串“cd”在 字符串“abcd”中出现的位置<br>3.字符串“a,b,c,d”，请用逗号分割字符串，分割后的结果是什么类型的？</p><p>4.”[name]喜欢{fruit}”.format(name=”李雷”)执行会出错，请修改代码让其正确执行</p><p>\5. string =”Python is good”, 请将字符串里的Python替换成 python,并输出替换后的结果<br>6.有一个字符串 string =“python修炼第一期.html”，请写程序从这个字符串里获得.htm前面的部分，要用尽可能多的方式来做这个事情<br>7.如何获取字符串的长度?<br>8.”this is a book”,请将字符串里的book替换成apple<br>9.”this is a book”,请用程序判断该字符串是否以this开头</p><p>10.”this is a book”，请用程序判断该字符串是否以apple结尾</p><p>11.”This IS a book”请将字符串里的大写字符转成小写字符<br>12.”This IS a book”,请将字符串里的小写字符转成大写字符<br>13.”this is a book\n”,字符串的末尾有一个回车符，请将其删除</p></blockquote><p><strong>解答：</strong></p><blockquote><p>\1. “abcd”.upper()<br>\2. “abcd”.find(‘cd’)<br>\3. “a,b,c,d”.split(‘,’)<br>\4. “{name}喜欢{fruit}”.format(name=”李雷”, fruit=’苹果’)<br>\5. string.replace(‘Python’, ‘python’)<br>\6. string[0:string.find(‘.html’)] 或者string[0:-5]<br>\7. 使⽤用len函数<br>\8. “this is a book”.replace(‘book’, ‘apple’)<br>\9. “this is a book”.startswith(‘this’)<br>\10. “this is a book”.endswith(‘apple’)<br>\11. “This IS a book”.lower()<br>\12. “This IS a book”.upper()<br>\13. “this is a book\n”.strip()</p></blockquote><p><strong>这里只对其中2个题目讲解</strong></p><p>第4小题的程序直接运行会报错，因为字符串里面有两个需要替换的位置，而format方法里只传入了一个参数，显然是不够</p><p>第13小题，strip()方法用于移除字符串头尾指定的字符(默认为空格或换行符)或字符序列，n 就是换行符，这里又涉及到转义字符这个概念，本篇不做详细讲解，求知欲强的同学可以自己百度一下</p><h1 id="②逻辑推理练习（字符串）"><a href="#②逻辑推理练习（字符串）" class="headerlink" title="②逻辑推理练习（字符串）"></a>②逻辑推理练习（字符串）</h1><blockquote><p><strong>不用代码，口述回答下面代码的执行结果</strong></p><p>string = “Python is good”<br>\1. string[1:20]</p><p>\2. string[20]</p><p>3.string[3:-4]<br>4.string[-10:-3]<br>5.string.lower()<br>6.string.replace(“o”，”0”)</p><p>\7. string.startswith(python’)<br>\8. string.split()<br>\9. len(string)<br>\10. string[30]<br>11.string.replace(“”,”)</p></blockquote><p><strong>解答：</strong></p><blockquote><p>\1. ‘ython is good’<br>\2. 报错<br>\3. ‘hon is ‘<br>\4. ‘on is g’<br>\5. ‘python is good’<br>\6. ‘Pyth0n is g00d’<br>\7. False<br>\8. [‘Python’, ‘is’, ‘good’]<br>\9. 14<br>\10. 报错<br>\11. ‘Pythonisgood’</p></blockquote><p><strong>第2题和第10题</strong>都报错，是因为超出了索引范围，字符串长度为14，你去20和30的位置取值，当然会报错<br>关于<strong>切片操作</strong>，只需要知道从哪里开始到哪里结束就一定能推导出答案，以string[3:-4]为例，3是开始的位置，-4是结束的位置，但这个范围是左闭右开的，从3开始没错，但不会到-4，而是到-5，更前面的一个位置，python支持负数索引，或者说是反向索引，从右向左从-1开始逐渐减小。<br>第一题中，做切片的时候是从1开始，到20结束，即便是右开，直到19，也仍然超出了索引范围，为什么不报错呢，这就是语言设计者自己的想法了，切片时，不论是开始位置还是结束位置，超出索引范围都不会报错，我猜，大概是由于切片是一个范围操作，这个范围内有值就切出来，没值返回空字符串就好了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-2字符串练习题&quot;&gt;&lt;a href=&quot;#1-2字符串练习题&quot; class=&quot;headerlink&quot; title=&quot;1.2字符串练习题&quot;&gt;&lt;/a&gt;1.2字符串练习题&lt;/h1&gt;&lt;h1 id=&quot;①字符串内置方法练习&quot;&gt;&lt;a href=&quot;#①字符串内置方法练习&quot; cla</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python150题day02</title>
@@ -475,98 +550,6 @@
     
     
     <category term="资源教程" scheme="https://bdta-zky.github.io/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Tomcat部署项目后，验证码不显示问题</title>
-    <link href="https://bdta-zky.github.io/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
-    <id>https://bdta-zky.github.io/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</id>
-    <published>2023-07-06T09:26:53.000Z</published>
-    <updated>2023-07-26T13:56:06.590Z</updated>
-    
-    <content type="html"><![CDATA[<p> <strong>在使用Tomcat服务器部署项目后，发现验证码不显示，在浏览器按f12查询后出现以下页面</strong></p><p><img src="https://s1.ax1x.com/2023/07/06/pC6BuW9.png" alt="pC6BuW9.png" style="zoom:33%;"><img src="https://s1.ax1x.com/2023/07/06/pC6BKzR.png" alt="pC6BKzR.png"></p><p><strong>查看源码发现一切正常</strong><img src="https://s1.ax1x.com/2023/07/06/pC6Blsx.png" alt="pC6Blsx.png"></p><p><img src="https://s1.ax1x.com/2023/07/06/pC6r0Vf.png" alt="pC6r0Vf.png"></p><p> <strong>查阅相关资料后，得到以下方法：</strong></p><blockquote><p>1.在tomcat配置文件catalina.sh文件中找到-Djava.io.tmpdir=”$CATALINA_TMPDIR”</p><p>2.然后在这一行下加入：-Djava.awt.headless=true \，一共需要在修改文件里面添加7次</p><p>3.修改好“保存”再重启tomcat后网页的验证码就可以正确显示了。</p></blockquote><p> <strong>结果然并卵，添加后依然不显示</strong></p><p><strong>之后继续一步步探索，发现了问题所在：</strong></p><blockquote><p><strong>根本原因是，不能在Tomcat目录下的temp文件夹下写入图片</strong></p></blockquote><p><img src="https://s1.ax1x.com/2023/07/06/pC6rDIS.png" alt="pC6rDIS.png"></p><p><img src="https://s1.ax1x.com/2023/07/06/pC6r62j.png" alt="pC6r62j.png"></p><p><strong>然后重新部署项目即可可以看到，验证码已正常显示</strong></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt; &lt;strong&gt;在使用Tomcat服务器部署项目后，发现验证码不显示，在浏览器按f12查询后出现以下页面&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s1.ax1x.com/2023/07/06/pC6BuW9.png&quot; alt=&quot;pC6BuW9.</summary>
-      
-    
-    
-    
-    <category term="教程" scheme="https://bdta-zky.github.io/categories/%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="资源教程" scheme="https://bdta-zky.github.io/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>合根植物（JAVA）</title>
-    <link href="https://bdta-zky.github.io/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>https://bdta-zky.github.io/%E5%90%88%E6%A0%B9%E6%A4%8D%E7%89%A9%EF%BC%88JAVA%EF%BC%89/</id>
-    <published>2023-06-09T08:34:45.000Z</published>
-    <updated>2023-07-26T13:37:52.118Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>w 星球的一个种植园，被分成 m×n 个小格子（东西方向 m 行，南北方向 n 列）。每个格子里种了一株合根植物。</p><p>这种植物有个特点，它的根可能会沿着南北或东西方向伸展，从而与另一个格子的植物合成为一体。</p><p>如果我们告诉你哪些小格子间出现了连根现象，你能说出这个园中一共有多少株合根植物吗？</p><p><strong>输入描述</strong><br>第一行，两个整数 m,n，用空格分开，表示格子的行数、列数（1≤m,n≤1000）。</p><p>接下来一行，一个整数 k (0≤k≤10^5 )，表示下面还有 k 行数据。</p><p>接下来 k 行，每行两个整数a，b，表示编号为 a 的小格子和编号为 b 的小格子合根了。</p><p>格子的编号一行一行，从上到下，从左到右编号。</p><p>比如：5×4 的小格子，编号：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2 3 4</span><br><span class="line">5 6 7 8</span><br><span class="line">9 10 11 12</span><br><span class="line">13 14 15 16</span><br><span class="line">17 18 19 20</span><br></pre></td></tr></table></figure><p><strong>输出描述</strong><br>输出植物数量。</p><p><strong>输入输出样例</strong><br><strong>示例</strong></p><p><strong>输入</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5 4</span><br><span class="line">16</span><br><span class="line">2 3</span><br><span class="line">1 5</span><br><span class="line">5 9</span><br><span class="line">4 8</span><br><span class="line">7 8</span><br><span class="line">9 10</span><br><span class="line">10 11</span><br><span class="line">11 12</span><br><span class="line">10 14</span><br><span class="line">12 16</span><br><span class="line">14 18</span><br><span class="line">17 18</span><br><span class="line">15 19</span><br><span class="line">19 20</span><br><span class="line">9 13</span><br><span class="line">13 17</span><br></pre></td></tr></table></figure><p><strong>输出</strong></p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure><p><strong>样例说明</strong></p><p><img src="https://s1.ax1x.com/2023/07/06/pC6JKxO.jpg" alt="pC6JKxO.jpg"></p><p><strong>运行限制</strong></p><ul><li>最大运行时间：2s</li><li>最大运行内存: 256M</li></ul><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"> </span><br><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">   <span class="keyword">static</span> <span class="type">int</span> n,m;       <span class="comment">//定义行列</span></span><br><span class="line">   <span class="keyword">static</span> <span class="type">int</span> []pre=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10000001</span>];    <span class="comment">//pre数组存储根（上级）</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        n=sc.nextInt();</span><br><span class="line">        m=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> k;</span><br><span class="line">        k=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> [][] arr=<span class="keyword">new</span> <span class="title class_">int</span>[k][<span class="number">2</span>];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;k;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">2</span>;j++) &#123;</span><br><span class="line">                arr[i][j]=sc.nextInt();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;                                  <span class="comment">//输入</span></span><br><span class="line">        <span class="type">int</span> x=n*m;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>;i&lt;x+<span class="number">1</span>;i++)&#123;</span><br><span class="line">            pre[i]=i;                    <span class="comment">//初始化pre数组（所有植物的根都为本身）</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;k;i++)&#123;</span><br><span class="line">            join(arr[i][<span class="number">0</span>],arr[i][<span class="number">1</span>]);    <span class="comment">//合并根</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">boolean</span> [] a=<span class="keyword">new</span> <span class="title class_">boolean</span>[x+<span class="number">1</span>];    </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;x+<span class="number">1</span>;i++)&#123;</span><br><span class="line">            a[i]=<span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>;i&lt;x+<span class="number">1</span>;i++)&#123;</span><br><span class="line">            a[find(i)]=<span class="literal">true</span>;        </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>;i&lt;x+<span class="number">1</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i])&#123;</span><br><span class="line">                sum++;            <span class="comment">//统计根的个数，进而得到有多少棵植物。</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> Integer <span class="title function_">find</span><span class="params">(<span class="type">int</span> x)</span>&#123;      <span class="comment">//查找植物的根</span></span><br><span class="line">        <span class="keyword">if</span> (x==pre[x])&#123;</span><br><span class="line">            <span class="keyword">return</span> x;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> pre[x]=find(pre[x]);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">join</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span>&#123;    <span class="comment">//如果两个植物的根不相同，那么前一个植物的根变为后一个植物。</span></span><br><span class="line">        x=find(x);</span><br><span class="line">        y=find(y);</span><br><span class="line">        <span class="keyword">if</span> (x!=y)&#123;</span><br><span class="line">            pre[x]=y;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>运用并查集的思想，将所有的合根植物的根变为一个，最终根的数量就是植物的数量。 </p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;w 星球的一个种植园，被分成 m×n 个小格子（东西方向 m 行，南北方向 n 列）。每个格子里种了一株合根植物。&lt;/p&gt;
-&lt;p&gt;这种植物有</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>方格填数（JAVA）</title>
-    <link href="https://bdta-zky.github.io/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/"/>
-    <id>https://bdta-zky.github.io/%E6%96%B9%E6%A0%BC%E5%A1%AB%E6%95%B0%EF%BC%88JAVA%EF%BC%89/</id>
-    <published>2023-06-07T09:30:15.000Z</published>
-    <updated>2023-07-06T07:23:17.461Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</p><p>如下的 10个格子</p><blockquote><p>   +–+–+–+<br>   |  |  |  |<br>+–+–+–+–+<br>|  |  |  |  |<br>+–+–+–+–+<br>|  |  |  |<br>+–+–+–+</p></blockquote><p>填入 0 ~ 9 的数字。要求：连续的两个数字不能相邻。 （左右、上下、对角都算相邻）</p><p>一共有多少种可能的填数方案？</p><p><strong>运行限制</strong></p><ul><li>最大运行时间：1s</li><li>最大运行内存: 128M</li></ul><h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> sum=<span class="number">0</span>;   <span class="comment">//存储结果</span></span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span>[][] nums=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">5</span>][<span class="number">6</span>];   <span class="comment">//用5行6列数组存储</span></span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span>[] vis=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">10</span>];      <span class="comment">//记录0-9是否使用</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        fuzhi(); </span><br><span class="line">        dfs(<span class="number">1</span>,<span class="number">2</span>);   <span class="comment">//dfs入口</span></span><br><span class="line">        System.out.println(sum);</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">fuzhi</span><span class="params">()</span>&#123;    <span class="comment">//将数组全赋值为-10避免影响对相邻是否连续的判断</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">0</span>;j&lt;<span class="number">6</span>;j++)&#123;</span><br><span class="line">                nums[i][j]=-<span class="number">10</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">panduan</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span>&#123;   <span class="comment">//对所填数是否符合要求判断（相邻是否连续）</span></span><br><span class="line">       <span class="keyword">for</span>(<span class="type">int</span> i=x-<span class="number">1</span>;i&lt;=x+<span class="number">1</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> j=y-<span class="number">1</span>;j&lt;=y+<span class="number">1</span>;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(Math.abs(nums[i][j]-nums[x][y])==<span class="number">1</span>)</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">dfs</span><span class="params">(<span class="type">int</span> x,<span class="type">int</span> y)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (x==<span class="number">3</span>&amp;&amp;y==<span class="number">4</span>)&#123;    <span class="comment">//dfs出口</span></span><br><span class="line">            sum++;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;   <span class="comment">//随机选一个数填入</span></span><br><span class="line">            <span class="keyword">if</span> (vis[i]==<span class="number">0</span>) &#123;         <span class="comment">//没使用过则填入</span></span><br><span class="line">                nums[x][y] = i;</span><br><span class="line">                vis[i]=<span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">                <span class="keyword">if</span> (!panduan(x, y)) &#123;    <span class="comment">//相邻连续则复原</span></span><br><span class="line">                    nums[x][y] = -<span class="number">10</span>;</span><br><span class="line">                    vis[i]=<span class="number">0</span>;</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (y == <span class="number">4</span>) &#123;    <span class="comment">//到第四列换行</span></span><br><span class="line">                    dfs(x + <span class="number">1</span>, <span class="number">1</span>);</span><br><span class="line">                &#125; <span class="keyword">else</span>         <span class="comment">//不换行继续向右填入</span></span><br><span class="line">                    dfs(x, y + <span class="number">1</span>);</span><br><span class="line">                vis[i] = <span class="number">0</span>;       <span class="comment">//dfs回溯</span></span><br><span class="line">                nums[x][y] = -<span class="number">10</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p><strong>用DFS解题</strong></p><p>首先我们要将题目中给的十个格子表示出来，这里我们用一个5行6列的数组（nums【5】【6】）取num【1】【2】到nums【3】【4】来表示。</p><p>首先我们先将nums【5】【6】全部赋值为-10避免影响对相邻格子里面的数是否连续的判断。</p><p>然后用vis数组存储每个数字是否使用过，接着我们就开始写dfs函数从十个数中选择任意一个数字进行判断填入，具体思路见代码中的注释。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;题目：&quot;&gt;&lt;a href=&quot;#题目：&quot; class=&quot;headerlink&quot; title=&quot;题目：&quot;&gt;&lt;/a&gt;题目：&lt;/h2&gt;&lt;p&gt;本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。&lt;/p&gt;
-&lt;p&gt;如下的 10个格子&lt;/p&gt;
-&lt;blockqu</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
     
   </entry>
   

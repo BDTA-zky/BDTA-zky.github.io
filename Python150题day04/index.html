@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Python150题day04 | 大数据科技协会-zky</title><meta name="author" content="刘浩龙"><meta name="copyright" content="刘浩龙"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="1.3列表与元组练习题①列表基础考察已知一个列表lst &#x3D; [1,2,3,4,5]1.求列表的长度2.判断6 是否在列表中3.lst + [6,7,8] 的结果是什么?4.lst*2 的结果是什么5.列表里元素的最大值是多少6.列表里元素的最小值是多少7.列表里所有元素的和是多少8.在索引1的后面新增一个的元素109.在列表的未尾新增一个元素20 解答：  \1. len(lst) \2. 6 i">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python150题day04">
+<meta property="og:url" content="https://bdta-zky.github.io/Python150%E9%A2%98day04/index.html">
+<meta property="og:site_name" content="大数据科技协会-zky">
+<meta property="og:description" content="1.3列表与元组练习题①列表基础考察已知一个列表lst &#x3D; [1,2,3,4,5]1.求列表的长度2.判断6 是否在列表中3.lst + [6,7,8] 的结果是什么?4.lst*2 的结果是什么5.列表里元素的最大值是多少6.列表里元素的最小值是多少7.列表里所有元素的和是多少8.在索引1的后面新增一个的元素109.在列表的未尾新增一个元素20 解答：  \1. len(lst) \2. 6 i">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img1.baidu.com/it/u=3860903603,4285508959&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=384">
+<meta property="article:published_time" content="2023-09-17T12:00:02.000Z">
+<meta property="article:modified_time" content="2023-09-18T12:01:43.918Z">
+<meta property="article:author" content="刘浩龙">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img1.baidu.com/it/u=3860903603,4285508959&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=384"><link rel="shortcut icon" href="https://s1.ax1x.com/2023/07/06/pC6tvad.png"><link rel="canonical" href="https://bdta-zky.github.io/Python150%E9%A2%98day04/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 刘浩龙","link":"链接: ","source":"来源: 大数据科技协会-zky","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python150题day04',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-09-18 20:01:43'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="大数据科技协会-zky" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="http://mms0.baidu.com/it/u=2453456125,3436738088&amp;fm=253&amp;app=138&amp;f=JPEG&amp;fmt=auto&amp;q=75?w=500&amp;h=523" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384')"><nav id="nav"><span id="blog-info"><a href="/" title="大数据科技协会-zky"><span class="site-name">大数据科技协会-zky</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python150题day04</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-09-17T12:00:02.000Z" title="发表于 2023-09-17 20:00:02">2023-09-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-09-18T12:01:43.918Z" title="更新于 2023-09-18 20:01:43">2023-09-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/python/">python</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">659</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Python150题day04"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-3列表与元组练习题"><a href="#1-3列表与元组练习题" class="headerlink" title="1.3列表与元组练习题"></a>1.3列表与元组练习题</h1><h1 id="①列表基础考察"><a href="#①列表基础考察" class="headerlink" title="①列表基础考察"></a>①列表基础考察</h1><p>已知一个列表<strong>lst = [1,2,3,4,5]</strong><br>1.求列表的长度<br>2.判断6 是否在列表中<br>3.lst + [6,7,8] 的结果是什么?<br>4.lst*2 的结果是什么<br>5.列表里元素的最大值是多少<br>6.列表里元素的最小值是多少<br>7.列表里所有元素的和是多少<br>8.在索引1的后面新增一个的元素109.在列表的未尾新增一个元素20</p>
+<p><strong>解答：</strong></p>
+<blockquote>
+<p>\1. len(lst)</p>
+<p>\2. 6 in lst</p>
+<p>\3. [1,2,3,4,5,6,7,8]</p>
+<p>\4. [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]</p>
+<p>\5. max(lst)</p>
+<p>\6. min(lst)</p>
+<p>\7. sum(lst)</p>
+<p>\8. lst.insert(1, 10)</p>
+<p>\9. lst.append(20)</p>
+</blockquote>
+<h1 id="②修改列表"><a href="#②修改列表" class="headerlink" title="②修改列表"></a>②修改列表</h1><p><strong>lst = [1, [4, 6],True]</strong></p>
+<p><strong>请将列表里所有数字修改成原来的两倍</strong></p>
+<p>答案：</p>
+<blockquote>
+<p>lst[0] = 2</p>
+<p>lst[1][0] = 4</p>
+<p>lst[1][1] = 12</p>
+</blockquote>
+<p><strong>你以为存在一个函数，其功能便是将列表里所有的数据都变成原来的两倍，这样才显得变成语言是一个非常神奇的东西，但是很遗憾的告诉你，那些神奇的东西都是程序员自己实现的。</strong></p>
+<p><strong>想要修改列表里的数据，必须通过索引对其重新赋值，上面的方法很low，你也可以写一个区数来实现这个功能，我们假设要处理的列表里只int,float,bool,和list数据，不管嵌套基层list.这个函数都应该能正确处理，下面是一段示例代码</strong></p>
+<blockquote>
+<p>def double_list(lst):</p>
+<p>​    for index,item in enumerate(lst):<br>​        if isinstance(item,bool):</p>
+<p>​            continue</p>
+<p>​        if isinstance(item,(int,float)):</p>
+<p>​            lst[index]*=2</p>
+<p>​        if isinstance(item,list):</p>
+<p>​            double_list(item)</p>
+<p>if <em>name</em> == ‘<em>main</em>‘:</p>
+<p>​    lst = [1,[4,6],True]</p>
+<p>​    double_list(lst)</p>
+<p>​    print(lst)</p>
+</blockquote>
+<h1 id="③元组概念考察"><a href="#③元组概念考察" class="headerlink" title="③元组概念考察"></a>③元组概念考察</h1><p><strong>写出下面代码的执行结果和最终结果的类型</strong></p>
+<p>\1. (1,2)*2</p>
+<p>\2. (1,)*2</p>
+<p>\3. (1)*2</p>
+<p><strong>解答：</strong></p>
+<blockquote>
+<p>\1. (1, 2, 1, 2)</p>
+<p>\2. (1, 1)</p>
+<p>\3. 2</p>
+</blockquote>
+<p>注意第2和第3个，当元组里只有一个数据时，必须有逗号，否则就变成了第三题的形式：<strong>1*2</strong></p>
+<p><strong>当元组中只有一个数据时，如果不省略了逗号，那么小括号的作用就不再是表示元组，而是表示运算优先级</strong></p>
+<h1 id="④合并列表"><a href="#④合并列表" class="headerlink" title="④合并列表"></a><strong>④合并列表</strong></h1><p>lst = [1,2,3]</p>
+<p>lst2 = [4,5,6]</p>
+<p><strong>不使用＋号运算符，将lst2合并到lst的末尾，并思考，这个过程中，是否产生了新的列表</strong></p>
+<p><strong>解答：</strong></p>
+<blockquote>
+<p>lst.extend(lst2)</p>
+</blockquote>
+<p><strong>这个过程中不会产生新的列表，最直观的检验方式就是print(id(lst)),合并前后，lst的内存地址都没有发生变化，只是列表里的内容发生了变化</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://bdta-zky.github.io">刘浩龙</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://bdta-zky.github.io/Python150%E9%A2%98day04/">https://bdta-zky.github.io/Python150题day04/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://bdta-zky.github.io" target="_blank">大数据科技协会-zky</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/python/">python</a></div><div class="post_share"><div class="social-share" data-image="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/Python150%E9%A2%98day05/" title="Python150题day05"><img class="cover" src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Python150题day05</div></div></a></div><div class="next-post pull-right"><a href="/Python150%E9%A2%98day03/" title="Python150题day03"><img class="cover" src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Python150题day03</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/Python150%E9%A2%98day05/" title="Python150题day05"><img class="cover" src="https://img1.baidu.com/it/u=3860903603,4285508959&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=384" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-18</div><div class="title">Python150题day05</div></div></a></div><div><a href="/Python150%E9%A2%98day03/" title="Python150题day03"><img class="cover" src="https://img1.baidu.com/it/u=3860903603,4285508959&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=384" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-16</div><div class="title">Python150题day03</div></div></a></div><div><a href="/Python150%E9%A2%98day02/" title="Python150题day02"><img class="cover" src="https://img1.baidu.com/it/u=3860903603,4285508959&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=384" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-15</div><div class="title">Python150题day02</div></div></a></div><div><a href="/Python150%E9%A2%98day01/" title="Python150题day01"><img class="cover" src="https://img1.baidu.com/it/u=3860903603,4285508959&fm=253&fmt=auto&app=120&f=JPEG?w=960&h=384" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-14</div><div class="title">Python150题day01</div></div></a></div><div><a href="/%E8%93%9D%E6%A1%A5%E6%9D%AF--%E7%8C%9C%E7%94%9F%E6%97%A5%EF%BC%88python%EF%BC%89/" title="蓝桥杯--猜生日（python）"><img class="cover" src="https://img0.baidu.com/it/u=293428944,389988821&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-05-06</div><div class="title">蓝桥杯--猜生日（python）</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://mms0.baidu.com/it/u=2453456125,3436738088&amp;fm=253&amp;app=138&amp;f=JPEG&amp;fmt=auto&amp;q=75?w=500&amp;h=523" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">刘浩龙</div><div class="author-info__description">大数据科技协会官方博客</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">94</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://qm.qq.com/q/GGqESJxMiu&amp;personal_qrcode_source=3" target="_blank" title="QQ"><i class="fa-brands fa-qq"></i></a><a class="social-icon" href="https://pic.imgdb.cn/item/64a914651ddac507ccca84a8.jpg" target="_blank" title="WeChat"><i class="fa-brands fa-weixin"></i></a><a class="social-icon" href="mailto:2793217027.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎进入大数据科技协会官方博客！! <style>.card-announcement .social-button {margin:0.6rem 0 0 0; text-align:center;} .card-announcement .social-button a {display:block; background-color:var(--btn-bg); color:var(--btn-color); text-align:center; line-height:2.4; margin:4px 0;}</style> <div class="social-button"> <a class="button--animated" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=h8DshHc1A-SWoJAQl_VwWyJ4dHJKUlyy&authKey=NROFgL8YFUlvEn6SK5rrIPciJyzu1%2Bcubvgiafe1edz5MmWPEe4NJsGB%2FGuw%2BE4m&noverify=0&group_code=675710085" target="_blank">👉 22级成员群 👈</a> <a class="button--animated" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=oIqDFvZHADN1A4WvSsl_agftsupd6DY0&authKey=3gEv2PS3IIfC0U0ST9EjM4bY52lS%2Bh8OUZjUPniyqzCDEnXgZytvSNLgWZaoYBg4&noverify=0&group_code=883850079" target="_blank">👉 23级成员群 👈</a> <a class="button--animated" href="https://qm.qq.com/q/GGqESJxMiu&personal_qrcode_source=3" rel="external nofollow noreferrer" target="_blank"> 👉 21级会长QQ 👈</a> <a class="button--animated" href="https://qm.qq.com/q/GzQREYtbOu&personal_qrcode_source=4" rel="external nofollow noreferrer" target="_blank"> 👉 22级会长QQ 👈</a> </div></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-3%E5%88%97%E8%A1%A8%E4%B8%8E%E5%85%83%E7%BB%84%E7%BB%83%E4%B9%A0%E9%A2%98"><span class="toc-number">1.</span> <span class="toc-text">1.3列表与元组练习题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%91%A0%E5%88%97%E8%A1%A8%E5%9F%BA%E7%A1%80%E8%80%83%E5%AF%9F"><span class="toc-number">2.</span> <span class="toc-text">①列表基础考察</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%91%A1%E4%BF%AE%E6%94%B9%E5%88%97%E8%A1%A8"><span class="toc-number">3.</span> <span class="toc-text">②修改列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%91%A2%E5%85%83%E7%BB%84%E6%A6%82%E5%BF%B5%E8%80%83%E5%AF%9F"><span class="toc-number">4.</span> <span class="toc-text">③元组概念考察</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E2%91%A3%E5%90%88%E5%B9%B6%E5%88%97%E8%A1%A8"><span class="toc-number">5.</span> <span class="toc-text">④合并列表</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day05/" title="Python150题day05"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day05"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day05/" title="Python150题day05">Python150题day05</a><time datetime="2023-09-18T12:00:09.000Z" title="发表于 2023-09-18 20:00:09">2023-09-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day04/" title="Python150题day04"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day04"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day04/" title="Python150题day04">Python150题day04</a><time datetime="2023-09-17T12:00:02.000Z" title="发表于 2023-09-17 20:00:02">2023-09-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day03/" title="Python150题day03"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day03"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day03/" title="Python150题day03">Python150题day03</a><time datetime="2023-09-16T11:59:35.000Z" title="发表于 2023-09-16 19:59:35">2023-09-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day02/" title="Python150题day02"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day02"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day02/" title="Python150题day02">Python150题day02</a><time datetime="2023-09-15T07:59:10.000Z" title="发表于 2023-09-15 15:59:10">2023-09-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/Python150%E9%A2%98day01/" title="Python150题day01"><img src="https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Python150题day01"/></a><div class="content"><a class="title" href="/Python150%E9%A2%98day01/" title="Python150题day01">Python150题day01</a><time datetime="2023-09-14T10:42:50.000Z" title="发表于 2023-09-14 18:42:50">2023-09-14</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://img1.baidu.com/it/u=3860903603,4285508959&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=960&amp;h=384')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 刘浩龙</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div><script async>window.onload=function(){var a=document.createElement('script'),b=document.getElementsByTagName('script')[0];a.type='text/javascript',a.async=!0,a.src='/sw-register.js?v='+Date.now(),b.parentNode.insertBefore(a,b)};</script></body></html>
