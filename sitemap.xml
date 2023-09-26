@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88/</loc>
+    
+    <lastmod>2023-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</loc>
+    
+    <lastmod>2023-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bdta-zky.github.io/%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F%EF%BC%88java%EF%BC%89/</loc>
+    
+    <lastmod>2023-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://bdta-zky.github.io/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89/</loc>
+    
+    <lastmod>2023-09-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bdta-zky.github.io/Tomcat%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%E5%90%8E%EF%BC%8C%E9%AA%8C%E8%AF%81%E7%A0%81%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2023-09-26</lastmod>
@@ -66,15 +102,6 @@
   
   <url>
     <loc>https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B2-1%20%E5%95%86%E5%93%81%E5%85%A5%E5%BA%93%EF%BC%88java%EF%BC%89/</loc>
-    
-    <lastmod>2023-09-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88/</loc>
     
     <lastmod>2023-09-26</lastmod>
     
@@ -542,24 +569,6 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F%EF%BC%88java%EF%BC%89/</loc>
-    
-    <lastmod>2023-09-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%98%B6%E4%B9%98%E8%AE%A1%E7%AE%97%EF%BC%88%E4%BA%8C%E5%88%86%EF%BC%89/</loc>
-    
-    <lastmod>2023-09-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://bdta-zky.github.io/%E8%93%9D%E8%82%BD%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88JAVA%EF%BC%89/</loc>
     
     <lastmod>2023-09-26</lastmod>
@@ -705,15 +714,6 @@
   
   <url>
     <loc>https://bdta-zky.github.io/%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C%EF%BC%88JAVA%EF%BC%89/</loc>
-    
-    <lastmod>2023-09-26</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://bdta-zky.github.io/%E9%AA%8C%E8%AF%81%E7%A0%81%EF%BC%88random%E7%B1%BB%EF%BC%89/</loc>
     
     <lastmod>2023-09-26</lastmod>
     
@@ -963,14 +963,14 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/tags/%E6%9A%B4%E5%8A%9B/</loc>
+    <loc>https://bdta-zky.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/</loc>
+    <loc>https://bdta-zky.github.io/tags/%E6%9A%B4%E5%8A%9B/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -998,7 +998,7 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98a/</loc>
+    <loc>https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1047,14 +1047,14 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/tags/%E6%90%9C%E7%B4%A2/</loc>
+    <loc>https://bdta-zky.github.io/tags/%E6%9E%9A%E4%B8%BE/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/tags/%E6%9E%9A%E4%B8%BE/</loc>
+    <loc>https://bdta-zky.github.io/tags/%E6%90%9C%E7%B4%A2/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1154,13 +1154,6 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2022%E5%B9%B4%E5%9B%BD%E8%B5%9B/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -1203,20 +1196,6 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2021%E5%B9%B4%E6%A8%A1%E6%8B%9F%E8%B5%9B/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2019%E5%B9%B4%E5%9B%BD%E8%B5%9B/</loc>
-    <lastmod>2023-09-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bdta-zky.github.io/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2020%E5%B9%B4%E7%9C%81%E8%B5%9B/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -1252,14 +1231,14 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2019%E5%B9%B4%E7%9C%81%E8%B5%9B/</loc>
+    <loc>https://bdta-zky.github.io/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2022%E5%B9%B4%E7%9C%81%E8%B5%9B/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2022%E5%B9%B4%E7%9C%81%E8%B5%9B/</loc>
+    <loc>https://bdta-zky.github.io/categories/python/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2019%E5%B9%B4%E7%9C%81%E8%B5%9B/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1280,7 +1259,14 @@
   </url>
   
   <url>
-    <loc>https://bdta-zky.github.io/categories/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/</loc>
+    <loc>https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2021%E5%B9%B4%E6%A8%A1%E6%8B%9F%E8%B5%9B/</loc>
+    <lastmod>2023-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2019%E5%B9%B4%E5%9B%BD%E8%B5%9B/</loc>
     <lastmod>2023-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
