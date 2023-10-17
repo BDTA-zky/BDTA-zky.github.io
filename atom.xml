@@ -6,7 +6,7 @@
   <link href="https://bdta-zky.github.io/atom.xml" rel="self"/>
   
   <link href="https://bdta-zky.github.io/"/>
-  <updated>2023-10-17T09:08:16.474Z</updated>
+  <updated>2023-10-17T09:50:45.218Z</updated>
   <id>https://bdta-zky.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://bdta-zky.github.io/test/"/>
+    <id>https://bdta-zky.github.io/test/</id>
+    <published>2023-10-17T09:50:19.000Z</published>
+    <updated>2023-10-17T09:50:45.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>helloworld</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;helloworld&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Python150题day05</title>
@@ -569,31 +590,6 @@
     <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
     
     <category term="算法模拟题" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hexo-offline-popup（提升hexo框架博客访问速度）</title>
-    <link href="https://bdta-zky.github.io/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/"/>
-    <id>https://bdta-zky.github.io/hexo-offline-popup%EF%BC%88%E6%8F%90%E5%8D%87hexo%E6%A1%86%E6%9E%B6%E5%8D%9A%E5%AE%A2%E8%AE%BF%E9%97%AE%E9%80%9F%E5%BA%A6%EF%BC%89/</id>
-    <published>2023-07-06T10:32:54.000Z</published>
-    <updated>2023-10-17T09:08:16.477Z</updated>
-    
-    <content type="html"><![CDATA[<p>采用hexo+github的方式搭建博客的，访问速度是比较慢的。部署后访问有些甚至要加载十几秒，这对用户来说，是非常伤脑筋的，因为托管网站github是外网，所以访问慢是必然的。怎样解决这个问题，提升我们的访问速度呢?</p><p>最近在GitHub上发现一个名为hexo-offline-popup的插件，可以加快hexo的加载速度，解决这种问题。</p><h2 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a><strong>官方介绍</strong></h2><p><strong>hexo-offline-popup</strong> 是一个 hexo 插件， 它可加速您的Hexo网站的加载速度，以及网站内容更新弹窗提示。</p><p>该插件基于停止维护已久的hexo-service-worker插件，并在它的基础上加以改进。</p><h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>在hexo的根目录下打开<strong>git bash</strong>输入如下指令下载安装</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-offline-popup --save</span><br></pre></td></tr></table></figure><p>如果npm i hexo-offline-popup –save命令执行得很慢，可能是由于网络连接较慢或npm仓库的响应时间较长导致的。您可以尝试以下方法来<strong>加快安装速度</strong>：</p><p><strong>使用淘宝镜像源：</strong>淘宝镜像源是一个国内的npm镜像源，可以加速npm包的下载。您可以使用以下命令将npm的镜像源设置为淘宝镜像：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm config set registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure><p>然后再次运行安装命令：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i hexo-offline-popup --save</span><br></pre></td></tr></table></figure><p>安装后, 运行 <strong>hexo clean &amp;&amp; hexo generate</strong> 激活插件. </p><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>如果网站提供的所有内容来自原始服务器，你不需要添加任何配置。只需安装和运行 <strong>hexo clean &amp;&amp; hexo generate</strong>。</p><p>在博客根目录的 _config.yml 中添加以下配置:</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># offline config passed to sw-precache.</span><br><span class="line">service_worker:</span><br><span class="line">  maximumFileSizeToCacheInBytes: 5242880</span><br><span class="line">  staticFileGlobs:</span><br><span class="line">  - public/**/*.&#123;js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2&#125;</span><br><span class="line">  stripPrefix: public</span><br><span class="line">  verbose: true</span><br></pre></td></tr></table></figure><p>如果你有CDN资源，例：</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://cdn.some.com/some/path/some-script.js</span><br><span class="line"></span><br><span class="line">http://cdn.some-else.org/some/path/deeply/some-style.css</span><br></pre></td></tr></table></figure><p>将此配置添加到根目录的 _config.yml</p><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">service_worker:</span><br><span class="line">  runtimeCaching:</span><br><span class="line">    - urlPattern: /*</span><br><span class="line">      handler: cacheFirst</span><br><span class="line">      options:</span><br><span class="line">        origin: cdn.some.com</span><br><span class="line">    - urlPattern: /*</span><br><span class="line">      handler: cacheFirst</span><br><span class="line">      options:</span><br><span class="line">        origin: cdn.some-else.org</span><br></pre></td></tr></table></figure><blockquote><p>附上GitHub仓库地址：<a href="https://github.com/Colsrch/hexo-offline-popup">Colsrch/hexo-offline-popup: 一个增强Hexo站点的插件 (github.com)</a></p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;采用hexo+github的方式搭建博客的，访问速度是比较慢的。部署后访问有些甚至要加载十几秒，这对用户来说，是非常伤脑筋的，因为托管网站github是外网，所以访问慢是必然的。怎样解决这个问题，提升我们的访问速度呢?&lt;/p&gt;
-&lt;p&gt;最近在GitHub上发现一个名为hexo</summary>
-      
-    
-    
-    
-    <category term="资源教程" scheme="https://bdta-zky.github.io/categories/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="资源教程" scheme="https://bdta-zky.github.io/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
     
   </entry>
   
