@@ -6,7 +6,7 @@
   <link href="https://bdta-zky.github.io/atom.xml" rel="self"/>
   
   <link href="https://bdta-zky.github.io/"/>
-  <updated>2023-12-12T11:06:27.222Z</updated>
+  <updated>2023-12-24T14:09:29.126Z</updated>
   <id>https://bdta-zky.github.io/</id>
   
   <author>
@@ -15,6 +15,401 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Python150题day20</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day20/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day20/</id>
+    <published>2023-12-24T13:59:35.000Z</published>
+    <updated>2023-12-24T14:09:29.126Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="4-7-startswith"><a href="#4-7-startswith" class="headerlink" title="4.7 startswith"></a><strong>4.7 startswith</strong></h2><p>“startswith”是Python字符串方法之一，用于检查字符串是否以特定的前缀开始。这个方法通常用于条件检查，以确定一个字符串是否以另一个字符串作为前缀。</p><p>这是startswith方法的语法：</p><blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">str.startswith(prefix[, start[, end]]) </span><br></pre></td></tr></table></figure></blockquote><ul><li><code>str</code> 是要检查的字符串。</li><li><code>prefix</code> 是要检查的前缀字符串。</li><li><code>start</code> （可选）是可选的开始搜索的起始位置。</li><li><code>end</code> （可选）是可选的结束搜索的结束位置。</li></ul><p>startswith方法返回一个布尔值，如果字符串以指定的前缀开始，则返回True，否则返回False。</p><p><strong>要求：</strong></p><p>实现函数is startswith，如果字符串source是以substr开头的，则函数返回True,反之返回<br> False</p><p><strong>代码：</strong></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">is_startswith</span>(<span class="params">source,substr</span>):</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">判断字符串source是否以substr开头</span></span><br><span class="line"><span class="string">:paramsource:</span></span><br><span class="line"><span class="string">:paramsubstr:</span></span><br><span class="line"><span class="string">:return:</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span>source<span class="keyword">or</span> <span class="keyword">not</span>substr:</span><br><span class="line"><span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">len</span>(substr) &gt; <span class="built_in">len</span>(source):</span><br><span class="line"><span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">for</span>index,item<span class="keyword">in</span> <span class="built_in">enumerate</span>(substr):</span><br><span class="line"><span class="keyword">if</span>item!=source[index]:</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="literal">True</span><span class="comment">#如果for循环不是因为break结束的，就会进⼊到else语句块</span></span><br><span class="line"><span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><strong>思路：</strong></p><p>函数首先要判断传入的参数是否合法，这里默认传入的都是字符串，那么我们要需要判断字符串是否有空串的情况<br> 如果substr的长度大于source的长度，直接返回False<br> 从索引0开始，遍历substr,从source上获得相同索引的字符，两者进行比较，只要有一个字符不相同，则可以立即返回False</p><h2 id="4-8-endswith"><a href="#4-8-endswith" class="headerlink" title="4.8 endswith"></a>4.8 endswith</h2><p><code>&quot;endswith&quot;</code>是Python字符串方法之一，用于检查字符串是否以特定的后缀结尾。这个方法通常用于条件检查，以确定一个字符串是否以另一个字符串作为后缀。</p><p>这是<code>endswith</code>方法的语法：</p><blockquote><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">str.endswith(suffix[, start[, end]]) </span><br></pre></td></tr></table></figure></blockquote><ul><li><code>str</code> 是要检查的字符串。</li><li><code>suffix</code> 是要检查的后缀字符串。</li><li><code>start</code> （可选）是可选的开始搜索的起始位置。</li><li><code>end</code> （可选）是可选的结束搜索的结束位置。</li></ul><p><code>endswith</code>方法返回一个布尔值，如果字符串以指定的后缀结尾，则返回True，否则返回False。</p><p><strong>要求：</strong></p><p>实现函数is endswith，判断字符串source是否以substr结尾</p><p><strong>代码：</strong></p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">is_endswith</span>(<span class="params">source,substr</span>):</span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">判断字符串source是否以substr结尾</span></span><br><span class="line"><span class="string">:paramsource:</span></span><br><span class="line"><span class="string">:paramsubstr:</span></span><br><span class="line"><span class="string">:return:</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span>source<span class="keyword">or</span> <span class="keyword">not</span>substr:</span><br><span class="line"><span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"><span class="keyword">if</span> <span class="built_in">len</span>(substr) &gt; <span class="built_in">len</span>(source):</span><br><span class="line"><span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">start_index= <span class="built_in">len</span>(source) - <span class="built_in">len</span>(substr)</span><br><span class="line"><span class="keyword">for</span>index<span class="keyword">in</span> <span class="built_in">range</span>(start_index, <span class="built_in">len</span>(source)):</span><br><span class="line"><span class="keyword">if</span>source[index] !=substr[index-start_index]:</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line"><span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line"><span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p><strong>思路：</strong></p><p>这个练习题的解法其实和is startswith函数相差无几，所不同的是，在is startswith函数中要从索引0开始进行相同位置字符的比较，而现在，是要判断是否以substr结尾，所以我们从索引len(source) - len(substr)开始逐一进行比较</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;4-7-startswith&quot;&gt;&lt;a href=&quot;#4-7-startswith&quot; class=&quot;headerlink&quot; title=&quot;4.7 startswith&quot;&gt;&lt;/a&gt;&lt;strong&gt;4.7 startswith&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;“star</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day19</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day19/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day19/</id>
+    <published>2023-12-24T13:59:27.000Z</published>
+    <updated>2023-12-24T14:08:47.785Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="4-4-字符串大写转小写"><a href="#4-4-字符串大写转小写" class="headerlink" title="4.4 字符串大写转小写"></a>4.4 字符串大写转小写</h2><p>在Python中，可以使用<code>lower()</code>方法将字符串中的大写字母转换为小写字母。<code>lower()</code>方法返回一个新的字符串，原始字符串本身不会被修改。</p><p>下面是一个示例：</p><blockquote><p>text = “HELLO, WORLD!”<br>lower_text = text.lower()<br>print(lower_text)  # 输出：hello, world!</p></blockquote><p>在上面的示例中，我们将字符串<code>text</code>中的大写字母转换为小写字母，并将转换后的新字符串赋值给<code>lower_text</code>变量。</p><p>需要注意的是，<code>lower()</code>方法只能将大写字母转换为小写字母，对于已经是小写字母或其他字符的部分，不会有任何影响。</p><p>另外，如果想将字符串中的小写字母转换为大写字母，可以使用**<code>upper()</code>**方法。</p><h2 id="4-5-判断字符串是否全部为小写字母"><a href="#4-5-判断字符串是否全部为小写字母" class="headerlink" title="4.5 判断字符串是否全部为小写字母"></a>4.5 判断字符串是否全部为小写字母</h2><p>在Python中，可以使用<code>islower()</code>方法判断字符串中的所有字母是否都是小写字母。如果字符串中至少有一个非小写字母，<code>islower()</code>方法返回<code>False</code>，否则返回<code>True</code>。</p><p>下面是一个示例：</p><blockquote><p>text1 = “hello, world!”<br>text2 = “Hello, World!”<br>print(text1.islower())  # 输出：True<br>print(text2.islower())  # 输出：False</p></blockquote><p>在上面的示例中，我们分别使用<code>islower()</code>方法判断字符串<code>text1</code>和<code>text2</code>中的所有字母是否都是小写字母。由于<code>text1</code>中的所有字母都是小写字母，因此<code>islower()</code>方法返回<code>True</code>；而<code>text2</code>中包含大写字母，因此<code>islower()</code>方法返回<code>False</code>。</p><p>需要注意的是，<code>islower()</code>方法只能用于判断字符串中的字母是否都是小写字母，对于其他字符，比如数字、标点符号等，不会有任何影响。</p><p>另外，如果想判断字符串中的所有字母是否都是大写字母，可以使用<code>**isupper()**</code>方法。</p><h2 id="4-6-isdigit判断是否只包含数字"><a href="#4-6-isdigit判断是否只包含数字" class="headerlink" title="4.6 isdigit判断是否只包含数字"></a>4.6 isdigit判断是否只包含数字</h2><p>在Python中，可以使用<code>isdigit()</code>方法判断一个字符串是否只包含数字字符。如果字符串中只包含数字字符，<code>isdigit()</code>方法返回<code>True</code>，否则返回<code>False</code>。</p><p>下面是一个示例：</p><blockquote><p>text1 = “12345”<br>text2 = “12.345”<br>print(text1.isdigit())  # 输出：True<br>print(text2.isdigit())  # 输出：False</p></blockquote><p>在上面的示例中，我们分别使用<code>isdigit()</code>方法判断字符串<code>text1</code>和<code>text2</code>是否只包含数字字符。由于<code>text1</code>中只包含数字字符，因此<code>isdigit()</code>方法返回<code>True</code>；而<code>text2</code>中包含小数点，因此<code>isdigit()</code>方法返回<code>False</code>。</p><p>需要注意的是，<code>isdigit()</code>方法只能用于判断字符串中是否只包含数字字符，对于其他字符，比如字母、标点符号等，不会有任何影响。</p><p>另外，如果想判断一个字符串是否只包含字母字符，可以使用<code>isalpha()</code>方法；如果想判断一个字符串是否只包含数字和字母字符，可以使用<code>isalnum()</code>方法。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;4-4-字符串大写转小写&quot;&gt;&lt;a href=&quot;#4-4-字符串大写转小写&quot; class=&quot;headerlink&quot; title=&quot;4.4 字符串大写转小写&quot;&gt;&lt;/a&gt;4.4 字符串大写转小写&lt;/h2&gt;&lt;p&gt;在Python中，可以使用&lt;code&gt;lower()&lt;/co</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day18</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day18/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day18/</id>
+    <published>2023-12-24T13:59:21.000Z</published>
+    <updated>2023-12-24T14:08:37.952Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="4-字符串方法"><a href="#4-字符串方法" class="headerlink" title="4.字符串方法"></a>4.字符串方法</h1><h2 id="4-1-find"><a href="#4-1-find" class="headerlink" title="4.1 find"></a>4.1 find</h2><p>在Python中，<code>find()</code>方法用于在字符串中查找子字符串，并返回子字符串第一次出现的索引位置。如果找不到子字符串，<code>find()</code>方法返回-1。</p><blockquote><p>str.find(sub, start, end)</p></blockquote><p>其中，<code>str</code>是要搜索的字符串，<code>sub</code>是要查找的子字符串。<code>start</code>和<code>end</code>是可选参数，用于指定搜索的起始和结束位置。</p><p>下面是一个示例：</p><blockquote><p>sentence = “Hello, world!”<br>index = sentence.find(“world”)<br>print(index)  # 输出：7</p></blockquote><p>在上面的示例中，我们在字符串<code>sentence</code>中查找子字符串”world”，并将其第一次出现的索引位置打印出来。</p><p>需要注意的是，<code>find()</code>方法区分大小写。如果要进行不区分大小写的搜索，可以使用<code>lower()</code>或<code>upper()</code>方法将字符串转换为统一的大小写，然后再进行搜索。</p><p>此外，还有其他类似的方法可用于在字符串中查找子字符串，如<code>index()</code>方法和<code>rfind()</code>方法。<code>index()</code>方法与<code>find()</code>方法类似，但如果找不到子字符串，会引发<code>ValueError</code>异常。<code>rfind()</code>方法与<code>find()</code>方法类似，但从字符串的末尾开始搜索子字符串。</p><h2 id="4-2-replace"><a href="#4-2-replace" class="headerlink" title="4.2 replace"></a>4.2 replace</h2><p>在Python中，<code>replace()</code>方法用于替换字符串中的子字符串。</p><p><code>replace()</code>方法的语法如下：</p><blockquote><p>str.replace(old, new, count)</p></blockquote><p>其中，<code>str</code>是要进行替换操作的字符串，<code>old</code>是要被替换的子字符串，<code>new</code>是替换后的新字符串。<code>count</code>是可选参数，用于指定替换的次数。</p><p>下面是一个示例：</p><blockquote><p>sentence = “Hello, world!”<br>new_sentence = sentence.replace(“world”, “Python”)<br>print(new_sentence)  # 输出：Hello, Python!</p></blockquote><p>在上面的示例中，我们将字符串<code>sentence</code>中的子字符串”world”替换为”Python”，并将替换后的新字符串赋值给<code>new_sentence</code>变量。</p><p>需要注意的是，<code>replace()</code>方法返回一个新的字符串，原始字符串本身不会被修改。如果要对原始字符串进行修改，可以将结果重新赋值给原始字符串变量。</p><p>另外，如果不指定<code>count</code>参数，<code>replace()</code>方法会替换所有匹配的子字符串。如果指定了<code>count</code>参数，只会替换前<code>count</code>个匹配的子字符串。</p><h2 id="4-3-split"><a href="#4-3-split" class="headerlink" title="4.3 split"></a>4.3 split</h2><p>在Python中，<code>split()</code>方法用于将字符串分割成多个子字符串，返回一个包含分割后子字符串的列表。</p><p><code>split()</code>方法的语法如下：</p><blockquote><p>str.split(sep, maxsplit)</p></blockquote><p>其中，<code>str</code>是要进行分割操作的字符串，<code>sep</code>是分隔符，默认情况下是空格。<code>maxsplit</code>是可选参数，用于指定最多分割的次数。</p><p>下面是一个示例：</p><blockquote><p>sentence = “Hello, world!”<br>words = sentence.split()<br>print(words)  # 输出：[‘Hello,’, ‘world!’]</p></blockquote><p>在上面的示例中，我们将字符串<code>sentence</code>分割成多个子字符串，以空格为分隔符。由于<code>sentence</code>中只包含两个单词，因此<code>split()</code>方法返回一个包含两个元素的列表。</p><p>需要注意的是，如果不指定分隔符，<code>split()</code>方法会以空格为分隔符。如果指定了分隔符，<code>split()</code>方法会使用指定的分隔符进行分割。</p><p>另外，如果指定了<code>maxsplit</code>参数，<code>split()</code>方法会最多分割<code>maxsplit</code>次。如果不指定<code>maxsplit</code>参数，则会分割所有符合条件的子字符串。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;4-字符串方法&quot;&gt;&lt;a href=&quot;#4-字符串方法&quot; class=&quot;headerlink&quot; title=&quot;4.字符串方法&quot;&gt;&lt;/a&gt;4.字符串方法&lt;/h1&gt;&lt;h2 id=&quot;4-1-find&quot;&gt;&lt;a href=&quot;#4-1-find&quot; class=&quot;headerli</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day17</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day17/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day17/</id>
+    <published>2023-12-24T13:59:16.000Z</published>
+    <updated>2023-12-24T14:08:24.329Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="3-9-enumerate"><a href="#3-9-enumerate" class="headerlink" title="3.9 enumerate"></a>3.9 enumerate</h1><p>enumerate()函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在for循环当中，下面是使用示例：</p><blockquote><p>lst = [‘a’, ‘b’, ‘c’]</p><p>for index, item in enumerate(lst):</p><p>​    print(index, item)</p></blockquote><p>程序输出：</p><blockquote><p>0 a</p><p>1 b</p><p>2 c</p></blockquote><p><strong>仿造该功能实现下面的函数:</strong></p><blockquote><p>def my_enumerate(lst):</p><p>​    “””</p><p>​    实现和enumerate 类似的功能</p><p>​    :param lst:</p><p>​    :return:</p><p>​    “””</p><p>​    pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>def my_enumerate(lst):</p><p>​    for i in range(len(lst)):</p><p>​        yield i,lst[i]</p><p>lst = [‘a’,’b’,’c’]</p><p>for index,item in my_enumerage(lst):</p><p>​    print(index,item)</p></blockquote><p><strong>思路：</strong></p><p>这个函数需要对<strong>生成器</strong>有一定的理解和认识。一个函数里出现了<strong>yield关键字</strong>，那么这个函数就是生成器函数，该函数返回的是一个生成器。</p><p>yield和return有着相似的功能，都会将数据返回给调用者，<strong>不同之处在于，return执行后，函数结束了，而yield执行后，会保留当前的状态，等到下一次执行时，恢复之前的状态，继续执行。</strong></p><p>在函数内部，使用for循环通过索引</p><p>遍历lst，使yield返回索引和 索引位置上的元素</p><p><strong>tips：</strong></p><blockquote><p><strong><code>yield</code></strong> 是一个关键字，用于<strong>定义生成器函数</strong>。生成器函数是一种特殊类型的函数，它可以暂停执行并在需要时产生一个值（或一系列值），然后再继续执行。</p><p>当在生成器函数中使用 <code>yield</code> 语句时，它会将一个值返回给调用者，并且当前的函数状态会被保存下来。下次调用生成器函数时，函数会从上次暂停的位置继续执行，而不是从头开始执行。这使得生成器函数能够逐步生成值，而不需要一次性计算和返回所有的值。以下是一个简单的示例，展示了生成器函数的使用：</p><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">number_generator</span>():</span><br><span class="line">    <span class="keyword">yield</span> <span class="number">1</span></span><br><span class="line">    <span class="keyword">yield</span> <span class="number">2</span></span><br><span class="line">    <span class="keyword">yield</span> <span class="number">3</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建一个生成器对象</span></span><br><span class="line">generator = number_generator()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 通过调用 next() 函数获取生成器的下一个值</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(generator))  <span class="comment"># 输出: 1</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(generator))  <span class="comment"># 输出: 2</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">next</span>(generator))  <span class="comment"># 输出: 3</span></span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>在上面的示例中，<code>number_generator()</code> 是一个生成器函数，它通过 <code>yield</code> 语句逐步生成数字 1、2 和 3。每次调用 <code>next()</code> 函数时，生成器函数会从上次暂停的位置继续执行，并返回下一个生成的值。</p><p>生成器函数非常有用，特别是在处理大量数据或需要逐步生成结果的情况下。通过使用生成器函数，可以减少内存消耗，并且可以在需要时按需生成值，而不必一次性生成所有的值。</p></blockquote><h1 id="3-10-all"><a href="#3-10-all" class="headerlink" title="3.10 all"></a>3.10 all</h1><p>all()函数用于判断给定的可迭代参数iterable中的所有元素是否都为True，示例代码如下：</p><blockquote><p>lst = [True, False, True]</p><p>print(all(lst))</p></blockquote><p>返回结果为False，实现一个函数，完成类似的功能</p><p><strong>代码：</strong></p><blockquote><p>def my_all(seq):</p><p>​    for item in seq:</p><p>​        if not item:</p><p>​            return False</p><p>​    return True</p></blockquote><p><strong>思路：</strong></p><p>直接用for循环遍历，如果遍历到的元素有False则直接返回False，如果没有是False的，遍历结束返回True</p><h1 id="3-11-any"><a href="#3-11-any" class="headerlink" title="3.11 any"></a>3.11 any</h1><p>any函数用于判断给定的可迭代参数 iterable 中的所有元素是否至少有一个为True</p><blockquote><p>lst = [True, False, False]</p><p>print(any(lst)</p></blockquote><p>返回结果为True，实现一个函数，完成类似功能</p><p><strong>代码：</strong></p><blockquote><p>def my_all(seq):</p><p>​    for item in seq:</p><p>​        if item:</p><p>​            return True</p><p>​    return False</p></blockquote><p><strong>思路：</strong></p><p>类似all，遍历列表，如果有一个是True，则直接返回True，否则则是全不是True，循环结束返回False</p><h1 id="3-12-bin"><a href="#3-12-bin" class="headerlink" title="3.12 bin"></a>3.12 bin</h1><p>函数bin可以获得整数的二进制形式：</p><blockquote><p>print(bin(10))</p></blockquote><p>输出结果为 0b1010</p><p>实现一个函数，完成相同功能，为了降低难度，只需要考虑正整数且不需要在开头加0b</p><p><strong>代码：</strong></p><blockquote><p>def my_bin(value):</p><p>​    lst = []</p><p>​    while value:</p><p>​        if value % 2 == 1:</p><p>​            lst.append(‘1’)</p><p>​        else:</p><p>​            lst.append(‘0’)</p><p>​    value = value // 2  # 也可写成value = value &gt;&gt; 1</p><p>​    </p><p>​    lst = lst[::-1]</p><p>​    return ‘’.join(lst)</p></blockquote><p><strong>思路：</strong></p><ol><li>创建一个空列表 <code>lst</code> 用于存储二进制表示的位。</li><li>进入一个循环，直到 <code>value</code> 的值为 0。</li><li>在循环中，检查 <code>value</code> 是否为奇数（通过取模运算 <code>value % 2 == 1</code>）。如果是奇数，将字符 <code>&#39;1&#39;</code> 添加到列表 <code>lst</code> 中，表示当前位为 1；否则，将字符 <code>&#39;0&#39;</code> 添加到列表 <code>lst</code> 中，表示当前位为 0。</li><li>将 <code>value</code> 的值除以 2（通过整除运算 <code>value // 2</code>），以便在下一次循环中处理下一个位。</li><li>循环结束后，反转列表 <code>lst</code> 的顺序，以得到正确的二进制表示。</li><li>使用 <code>&#39;&#39;.join(lst)</code> 将列表中的字符连接成一个字符串，表示整数的二进制形式。</li><li>返回二进制字符串。</li></ol><p><strong>tips：</strong></p><blockquote><p><strong><code>value = value &gt;&gt; 1</code></strong> 是一个位运算操作，用于将变量 <code>value</code> 的值向右移动一位。</p><p>具体而言，<code>&gt;&gt;</code> 是右移位运算符，它将二进制数向右移动指定的位数。在这种情况下，<code>value</code> 的值被向右移动一位，相当于将其二进制表示的所有位向右移动一位，并将最右边的位丢弃。</p><p>例如，如果 <code>value</code> 的初始值为 10，其二进制表示为 <code>1010</code>。执行 <code>value = value &gt;&gt; 1</code> 后，<code>value</code> 的值将变为 5，其二进制表示为 <code>0101</code>。</p><p>这种右移位操作可以理解为将一个数除以 2（向下取整），因为向右移动一位等于将所有位向右移动一位，并在最左边添加一个零。在二进制中，向右移动一位相当于将数值除以 2。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;3-9-enumerate&quot;&gt;&lt;a href=&quot;#3-9-enumerate&quot; class=&quot;headerlink&quot; title=&quot;3.9 enumerate&quot;&gt;&lt;/a&gt;3.9 enumerate&lt;/h1&gt;&lt;p&gt;enumerate()函数用于将一个可遍历的数据对象</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day16</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day16/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day16/</id>
+    <published>2023-12-24T13:59:07.000Z</published>
+    <updated>2023-12-24T14:07:43.826Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="3-5-int"><a href="#3-5-int" class="headerlink" title="3.5 int"></a>3.5 int</h1><p>内置函数int，可以将float、全是数字的字符串转换成int类型的数据，为了降低难度，这个练习题只要求你实现其中的一种功能，将全是数字组成的字符串转换成int类型数据，例如将字符此案“123”转换成整数123，函数定义如下：</p><blockquote><p>def my_int(string):</p><p>​    “””</p><p>​    将字符串string转成int类型数据</p><p>​    不考虑string的类型,默认就是符合要求的字符串</p><p>​    传⼊字符串”432”</p><p>​    返回整数432</p><p>​    :param string:</p><p>​    :return:</p><p>​    “””</p><p>​    pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>str_int_dic = { ‘0’: 0, ‘1’: 1, ‘2’: 2, ‘3’: 3, ‘4’: 4, ‘5’: 5, ‘6’: 6, ‘7’: 7, ‘8’: 8, ‘9’: 9 }</p><p>def my_int(string):</p><p>​    res = 0</p><p>​    for item in string:</p><p>​        int_value = str_int_dic[item]</p><p>​        res = res*10 + int_value</p><p>​    return res</p></blockquote><p><strong>思路：</strong></p><p>遍历字符串，将每个字符串里的每个字符传换成int类型的数值，这个过程可以使用字典来完成，建立一个字典，字符串的数字做key，int类型的数字做value，例如下面的字典</p><blockquote><p>str_int_dic = { ‘0’: 0, ‘1’: 1, ‘2’: 2, ‘3’: 3, ‘4’: 4, ‘5’: 5, ‘6’: 6, ‘7’: 7, ‘8’: 8, ‘9’: 9 }</p></blockquote><p>得到数字后，还得考虑这个数字是哪一位的，是千位还是百位，这里可以使用一个<strong>技巧，遍历的过程都是从左向右进行的，设置一个变量保存转换后的int数据，初始值赋为0，每一次循环后，都用这个变量乘10再加上所遍历的数值，这样就巧妙地解决了位数问题。</strong></p><h1 id="3-6-str"><a href="#3-6-str" class="headerlink" title="3.6 str"></a><strong>3.6 str</strong></h1><p>内置函数str的功能非常强大，想要模仿实现一个相同功能的函数是非常困难的，因此本练习题只要求将int类型的数据转换成字符串，实现下面的函数：</p><blockquote><p>def my_str(int_value):</p><p>​    “””</p><p>​    将int_value转换成字符串</p><p>​    :param int_value:</p><p>​    :return:</p><p>​    “””</p><p>​    pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>def my_str(int_value):</p><p>  if int_value == 0:<br>    return ‘0’</p><p>  lst = []<br>  is_positive = True  #标记是否是负数<br>  if int_value &lt; 0:<br>    is_positive = False<br>    int_value = abs(int_value)</p><p>  while int_value:<br>    number = int_value % 10<br>    int_value //= 10<br>    str_number = chr(number + 48)<br>    lst.append(str_number)</p><p>  if not is_positive:<br>    lst.append(‘-‘)</p><p>  lst = lst[::-1]  #倒序输出<br>  return ‘’.join(lst)</p></blockquote><p><strong>代码详解：</strong></p><blockquote><p>  <strong>if int_value == 0:<br>    return ‘0’</strong></p><p>首先，函数检查输入的整数是否为0。如果是0，那么函数直接返回字符串<code>&#39;0&#39;</code>，表示整数0的字符串形式。</p><p>  <strong>lst = []<br>  is_positive = True<br>  if int_value &lt; 0:<br>    is_positive = False<br>    int_value = abs(int_value)</strong></p><p>接下来，函数创建一个空列表<code>lst</code>，用于存储每个数字的字符形式。同时，函数定义一个布尔变量<code>is_positive</code>，用于表示整数的正负情况。如果输入的整数<code>int_value</code>小于0，说明它是一个负数，那么将<code>is_positive</code>设置为<code>False</code>，并将<code>int_value</code>取绝对值，以便后续处理。</p><p>  <strong>while int_value:<br>    number = int_value % 10<br>    int_value //= 10<br>    str_number = chr(number + 48)<br>    lst.append(str_number)</strong></p><p>接下来是一个循环，用于将整数的每个位数提取出来并转换为字符形式。循环条件是<code>int_value</code>不为0，即还有位数需要处理。在每次循环中，通过取整数<code>int_value</code>除以10的余数，可以得到当前位的数字。然后，将<code>int_value</code>整除以10，以便处理下一位。将数字转换为字符的过程使用了<code>chr()</code>函数，其中<code>number + 48</code>将数字转换为对应的ASCII码。将字符添加到列表<code>lst</code>中。</p><p>  <strong>if not is_positive:<br>    lst.append(‘-‘)<br>  lst = lst[::-1]<br>  return ‘’.join(lst)</strong></p><p>在循环结束后，检查整数的正负情况。如果输入的整数为负数，即<code>is_positive</code>为<code>False</code>，那么在最终的字符串前添加一个负号<code>&#39;-&#39;</code>。然后，将列表<code>lst</code>进行反转操作，以便得到正确的数字顺序。最后，使用<code>&#39;&#39;.join(lst)</code>将列表中的字符连接成一个字符串，并将其作为函数的返回值。</p></blockquote><p>总体来说，这段代码的作用是将整数转换为字符串形式。它通过不断地取整数的每个位数，并将每个位数的字符形式存储在列表中，最后将列表中的字符连接起来，得到整数的字符串表示。</p><p><strong>思路：</strong></p><p>int类型的数据，不能像字符串那样使用for循环进行遍历，但<strong>可以结合/和%操作符从各位向高位进行遍历，获取到某一位的数字之后，将其转换成字符串append到一个列表中。</strong></p><p><strong>遍历结束后，翻转列表，用空字符串join这个列表，即可得到转换后的字符串。</strong></p><p>单个数字，怎样转换成字符串？可以使用3.6中类似的方法， <strong>创建一个字典，数字为key，字符串数字为value</strong></p><blockquote><p>int_str_dict = { 0: ‘0’, 1: ‘1’, 2: ‘2’, 3: ‘3’, 4: ‘4’, 5: ‘5’, 6: ‘6’, 7: ‘7’, 8: ‘8’, 9: ‘9’, }</p></blockquote><p>获得某一位数字之后，通过字典获得对应的字符串，此外，还可以通过ASCII码来获得与之对应的数字字符。以3为例，chr(3+48)即可得到字符串“3”，其原理，字符串3的ASCII码表十进制数值为51，恰好比3大48，其他数值，也同样如此。</p><p>细节性问题：</p><blockquote><p>①如果传入的参数是0，那么直接返回字符串‘0’</p><p>②如果传入的参数是负数，那么需要标识记录，最后在列表里append一个‘-’字符串</p><p>③lst=[1,2,3], 反转 lst=lst[::-1]</p></blockquote><h1 id="3-7-float"><a href="#3-7-float" class="headerlink" title="3.7 float"></a>3.7 float</h1><p>为了降低难度，只要求将字符串转换成float类型的数据，并且字符串都是符合”xx.xx”类型的字符串，例如“34.22”</p><blockquote><p>def my_float(string):</p><p>“””</p><p>将字符串string转换成float类型数据</p><p>:param string:</p><p>:return:</p><p>“””</p><p>pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>str_int_dic = { ‘0’: 0, ‘1’: 1, ‘2’: 2, ‘3’: 3, ‘4’: 4, ‘5’: 5, ‘6’: 6, ‘7’: 7, ‘8’:  8, ‘9’: 9}</p><p>def my_float(string):</p><p>​    arrs = string.split(‘.’)</p><p>​    int_value = my_int(arrs[0])    #整数部分</p><p>​    float_value = my_int(arrs[1])  #小数部分</p><p>​    while float_value &gt; 1:</p><p>​        float_value *= 0.1</p><p>​    return int_value + float_value</p></blockquote><p><strong>思路：</strong></p><p>使用<strong>split函数</strong>，可以以”.”作为分隔符，可以将字符串分割为两部分，<strong>整数部分</strong>和<strong>小数部分</strong>，以”34.22”为例，分别得到整数<strong>34</strong>和<strong>22</strong>，对于22，不停的乘以0.1，直到它的数值小于1，就得到了小数部分</p><h1 id="3-8-len"><a href="#3-8-len" class="headerlink" title="3.8 len"></a>3.8 len</h1><p>内置函数len可以获得<strong>可迭代对象</strong>的长度，例如字符串、列表、元组、集合。实现一个类似功能的函数，获得数据的长度。</p><blockquote><p>def my_len(obj):</p><p>​    “””</p><p>​    获得obj对象的⻓度</p><p>​    :param obj:</p><p>​    :return:</p><p>​    “””</p><p>​    pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>from collections import Iterable</p><p>def my_len(obj):</p><p>​    if not isinstance(obj, Iterable):</p><p>​        return None</p><p>​    length = 0</p><p>​    for item in obj:</p><p>​        length += 1</p><p>​    return length</p></blockquote><p><strong>思路：</strong></p><p>使用for循环遍历对象，<strong>循环的次数就是这个对象的长度</strong>，只需要一个变量来保存循环的次数就可以了。</p><p>对obj参数的检查，可以使用<strong>isinstance</strong>判断是否为列表、元组、字典、集合、字符串中的某一个，更为简便的做法就是，这些对象都是<strong>可迭代对象</strong>，<strong>isinstance（obj，lterable）</strong>可以判断obj是否为可迭代对象</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;3-5-int&quot;&gt;&lt;a href=&quot;#3-5-int&quot; class=&quot;headerlink&quot; title=&quot;3.5 int&quot;&gt;&lt;/a&gt;3.5 int&lt;/h1&gt;&lt;p&gt;内置函数int，可以将float、全是数字的字符串转换成int类型的数据，为了降低难度，这个练习题只</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day15</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day15/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day15/</id>
+    <published>2023-12-24T13:59:01.000Z</published>
+    <updated>2023-12-24T14:07:21.296Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="3-内置函数篇"><a href="#3-内置函数篇" class="headerlink" title="3.内置函数篇"></a>3.内置函数篇</h1><h1 id="3-1-abs"><a href="#3-1-abs" class="headerlink" title="3.1 abs"></a>3.1 abs</h1><p>abs函数返回数字的绝对值，请实现下面的函数，模仿abs函数的功能，返回数字的绝对值</p><blockquote><p>def my_abs(number):</p><p>​    pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>def my_abs(number):</p><p>​    if not isinstance(number, (float, int)):</p><p>​         return number</p><p>​    if number &lt; 0:</p><p>​        number *= -1</p><p>​    return numbe</p></blockquote><p><strong>思路：</strong></p><blockquote><p>处于<strong>程序健壮性</strong>考虑，要对传入的number参数进行检查，判断其类型是否为数字类型，float和int是比较常用的数据类型，复数类型基本接触不到，因此不考虑。<br><strong>判断变量类型</strong>，可以使用<strong>isinstance</strong>函数，该函数的第一个参数是需要检查类型的对象，第二个参数可以是数据类型，也可以是一个元组，元组里是多个数据类型，只要满足其中一个就返True<br>如果number的数值小于0，乘以-1就得到了绝对值</p></blockquote><h1 id="3-2-sum"><a href="#3-2-sum" class="headerlink" title="3.2 sum"></a>3.2 sum</h1><p>sum函数可以获取列表所有数据的综合，模仿这个功能实现下面的函数</p><blockquote><p>def my_sum(lst):</p><p>​    “””</p><p>​    返回列表⾥所有数据的总和</p><p>​    如果列表⾥有⾮数字类型的数据，忽略不管</p><p>​    :param lst:</p><p>​    :return:</p><p>​    “””</p><p>​    pass</p></blockquote><p><strong>代码：</strong></p><blockquote><p>def my_sum(lst):</p><p>sum_res = 0</p><p>if not isinstance(lst, list):</p><p>​    return sum_res</p><p>for item in lst:</p><p>​    if isinstance(item, (float, int)):</p><p>​        sum_res += item</p><p>return sum_res</p></blockquote><p><strong>思路：</strong></p><blockquote><p>①对传入的参数lst，要进行类型检查</p><p>②遍历列表，遇到数字类型的数据就进行加和操作</p></blockquote><h1 id="3-3-max"><a href="#3-3-max" class="headerlink" title="3.3 max"></a>3.3 max</h1><p>max函数返回序列中的最大值，传入的参数可以是列表，也可以是元组，实现下面的函数，实现同样的功能，如果序列里有非数字类型的数据，可以忽略，如果序列是空的，可以直接返回None</p><blockquote><p>def my_max(seq):</p><p>​    “””</p><p>​    返回序列⾥的最⼤值</p><p>​    :param lst:</p><p>​    :return:</p><p>​    “””</p></blockquote><p><strong>代码：</strong></p><blockquote><p>def my_max(seq):</p><p>​    max_value=None</p><p>​    if not isinstance(seq,(list,tuple)):</p><p>​        return max_value</p><p>​    if len(seq)=0:</p><p>​        return max_value</p><p>​    max_value=seq[0]</p><p>​    for item in seq:</p><p>​        if not isinstance(item,(int,float)):</p><p>​            continue</p><p>​        if item&gt;max_value:</p><p>​            item=max_value</p><p>​    return max_value</p></blockquote><p><strong>思路：</strong></p><blockquote><p>①对传入的参数seq需要进行类型检查，如果既不是列表也不是元组，那么就返回None</p><p>②如果序列是空的，也直接返回None</p><p>③ 遍历序列中的元素，如果数据的类型不属于数字类型，那么就忽略跳过</p></blockquote><h1 id="3-4-min"><a href="#3-4-min" class="headerlink" title="3.4 min"></a>3.4 min</h1><p>min函数返回序列中的最小值，传入的参数可以是列表，也可以是元组，实现下面的函数，实现同样的功能，如果序列里又非数字类型的数据，可以忽略</p><blockquote><p>def my_min(seq):</p><p>​    “””</p><p>​    返回序列⾥的最⼩值</p><p>​    :param lst:</p><p>​    :return:</p><p>​    “””</p><p>​    pass</p></blockquote><p><strong>代码（与max类似）：</strong></p><blockquote><p>def my_min(seq):</p><p>​    min_value=None</p><p>​    if not isinstance(seq,(list,tuple)):</p><p>​        return min_value</p><p>​    if len(seq)=0:</p><p>​        return min_value</p><p>​    min_value=seq[0]</p><p>​    for item in seq:</p><p>​        if not isinstance(item,(int,float)):</p><p>​            continue</p><p>​        if item&lt;min_value:</p><p>​            item=min_value</p><p>​    return min_value</p></blockquote><p><strong>思路（与max一致）：</strong></p><blockquote><p>①对传入的参数seq需要进行类型检查，如果既不是列表也不是元组，那么就返回None</p><p>②如果序列是空的，也直接返回None</p><p>③ 遍历序列中的元素，如果数据的类型不属于数字类型，那么就忽略跳过</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;3-内置函数篇&quot;&gt;&lt;a href=&quot;#3-内置函数篇&quot; class=&quot;headerlink&quot; title=&quot;3.内置函数篇&quot;&gt;&lt;/a&gt;3.内置函数篇&lt;/h1&gt;&lt;h1 id=&quot;3-1-abs&quot;&gt;&lt;a href=&quot;#3-1-abs&quot; class=&quot;headerlink</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day14</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day14/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day14/</id>
+    <published>2023-12-24T13:58:55.000Z</published>
+    <updated>2023-12-24T14:06:58.153Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="③continue的好处"><a href="#③continue的好处" class="headerlink" title="③continue的好处"></a>③continue的好处</h1><p><strong>break是跳出循环体，continue是跳过continue语句后面的代码块，循环并不停止</strong><br>题目要求:<br>使用input函数接受用户的输入，如果用户输入的数值小于等于10，则判断是奇数还是偶数如果数值大于10，则输出“输入大于10，不判断奇偶”,用户输入quit，结束程序</p><blockquote><p>while True:</p><p>​    input_str = input(“请输⼊⼀个正整数,如果想停⽌程序，输⼊quit:”)</p><p>​    if input_str == ‘quit’:</p><p>​        break</p><p>​    number = int(input_str)</p><p>​    if number &gt; 10:</p><p>​        print(“输入大于10，不判断奇偶”)</p><p>​        continue</p><p>​    if number % 2 == 0:</p><p>​        print(“输⼊为偶数”)</p><p>​    else:</p><p>​        print(“输⼊为奇数”)</p></blockquote><p>当number大于10 的时候，后面的那4行代码就不会被执行，直接进入到下一次循环上面的代码，也可以不使用continue</p><blockquote><p>while True:</p><p>​    input_str = input(“请输⼊⼀个正整数,如果想停⽌程序，输⼊quit:”)</p><p>​    if input_str == ‘quit’:</p><p>​        break</p><p>​    number = int(input_str)</p><p>​    if number &lt; 10:</p><p>​        if number % 2 == 0:</p><p>​            print(“输⼊为偶数”)</p><p>​        else:</p><p>​            print(“输⼊为奇数”)</p></blockquote><p>两段代码，实现了一样的功能，但对比一下不难发现，<strong>不使用continue，代码的嵌套层次更深</strong>，如果嵌套多了，会让代码变得难以阅读，难以管理<br>但使用continue，就可以减少代码层次，代码的理解和管理都更容易，大于10的时候continue跳过后面的代码，在逻辑思考时，这种一刀两断的方法让思路更清晰.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;③continue的好处&quot;&gt;&lt;a href=&quot;#③continue的好处&quot; class=&quot;headerlink&quot; title=&quot;③continue的好处&quot;&gt;&lt;/a&gt;③continue的好处&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;break是跳出循环体，continue是跳</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day13</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day13/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day13/</id>
+    <published>2023-12-24T13:58:50.000Z</published>
+    <updated>2023-12-24T14:06:42.884Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2-3-while循环"><a href="#2-3-while循环" class="headerlink" title="2.3 while循环"></a>2.3 while循环</h1><h2 id="①奇偶数判断"><a href="#①奇偶数判断" class="headerlink" title="①奇偶数判断"></a>①奇偶数判断</h2><p>使用input函数接收用户输入的整数，如果是偶数，则使用print函数输出”你输入的是一个偶数”,反之输出”你输入的是一个奇数”，用户可以输入多次，直到输入quit时程序退出</p><blockquote><p>while True:</p><p>​    input_str = input(“请输⼊⼀个正整数，想退出程序请输⼊ quit:”)</p><p>​    if input_str == “quit”:</p><p>​        break</p><p>​    number = int(input_str)</p><p>​    if number % 2 == 0:</p><p>​        print(“你输⼊的是⼀个偶数”)</p><p>​    else:</p><p>​        print(“你输⼊的是⼀个奇数”)</p></blockquote><h2 id="②for循环与while循环嵌套"><a href="#②for循环与while循环嵌套" class="headerlink" title="②for循环与while循环嵌套"></a>②for循环与while循环嵌套</h2><p>已知 lst = [2, 3, 4]依次要求用户输入2，3，4 的整数倍，先让用户输入2的倍数，如果用户输入的正确，输出“输入正确”，否则输出“输入错误”，如果用户输入quit，则停止当前的输入，让用户输入3的倍数，输入3的倍数的过程中，如果用户输入quit，则让用户输入4的倍数</p><blockquote><p>lst = [2, 3, 4]</p><p>for item in lst:</p><p>​    while True:</p><p>​        input_str = input(“请输⼊{number}的倍数,想停⽌输⼊时，输⼊quit:”.format(numbe r=item))</p><p>​        if input_str == ‘quit’:</p><p>​            break</p><p>​        number = int(input_str)</p><p>​        if number % item == 0:</p><p>​            print(“输⼊正确”)</p><p>​        else:</p><p>​            print(“输⼊错误”</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2-3-while循环&quot;&gt;&lt;a href=&quot;#2-3-while循环&quot; class=&quot;headerlink&quot; title=&quot;2.3 while循环&quot;&gt;&lt;/a&gt;2.3 while循环&lt;/h1&gt;&lt;h2 id=&quot;①奇偶数判断&quot;&gt;&lt;a href=&quot;#①奇偶数判断&quot; cla</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day12</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day12/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day12/</id>
+    <published>2023-12-24T13:58:45.000Z</published>
+    <updated>2023-12-24T14:06:26.921Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="⑥寻找列表中的最大值，最小值"><a href="#⑥寻找列表中的最大值，最小值" class="headerlink" title="⑥寻找列表中的最大值，最小值"></a>⑥寻找列表中的最大值，最小值</h1><blockquote><p>lst = [3, 6, 1, 8, 1, 9 , 2]</p><p>max_value = lst[0]</p><p>​    for item in lst:</p><p>​        if item &gt; max_value:</p><p>​        max_value = item</p><p>print(max_value) </p></blockquote><p>1.参照上面的代码，写代码寻找列表的最小值</p><blockquote><p>lst = [3, 6, 1, 8, 1, 9, 2]</p><p>min_value = lst[0]</p><p>for item in lst:<br>  if item &lt; min_value:<br>    min_value = item</p><p>print(min_value)</p></blockquote><p>2.写代码寻找列表里的最小偶数</p><blockquote><p>lst = [3, 6, 1, 8, 1, 9, 2]</p><p>min_even = None</p><p>for item in lst:<br>  if item % 2 == 0:<br>    if min_even is None or item &lt; min_even:<br>      min_even = item</p><p>print(min_even)</p></blockquote><p><strong>在上述代码中，我们引入了一个新的变量 <code>min_even</code> 来保存最小的偶数。初始值设置为 <code>None</code>，表示还没有找到偶数。然后，我们遍历列表中的每个元素，如果遇到偶数，则检查是否比当前的 <code>min_even</code> 更小，如果是，则更新 <code>min_even</code>。最终，输出 <code>min_even</code> 即为列表中的最小偶数。</strong></p><p>3.写代码寻找列表里的最大奇数</p><blockquote><p>lst = [3, 6, 1, 8, 1, 9, 2]</p><p>max_odd = None</p><p>for item in lst:<br>  if item % 2 != 0:<br>    if max_odd is None or item &gt; max_odd:<br>      max_odd = item</p><p>print(max_odd)</p></blockquote><p><strong>在上述代码中，我们引入了一个新的变量 <code>max_odd</code> 来保存最大的奇数。初始值同样设置为 <code>None</code>，表示还没有找到奇数。然后，我们遍历列表中的每个元素，如果遇到奇数，则检查是否比当前的 <code>max_odd</code> 更大，如果是，则更新 <code>max_odd</code>。最终，输出 <code>max_odd</code> 即为列表中的最大奇数。</strong></p><p><strong>请注意，如果列表中没有奇数，那么输出结果将为 <code>None</code>，表示没有找到最大奇数。</strong></p><h1 id="⑦寻找组合"><a href="#⑦寻找组合" class="headerlink" title="⑦寻找组合"></a><strong>⑦寻找组合</strong></h1><blockquote><p>lst1 = [3, 6, 1, 8, 1, 9 , 2]</p><p>lst2 = [3, 1, 2, 6, 4, 8, 7]</p><p>for item1 in lst1:</p><p>​    for item2 in lst2:</p><p>​        if item1 + item2 == 10:</p><p>​            print((item1, item2))</p></blockquote><p><strong>上面的代码利用嵌套循环，从两个列表里各取1个数，如果这两个数的和等于10，则以元组的方式输出这两个数</strong></p><p>1.参照上面的代码，寻找两个数的差的绝对值等于2的组合</p><blockquote><p>lst1 = [3, 6, 1, 8, 1, 9, 2]<br>lst2 = [3, 1, 2, 6, 4, 8, 7]</p><p>for item1 in lst1:<br>  for item2 in lst2:<br>    if abs(item1 - item2) == 2:<br>      print((item1, item2))</p></blockquote><p>2.两个列表里各取出一个值，item1和item2， 请计算item1*item2的最大值</p><blockquote><p>lst1 = [3, 6, 1, 8, 1, 9, 2]<br>lst2 = [3, 1, 2, 6, 4, 8, 7]</p><p>max_product = float(‘-inf’)</p><p>for item1 in lst1:<br>  for item2 in lst2:<br>    product = item1 * item2<br>    if product &gt; max_product:<br>      max_product = product</p><p>print(max_product)</p></blockquote><p><strong>在上述代码中，我们引入了一个新的变量 <code>max_product</code> 来保存最大的乘积。初始值设置为负无穷 <code>-inf</code>，确保任何乘积都会比它大。然后，我们使用嵌套循环遍历 <code>lst1</code> 和 <code>lst2</code> 中的元素，计算 <code>item1 \* item2</code> 的乘积，并与当前的 <code>max_product</code> 进行比较，如果大于 <code>max_product</code>，则更新 <code>max_product</code>。最终，输出 <code>max_product</code> 即为 <code>item1 \* item2</code> 的最大值。</strong></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;⑥寻找列表中的最大值，最小值&quot;&gt;&lt;a href=&quot;#⑥寻找列表中的最大值，最小值&quot; class=&quot;headerlink&quot; title=&quot;⑥寻找列表中的最大值，最小值&quot;&gt;&lt;/a&gt;⑥寻找列表中的最大值，最小值&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;lst = [3,</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day11</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day11/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day11/</id>
+    <published>2023-12-24T13:58:39.000Z</published>
+    <updated>2023-12-24T14:06:11.593Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="④continue练习"><a href="#④continue练习" class="headerlink" title="④continue练习"></a>④continue练习</h1><p>从列表 Ist = [1,3,5,2,7,9,10] 中输出所有的奇数，代码如下</p><blockquote><p>lst = [1, 3, 5, 2, 7, 9, 10]</p><p>for item in lst:<br>  if item % 2 == 0:<br>    continue<br>  print(item)</p></blockquote><p>在上述代码中，当遇到偶数时，<code>continue</code> 语句会跳过当前迭代，直接进入下一次迭代。因此，只有奇数会被输出。</p><p>请注意，<code>continue</code> 语句后面的代码将不会被执行，而是直接进入下一次迭代。在这个例子中，当遇到偶数时，<code>print(item)</code> 这行代码将被跳过。</p><h1 id="⑤break练习"><a href="#⑤break练习" class="headerlink" title="⑤break练习"></a>⑤break练习</h1><p>从列表 Ist = [1,3,5,2,7,9,10] 中寻找1个偶数并输出，代码如下</p><blockquote><p>lst = [1, 3, 5, 2, 7, 9, 10]</p><p>for item in lst:</p><p>​    if item % 2 == 0:</p><p>​        print(item)</p><p>​        break</p></blockquote><p>题目要求寻找一个偶数，当找到这个偶数后，循环就可以终止了，使用break可以终止本次循环，你可以去掉代码中的break，再次执行代码，观察代码的执行效果</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;④continue练习&quot;&gt;&lt;a href=&quot;#④continue练习&quot; class=&quot;headerlink&quot; title=&quot;④continue练习&quot;&gt;&lt;/a&gt;④continue练习&lt;/h1&gt;&lt;p&gt;从列表 Ist = [1,3,5,2,7,9,10] 中输出所有的奇</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day10</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day10/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day10/</id>
+    <published>2023-12-24T13:58:34.000Z</published>
+    <updated>2023-12-24T14:05:56.449Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2-2-for循环"><a href="#2-2-for循环" class="headerlink" title="2.2 for循环"></a>2.2 for循环</h1><h1 id="①range函数的基本使用"><a href="#①range函数的基本使用" class="headerlink" title="①range函数的基本使用"></a>①range函数的基本使用</h1><blockquote><p>range(3, 20, 4)</p><p>range(10, -3, -4)</p><p>range(10, 5)</p><p>range(2, 12)</p></blockquote><p>不使用代码，说出以上函数产生的整数序列</p><p><strong>解答：</strong></p><blockquote><ol><li><code>range(3, 20, 4)</code>：这个函数调用将返回一个从3开始，以4为步长递增的序列，直到小于20为止。结果为 <code>[3, 7, 11, 15, 19]</code>。</li><li><code>range(10, -3, -4)</code>：这个函数调用将返回一个从10开始，以-4为步长递减的序列，直到大于-3为止。结果为 <code>[10, 6, 2, -2]</code>。</li><li><code>range(10, 5)</code>：这个函数调用将返回一个从10开始，以1为步长递减的序列，直到大于5为止。结果为空序列，因为起始值大于结束值。</li><li><code>range(2, 12)</code>：这个函数调用将返回一个从2开始，以1为步长递增的序列，直到小于12为止。结果为 <code>[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]</code>。</li></ol></blockquote><p><strong>请注意</strong>，<code>range()</code>函数返回的是一个迭代器对象，如果需要将其转换为列表，可以使用<code>list()</code>函数进行转换。</p><h1 id="②利用range函数遍历列表"><a href="#②利用range函数遍历列表" class="headerlink" title="②利用range函数遍历列表"></a>②利用range函数遍历列表</h1><blockquote><p>lst = [1, 3, 5, 2, 7, 9]</p><p>for index in range(len(lst)):</p><p>​    print(lst[index])</p></blockquote><p>1.参照上面的代码，从后向前遍历</p><p>2.遍历输出列表里的所有偶数</p><p>3.遍历列表，输出大于3的奇数</p><p><strong>解答：</strong></p><blockquote><p>lst = [1, 3, 5, 2, 7, 9]</p><p>for index in range(len(lst)-1, -1, -1):<br>  print(lst[index])</p></blockquote><p>这段代码使用<code>range()</code>函数从<code>len(lst)-1</code>开始，以-1为步长递减，实现了从后向前遍历列表。</p><blockquote><p>(使用range）</p><p>lst = [1, 3, 5, 2, 7, 9]</p><p>for i in range(len(list)):<br>  num = list[i]<br>  if num % 2 == 0:<br>    print(“偶数:”, num)<br>  elif num % 2 == 1 and num &gt; 3:<br>    print(“大于3的奇数:”, num)</p></blockquote><blockquote><p>（未使用range 简便版）</p><p>lst = [1, 3, 5, 2, 7, 9]</p><p>for num in lst:<br>  if num % 2 == 0:<br>    print(num)</p></blockquote><p>这段代码遍历列表中的每个元素，通过判断元素是否为偶数，输出所有偶数。</p><blockquote><p>（使用range）</p><p>lst = [1, 3, 5, 2, 7, 9]</p><p>for i in range(len(lst)):<br>  num = lst[i]<br>  if num &gt; 3 and num % 2 != 0:<br>    print(num)</p></blockquote><blockquote><p>（未使用range简便版）</p><p>lst = [1, 3, 5, 2, 7, 9]</p><p>for num in lst:<br>  if num &gt; 3 and num % 2 != 0:<br>    print(num)</p></blockquote><p>这段代码遍历列表中的每个元素，通过判断元素是否大于3且为奇数，输出所有满足条件的元素。</p><h1 id="③使用for循环遍历字典"><a href="#③使用for循环遍历字典" class="headerlink" title="③使用for循环遍历字典"></a>③使用for循环遍历字典</h1><p><strong>1.仅遍历key值</strong></p><blockquote><p>dic = { ‘python’: 90, ‘java’: 95 }</p><p>for key in dic:</p><p>​    print(key, dic[key])</p></blockquote><p><strong>2.遍历key和value值</strong></p><blockquote><p>dic = { ‘python’: 90, ‘java’: 95 } for</p><p>key, value in dic.items():</p><p>​    print(key, value)</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2-2-for循环&quot;&gt;&lt;a href=&quot;#2-2-for循环&quot; class=&quot;headerlink&quot; title=&quot;2.2 for循环&quot;&gt;&lt;/a&gt;2.2 for循环&lt;/h1&gt;&lt;h1 id=&quot;①range函数的基本使用&quot;&gt;&lt;a href=&quot;#①range函数的基本使</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day09</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day09/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day09/</id>
+    <published>2023-12-24T13:58:27.000Z</published>
+    <updated>2023-12-24T14:05:38.644Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="③多条件分支"><a href="#③多条件分支" class="headerlink" title="③多条件分支"></a>③多条件分支</h1><p>使用input函数接收用户的输入数据，如果用户输入python，则输出90，如果用户输入java.输出95，如果用户输入php，输出85，其他输入，程序输出0</p><p><strong>解答：</strong></p><p><strong>if…elif…else</strong></p><blockquote><p>value = input(“请输⼊⼀个整数:”)</p><p>if value == ‘python’:</p><p>​    print(90)</p><p>elif value == ‘java’:</p><p>​    print(95)</p><p>elif value == ‘php’:</p><p>​    print(85)</p><p>else:</p><p>​    print(0)</p></blockquote><p><strong>程序流程图：</strong></p><p><img src="https://s11.ax1x.com/2023/12/24/piHKaMF.png"></p><p><strong>在Python 3.9以及之前的版本中，并没有提供真正意义上的多分支选择结构，如果确实需要可通过字典构造跳转表来实现，如下代码：</strong></p><blockquote><p>user_input = input(“请输入编程语言：”)</p><p>score_dict = {<br>  “python”: 90,<br>  “java”: 95,<br>  “php”: 85<br>}</p><p>score = score_dict.get(user_input, 0)<br>print(score)</p></blockquote><p><strong>Python 3.10新增了软关键字（只在特定场合作为关键字，普通场合也可以作为变量名）match和case，实现了真正意义上的多分支选择结构。</strong></p><p><strong>【类似c和java中的switch…case…】</strong></p><blockquote><p><strong>user_input = input(“请输入编程语言：”)</strong></p><p><strong>match user_input:<br>  case “python”:<br>    print(90)<br>  case “java”:<br>    print(95)<br>  case “php”:<br>    print(85)<br>  case _:<br>    print(0)</strong></p></blockquote><h1 id="④复杂条件判断"><a href="#④复杂条件判断" class="headerlink" title="④复杂条件判断"></a>④复杂条件判断</h1><p>使用input函数接收用户的输入，如果输入的数据不可以转换成int类型数据，则输出”无法使用<br>int函数转换”，如果可以，则将用户的输入转成int类型数据并继续判断。</p><p>如果输入数据是奇数，则将其乘以2并输出，如果是偶数，则判断是否能被4整除，如果可以则输出被4整除后的值，若不能被4整数，则判断是否大于20，如果大于20则输出与20的差值，如果小于等于20，则直接输出该值</p><p><strong>解答：</strong></p><blockquote><p>value = input(“请输⼊⼀个整数:”)</p><p>if not value.isdigit():</p><p>​    print(‘⽆法使⽤int函数转换’)</p><p>else:</p><p>​    i_value = int(value)</p><p>​    if i_value % 2 == 1:</p><p>​        print(i_value*2)</p><p>​    elif i_value % 4 == 0:</p><p>​        print(i_value / 4)</p><p>​    elif i_value &gt; 20:</p><p>​        print(i_value - 20)</p><p>​    else:</p><p>​        print(i_value</p></blockquote><p><strong>程序流程图：</strong></p><p><img src="https://s11.ax1x.com/2023/12/24/piHKwqJ.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;③多条件分支&quot;&gt;&lt;a href=&quot;#③多条件分支&quot; class=&quot;headerlink&quot; title=&quot;③多条件分支&quot;&gt;&lt;/a&gt;③多条件分支&lt;/h1&gt;&lt;p&gt;使用input函数接收用户的输入数据，如果用户输入python，则输出90，如果用户输入java.输出95，</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day08</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day08/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day08/</id>
+    <published>2023-12-24T13:58:22.000Z</published>
+    <updated>2023-12-24T14:04:00.077Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2-基础语法篇"><a href="#2-基础语法篇" class="headerlink" title="2.基础语法篇"></a>2.基础语法篇</h1><h1 id="2-1-if-条件句"><a href="#2-1-if-条件句" class="headerlink" title="2.1 if 条件句"></a>2.1 if 条件句</h1><h1 id="①单个条件分支"><a href="#①单个条件分支" class="headerlink" title="①单个条件分支"></a>①单个条件分支</h1><p>使用input函数接收用户的输入，如果用户输入的整数是偶数，则使用print函数输出”你输入的整数是:{value],它是偶数”，[value]部分要替换成用户的输入。</p><p><strong>解答:</strong></p><blockquote><p>value = input(“请输⼊⼀个整数:”)</p><p>i_value = int(value)</p><p>if i_value % 2 == 0:</p><p>​    print(“你输⼊的整数是:{value}, 它是偶数”.format(value=value))</p></blockquote><p><strong>完成这个练习题需要掌握的4个知识点</strong><br>1.input函数的作用<br>2.字符串转int<br>3.取模运算<br>4.字符串格式化</p><h1 id="②-if…else…"><a href="#②-if…else…" class="headerlink" title="② if…else…"></a>② if…else…</h1><p>使用input函数接收用户的输入，如果用户输入的整数是偶数，则使用print函数输出”你输入的整数是:{value],它是偶数”,如果是奇数，则使用print函数输出”你输入的整数是:value],它是奇数”</p><p><strong>解答:</strong></p><blockquote><p>value = input(“请输⼊⼀个整数:”)</p><p>i_value = int(value)</p><p>if i_value % 2 == 0:</p><p>​    print(“你输⼊的整数是:{value}, 它是偶数”.format(value=value))</p><p>else:</p><p>​    print(“你输⼊的整数是:{value}, 它是奇数”.format(value=value))</p></blockquote><p><strong>程序流程图</strong></p><p><img src="/C:/Users\liuduo\Desktop\blog\source_posts\assets\piHK85q.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;2-基础语法篇&quot;&gt;&lt;a href=&quot;#2-基础语法篇&quot; class=&quot;headerlink&quot; title=&quot;2.基础语法篇&quot;&gt;&lt;/a&gt;2.基础语法篇&lt;/h1&gt;&lt;h1 id=&quot;2-1-if-条件句&quot;&gt;&lt;a href=&quot;#2-1-if-条件句&quot; class=&quot;head</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python150题day07</title>
+    <link href="https://bdta-zky.github.io/Python150%E9%A2%98day07/"/>
+    <id>https://bdta-zky.github.io/Python150%E9%A2%98day07/</id>
+    <published>2023-12-24T13:58:15.000Z</published>
+    <updated>2023-12-24T14:01:29.225Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="1-5集合练习题"><a href="#1-5集合练习题" class="headerlink" title="1.5集合练习题"></a>1.5集合练习题</h1><p>集合间的运算</p><blockquote><p>lst1 = [1, 2, 3, 5, 6, 3, 2]</p><p>lst2 = [2, 5, 7, 9]</p></blockquote><ul><li>哪些整数既在Ist1中，也在Ist2中</li><li>哪些整数在Ist1中，不在Ist2中</li><li>两个列表一共有哪些整数</li></ul><p>虽然题目问的是两个列表之间的问题，但是用列表解答的效率很低，所以应该用集合</p><blockquote><p>lst1 = [1, 2, 3, 5, 6, 3, 2]</p><p>lst2 = [2, 5, 7, 9]</p><p>set1 = set(lst1)</p><p>set2 = set(lst2)</p><p># 哪些整数既在lst1中，也在lst2中</p><p>print(set1.intersection(set2))</p><p># 哪些整数在lst1中，不在lst2中</p><p>print(set1.difference(set2))</p><p># 两个列表⼀共有哪些整数</p><p>print(set1.union(set2)</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;1-5集合练习题&quot;&gt;&lt;a href=&quot;#1-5集合练习题&quot; class=&quot;headerlink&quot; title=&quot;1.5集合练习题&quot;&gt;&lt;/a&gt;1.5集合练习题&lt;/h1&gt;&lt;p&gt;集合间的运算&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;lst1 = [1, 2, 3, 5,</summary>
+      
+    
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/categories/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/categories/python/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+    
+    <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
+    
+    <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>Python150题day06</title>
@@ -41,27 +436,6 @@
     <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
     
     <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://bdta-zky.github.io/test/"/>
-    <id>https://bdta-zky.github.io/test/</id>
-    <published>2023-10-17T09:50:19.000Z</published>
-    <updated>2023-10-17T09:50:58.848Z</updated>
-    
-    <content type="html"><![CDATA[<p>helloworld</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;helloworld&lt;/p&gt;
-</summary>
-      
-    
-    
-    
     
   </entry>
   
@@ -208,388 +582,6 @@
     <category term="python" scheme="https://bdta-zky.github.io/tags/python/"/>
     
     <category term="入门150题专栏" scheme="https://bdta-zky.github.io/tags/%E5%85%A5%E9%97%A8150%E9%A2%98%E4%B8%93%E6%A0%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CentOS7安装时直接跳过了安装信息摘要页面的解决方法</title>
-    <link href="https://bdta-zky.github.io/CentOS7%E5%AE%89%E8%A3%85%E6%97%B6%E7%9B%B4%E6%8E%A5%E8%B7%B3%E8%BF%87%E4%BA%86%E5%AE%89%E8%A3%85%E4%BF%A1%E6%81%AF%E6%91%98%E8%A6%81%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
-    <id>https://bdta-zky.github.io/CentOS7%E5%AE%89%E8%A3%85%E6%97%B6%E7%9B%B4%E6%8E%A5%E8%B7%B3%E8%BF%87%E4%BA%86%E5%AE%89%E8%A3%85%E4%BF%A1%E6%81%AF%E6%91%98%E8%A6%81%E9%A1%B5%E9%9D%A2%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/</id>
-    <published>2023-09-04T23:36:54.000Z</published>
-    <updated>2023-10-17T09:08:16.463Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近在配置Hadoop虚拟机的时候，创建的centos7虚拟机在安装信息摘要时直接自动跳过，直接跳到设置用户名和密码，在重复多次的重新删除安装后发现了问题所在：</p><p>在进行到选择操作系统来源时，注意是否出现<strong>“该操作系统将使用简易安装”</strong>的字样，</p><p><img src="https://s1.ax1x.com/2023/09/05/pPrDtHA.png" alt="pPrDtHA.png"></p><p>简易安装会在安装虚拟机后的配置过程中<strong>自动安装客户机操作系统和 VMware Tools</strong></p><p><strong>因此会导致虚拟机配置过程自动跳过安装信息摘要页面</strong></p><p><img src="https://s1.ax1x.com/2023/09/05/pPrDYBd.png" alt="pPrDYBd.png"></p><p><strong>如果要跳过简易安装，可选择稍后安装操作系统，在后面的配置中选择你的操作系统映像文件。</strong></p><p><img src="https://s1.ax1x.com/2023/09/05/pPrDJnH.png" alt="pPrDJnH.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;最近在配置Hadoop虚拟机的时候，创建的centos7虚拟机在安装信息摘要时直接自动跳过，直接跳到设置用户名和密码，在重复多次的重新删除安装后发现了问题所在：&lt;/p&gt;
-&lt;p&gt;在进行到选择操作系统来源时，注意是否出现&lt;strong&gt;“该操作系统将使用简易安装”&lt;/stron</summary>
-      
-    
-    
-    
-    <category term="资源教程" scheme="https://bdta-zky.github.io/categories/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
-    
-    
-    <category term="资源教程" scheme="https://bdta-zky.github.io/tags/%E8%B5%84%E6%BA%90%E6%95%99%E7%A8%8B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>案例2-2 小明都可以买什么</title>
-    <link href="https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88/"/>
-    <id>https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B2-2-%E5%B0%8F%E6%98%8E%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%B9%B0%E4%BB%80%E4%B9%88/</id>
-    <published>2023-07-09T13:41:12.000Z</published>
-    <updated>2023-10-17T09:08:16.500Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>编写一个智能购物计算小程序，在一家商店有书本、铅笔、橡皮、可乐、零食5种商品，商品价格如表</p><p><img src="https://s1.ax1x.com/2023/07/09/pC2MT6e.png" alt="pC2MT6e.png"></p><p>假如你带了20元，且必须购买一本书，剩余的钱还可以购买哪种商品？可以购买几件，购买完后又能剩余多少钱？</p><h5 id="个人思路："><a href="#个人思路：" class="headerlink" title="个人思路："></a>个人思路：</h5><p>1.设计一个菜单，给商品编号</p><p>2.需要利用switch语句进行判断</p><p>3.利用取余、取模求得可购买数量和剩余</p><h1 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example2_2</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="type">int</span> <span class="variable">pencil</span> <span class="operator">=</span> <span class="number">1</span>;<span class="comment">//铅笔</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">rubber</span> <span class="operator">=</span> <span class="number">2</span>;<span class="comment">//橡皮</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">cola</span> <span class="operator">=</span> <span class="number">3</span>;<span class="comment">//可乐</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">snacks</span> <span class="operator">=</span> <span class="number">5</span>;<span class="comment">//零食</span></span><br><span class="line"> </span><br><span class="line">        System.out.println(<span class="string">&quot;书本的价格是12元，你总共带了20元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;1.铅笔的价格是1元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;2.橡皮的价格是2元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;3.可乐的价格是3元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;4.零食的价格是5元&quot;</span>);</span><br><span class="line">        System.out.print(<span class="string">&quot;请输入你还想购入的商品编号:&quot;</span>);</span><br><span class="line"> </span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> x=sc.nextInt();</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">switch</span>(x)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;购买完书本后还可以购买铅笔&quot;</span>+<span class="number">8</span>/pencil+<span class="string">&quot;支，还剩&quot;</span>+<span class="number">8</span>%pencil+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;购买完书本后还可以购买橡皮&quot;</span>+<span class="number">8</span>/rubber+<span class="string">&quot;块，还剩&quot;</span>+<span class="number">8</span>%rubber+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;购买完书本后还可以购买可乐&quot;</span>+<span class="number">8</span>/cola+<span class="string">&quot;瓶，还剩&quot;</span>+<span class="number">8</span>%cola+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">                System.out.println(<span class="string">&quot;购买完书本后还可以购买零食&quot;</span>+<span class="number">8</span>/snacks+<span class="string">&quot;袋，还剩&quot;</span>+<span class="number">8</span>%snacks+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="运行结果："><a href="#运行结果：" class="headerlink" title="运行结果："></a>运行结果：</h1><p><img src="https://s1.ax1x.com/2023/07/09/pC2MXkt.png" alt="pC2MXkt.png"></p><p><img src="https://s1.ax1x.com/2023/07/09/pC2MjtP.png" alt="pC2MjtP.png"></p><p><img src="https://s1.ax1x.com/2023/07/09/pC2Mvff.png" alt="pC2Mvff.png"></p><p><img src="https://s1.ax1x.com/2023/07/09/pC2Mzp8.png" alt="pC2Mzp8.png"></p><h1 id="举一反三："><a href="#举一反三：" class="headerlink" title="举一反三："></a>举一反三：</h1><p>可改变题目条件，输入一个资金数目，然后选择一项商品，求得最多可买该商品多少件，剩余多少钱。</p><h5 id="个人思路：-1"><a href="#个人思路：-1" class="headerlink" title="个人思路："></a>个人思路：</h5><ol><li>在原有基础上，设一个变量代表资金数</li></ol><p>​    2.考虑特殊情况，需要判断资金是否足够最少买一个（在case中加入if语句进行判断）</p><h1 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Example2_2_new</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line"> </span><br><span class="line">        System.out.print(<span class="string">&quot;请输入你的资金数:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> w=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> <span class="variable">book</span> <span class="operator">=</span> <span class="number">12</span>;<span class="comment">//书本</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">pencil</span> <span class="operator">=</span> <span class="number">1</span>;<span class="comment">//铅笔</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">rubber</span> <span class="operator">=</span> <span class="number">2</span>;<span class="comment">//橡皮</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">cola</span> <span class="operator">=</span> <span class="number">3</span>;<span class="comment">//可乐</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">snacks</span> <span class="operator">=</span> <span class="number">5</span>;<span class="comment">//零食</span></span><br><span class="line"> </span><br><span class="line">        System.out.println(<span class="string">&quot;0.书本的价格是12元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;1.铅笔的价格是1元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;2.橡皮的价格是2元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;3.可乐的价格是3元&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;4.零食的价格是5元&quot;</span>);</span><br><span class="line">        System.out.print(<span class="string">&quot;请输入你还想购入的商品编号:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> x=sc.nextInt();</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">switch</span>(x)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">if</span>(w-book&lt;<span class="number">0</span>) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;对不起，对于该商品，您的资金一个也买不起0.0&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                System.out.println(<span class="string">&quot;您可以购买书本&quot;</span>+w/book+<span class="string">&quot;本，还剩&quot;</span>+w%book+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">if</span>(w-pencil&lt;<span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;对不起，对于该商品，您的资金一个也买不起0.0&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                System.out.println(<span class="string">&quot;您可以购买铅笔&quot;</span>+w/pencil+<span class="string">&quot;支，还剩&quot;</span>+w%pencil+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">                <span class="keyword">if</span>(w-rubber&lt;<span class="number">0</span>) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;对不起，对于该商品，您的资金一个也买不起0.0&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                System.out.println(<span class="string">&quot;您可以购买橡皮&quot;</span>+w/rubber+<span class="string">&quot;块，还剩&quot;</span>+w%rubber+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">                <span class="keyword">if</span>(w-cola&lt;<span class="number">0</span>) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;对不起，对于该商品，您的资金一个也买不起0.0&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                System.out.println(<span class="string">&quot;您可以购买可乐&quot;</span>+w/cola+<span class="string">&quot;瓶，还剩&quot;</span>+w%cola+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">4</span>:</span><br><span class="line">                <span class="keyword">if</span>(w-snacks&lt;<span class="number">0</span>) &#123;</span><br><span class="line">                    System.out.println(<span class="string">&quot;对不起，对于该商品，您的资金一个也买不起0.0&quot;</span>);</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                System.out.println(<span class="string">&quot;您可以购买零食&quot;</span>+w/snacks+<span class="string">&quot;袋，还剩&quot;</span>+w%snacks+<span class="string">&quot;元&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="运行结果：-1"><a href="#运行结果：-1" class="headerlink" title="运行结果："></a>运行结果：</h1><p><img src="https://s1.ax1x.com/2023/07/09/pC2QS1S.png" alt="pC2QS1S.png"></p><p><img src="https://s1.ax1x.com/2023/07/09/pC2Qp6g.png" alt="pC2Qp6g.png"></p><p><img src="https://s1.ax1x.com/2023/07/09/pC2Q9XQ.png" alt="pC2Q9XQ.png"></p><p><strong>特殊情况</strong></p><p><img src="https://s1.ax1x.com/2023/07/09/pC28UPI.png" alt="pC28UPI.png"></p><ul><li>细节</li></ul><blockquote><p>System.<em>out</em>.print(“请输入你的资金数:”);</p></blockquote><p>一般情况下，请输入xxxxx：时使用print而不适用println排版更舒适。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h1&gt;&lt;p&gt;编写一个智能购物计算小程序，在一家商店有书本、铅笔、橡皮、可乐、零食5种商品，商品价格如表&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https:/</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字加密和解密</title>
-    <link href="https://bdta-zky.github.io/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86/"/>
-    <id>https://bdta-zky.github.io/%E6%95%B0%E5%AD%97%E5%8A%A0%E5%AF%86%E5%92%8C%E8%A7%A3%E5%AF%86/</id>
-    <published>2023-07-08T13:56:43.000Z</published>
-    <updated>2023-10-17T09:08:16.494Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="需求："><a href="#需求：" class="headerlink" title="需求："></a>需求：</h1><p>某系统的数字密码(大于0) 比如1983，采用加密方式进行传输</p><h2 id="规则如下"><a href="#规则如下" class="headerlink" title="规则如下:"></a>规则如下:</h2><p>每位数加上5</p><p>再对10求余</p><p>最后将所有数字反转得到一串新数。</p><h1 id="加密："><a href="#加密：" class="headerlink" title="加密："></a>加密：</h1><p><strong>思路：</strong></p><blockquote><p>1.把整数里面的每一位放到数组中</p><p>2.加密</p><p>3.把数组里面的每一个数字进行拼接，变成加密之后的结果</p></blockquote><h2 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner</span><br><span class="line"> </span><br><span class="line">        </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test6</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//键盘录入密码</span></span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        System.out.println(<span class="string">&quot;请输入密码:&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">number</span> <span class="operator">=</span> sc.nextInt();</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">        <span class="comment">//一.将数字转换到数组中</span></span><br><span class="line"> </span><br><span class="line">        <span class="type">int</span> temp=number;<span class="comment">//number初始值</span></span><br><span class="line">        <span class="comment">//1.获取数组长度count</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(number!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//每循环一次就去掉最右边的数字</span></span><br><span class="line">            number=number/<span class="number">10</span>;</span><br><span class="line">            <span class="comment">//循环一次计数器加一次</span></span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//2.将数字存入数组中</span></span><br><span class="line">            <span class="comment">//动态分配（定义数组）</span></span><br><span class="line">        <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> (count-<span class="number">1</span>); i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            arr[i]=temp%<span class="number">10</span>;<span class="comment">//将个位数字赋给数组</span></span><br><span class="line">            temp=temp/<span class="number">10</span>;<span class="comment">//将个位数字删除</span></span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//二.数组中每项加五</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            arr[i]+=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//三.每项对10求余</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            arr[i]=arr[i]%<span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//四.将所有数字反转</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>,j=(count-<span class="number">1</span>); i &lt; j; i++,j--) &#123;</span><br><span class="line">            temp=arr[i];</span><br><span class="line">            arr[i]=arr[j];</span><br><span class="line">            arr[j]=temp;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//五.输出</span></span><br><span class="line">        <span class="comment">//直接遍历输出数组</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            System.out.print(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="难点："><a href="#难点：" class="headerlink" title="难点："></a>难点：</h3><p>第一步.将一个整数转入数组、</p><p>1.利用取余、取模获取和删除最右边的数字</p><p>2.定义一个变量作为计数器，删除数字的次数就是数字的位数即需要定义的数组长</p><h1 id="解密："><a href="#解密：" class="headerlink" title="解密："></a>解密：</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgaoRA.png" alt="pCgaoRA.png"></p><p>如图所示，反转加密的过程。</p><h3 id="难点：-1"><a href="#难点：-1" class="headerlink" title="难点："></a>难点：</h3><p>由于加密是对10取余的方式进行获取的，因此解密的时候需要进行判断，0<del>4之间加10，5</del>9之间不变</p><h2 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Test7</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//键盘录入加密后的密码</span></span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> number=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> temp=number;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//一.先将数字转入数组中</span></span><br><span class="line">        <span class="comment">//1.获取数组长度</span></span><br><span class="line">        <span class="type">int</span> count=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(number!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//每循环一次就去除一个最右边的数字</span></span><br><span class="line">            number=number/<span class="number">10</span>;</span><br><span class="line">            <span class="comment">//每循环一次，计数器加一</span></span><br><span class="line">            count++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//2.定义数组</span></span><br><span class="line">        <span class="type">int</span>[] arr=<span class="keyword">new</span> <span class="title class_">int</span>[count];</span><br><span class="line">            <span class="comment">//</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> (count-<span class="number">1</span>); i &gt;=<span class="number">0</span> ; i--) &#123;</span><br><span class="line">            arr[i]=temp%<span class="number">10</span>;<span class="comment">//将个位数字赋给数组</span></span><br><span class="line">            temp=temp/<span class="number">10</span>;<span class="comment">//将个位数字删除</span></span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//二.反转</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>,j=(count-<span class="number">1</span>); i &lt; j ; i++,j--) &#123;</span><br><span class="line">            temp=arr[i];</span><br><span class="line">            arr[i]=arr[j];</span><br><span class="line">            arr[j]=temp;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//三.由于加密是对10取余的方式进行获取的，因此解密的时候需要进行判断，0~4之间加10，5~9之间不变</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(arr[i]&gt;=<span class="number">0</span>&amp;&amp;arr[i]&lt;=<span class="number">4</span>)&#123;</span><br><span class="line">                arr[i]+=<span class="number">10</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//四.每位减5</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            arr[i]-=<span class="number">5</span>;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="comment">//五.输出</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            System.out.print(arr[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;需求：&quot;&gt;&lt;a href=&quot;#需求：&quot; class=&quot;headerlink&quot; title=&quot;需求：&quot;&gt;&lt;/a&gt;需求：&lt;/h1&gt;&lt;p&gt;某系统的数字密码(大于0) 比如1983，采用加密方式进行传输&lt;/p&gt;
-&lt;h2 id=&quot;规则如下&quot;&gt;&lt;a href=&quot;#规则如下&quot; </summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算球体积(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%AE%A1%E7%AE%97%E7%90%83%E4%BD%93%E7%A7%AF/"/>
-    <id>https://bdta-zky.github.io/%E8%AE%A1%E7%AE%97%E7%90%83%E4%BD%93%E7%A7%AF/</id>
-    <published>2023-07-08T13:52:20.000Z</published>
-    <updated>2023-10-17T09:08:16.521Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>根据输入的半径值，计算球的体积。</p><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>输入数据有多组，每组占一行，每行包括一个实数，表示球的半径。</p><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出对应的球的体积，对于每组输入数据，输出一行，计算结果保留三位小数。</p><h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><blockquote><p>1<br>1.5</p></blockquote><h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><blockquote><p>4.189<br>14.137</p></blockquote><h1 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;                                      </span><br><span class="line">                                                               </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Rumen01</span> &#123;                                         </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;                   </span><br><span class="line">       Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);                      </span><br><span class="line">       <span class="keyword">while</span>(sc.hasNext()) &#123;                                   </span><br><span class="line">           <span class="type">double</span> <span class="variable">a</span> <span class="operator">=</span> sc.nextDouble();                         </span><br><span class="line">           <span class="type">double</span> <span class="variable">a1</span> <span class="operator">=</span> (<span class="number">4.0</span> / <span class="number">3</span>) * Math.PI * Math.pow(a, <span class="number">3</span>);   </span><br><span class="line">           System.out.printf(<span class="string">&quot;%.3f\n&quot;</span>, a1);                    </span><br><span class="line">       &#125;                                                       </span><br><span class="line">    &#125;                                                          </span><br><span class="line">&#125;                                                              </span><br></pre></td></tr></table></figure><h1 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgacKx.png" alt="pCgacKx.png"></p><p><img src="https://s1.ax1x.com/2023/07/08/pCga2qK.png" alt="pCga2qK.png"></p><h1 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h1><p><strong>一.</strong><br>Scanner sc = new Scanner(System.in);此句 表示从控制台获取数据，</p><p>sc.hasNext() 表示你是否有输入数据，</p><p>while语句块 表示当你输入数据的时候，就执行输出sc.next()（输出内容）</p><p>所以只要你输入数据了，它就可以执行。</p><p>参考资料：<br>CSDN博主「realzhangsan」的原创文章</p><p>原文链接：<a href="https://blog.csdn.net/hanqingupc/article/details/121799598">https://blog.csdn.net/hanqingupc/article/details/121799598</a></p><p><strong>二.</strong><br>易错点：<br>4/3的时候要记得类型转换，因为如果不进行类型转换，编译器会将4/3当做整数运算，导致运算的结果会向下取整，使得运行的结果比正确的结果小。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;根据输入的半径值，计算球的体积。&lt;/p&gt;
-&lt;h2 id=&quot;输入格式&quot;&gt;&lt;a href=&quot;#输入格式&quot; class=&quot;head</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>计算矩阵边缘元素之和(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%AE%A1%E7%AE%97%E7%9F%A9%E9%98%B5%E8%BE%B9%E7%BC%98%E5%85%83%E7%B4%A0%E4%B9%8B%E5%92%8C%EF%BC%88java%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%EF%BC%89/"/>
-    <id>https://bdta-zky.github.io/%E8%AE%A1%E7%AE%97%E7%9F%A9%E9%98%B5%E8%BE%B9%E7%BC%98%E5%85%83%E7%B4%A0%E4%B9%8B%E5%92%8C%EF%BC%88java%E7%AE%97%E6%B3%95%E4%BC%98%E5%8C%96%EF%BC%89/</id>
-    <published>2023-07-08T13:49:23.000Z</published>
-    <updated>2023-10-17T09:08:16.521Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入一个整数矩阵，计算位于矩阵边缘的元素之和。所谓矩阵边缘的元素，就是第一行和最后一行的元素以及第一列和最后一列的元素。</p><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行分别为矩阵的行数m和列数n（m &lt; 100，n &lt; 100），两者之间以一个空格分开。</p><p>接下来输入的m行数据中，每行包含n个整数，整数之间以一个空格分开。</p><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>输出对应矩阵的边缘元素和。</p><h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><blockquote><p>3 3<br>3 4 1<br>3 7 1<br>2 0 1</p></blockquote><h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><blockquote><p>15</p></blockquote><h1 id="代码1"><a href="#代码1" class="headerlink" title="代码1"></a>代码1</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">T2878</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> m=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=sc.nextInt();</span><br><span class="line">        <span class="type">int</span>[][] arr=<span class="keyword">new</span> <span class="title class_">int</span>[m][n];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">                arr[i][j]=sc.nextInt();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            sum+=(arr[<span class="number">0</span>][i]+arr[m-<span class="number">1</span>][i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;n-<span class="number">1</span>;i++)&#123;</span><br><span class="line">            sum+=(arr[i][<span class="number">0</span>]+arr[<span class="number">1</span>][n-<span class="number">1</span>]);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h2><p><img src="https://s1.ax1x.com/2023/07/08/pCgaVgI.png" alt="pCgaVgI.png"></p><p><strong>代码运行正确，但是内存过大，运行时间长</strong></p><h1 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgaZvt.png" alt="pCgaZvt.png"></p><p>分析代码可知，当i=0或i=m-1或j=0或j=n-1时符合条件，且互不干扰不重复，因此可写为</p><blockquote><p><strong>i==0||j==0||i==m-1||j==n-1</strong></p></blockquote><h1 id="代码2"><a href="#代码2" class="headerlink" title="代码2"></a>代码2</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">T2878new</span> &#123;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> m=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> n=sc.nextInt();</span><br><span class="line">        <span class="type">int</span>[][] arr=<span class="keyword">new</span> <span class="title class_">int</span>[m][n];</span><br><span class="line">        <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">                arr[i][j]=sc.nextInt();</span><br><span class="line">                <span class="keyword">if</span>(i==<span class="number">0</span>||j==<span class="number">0</span>||i==m-<span class="number">1</span>||j==n-<span class="number">1</span>)&#123;</span><br><span class="line">                    sum+=arr[i][j];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(sum);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;输入一个整数矩阵，计算位于矩阵边缘的元素之和。所谓矩阵边缘的元素，就是第一行和最后一行的元素以及第一列和最后一列的元素。&lt;/</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>链表数据求和操作(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%93%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%82%E5%92%8C%E6%93%8D%E4%BD%9C/"/>
-    <id>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E9%93%BE%E8%A1%A8%E6%95%B0%E6%8D%AE%E6%B1%82%E5%92%8C%E6%93%8D%E4%BD%9C/</id>
-    <published>2023-07-08T13:47:42.000Z</published>
-    <updated>2023-10-17T09:08:16.518Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>读入10个复数，建立对应<a href="https://so.csdn.net/so/search?q=%E9%93%BE%E8%A1%A8&spm=1001.2101.3001.7020">链表</a>，然后求所有复数的和。</p><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>无</p><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>无</p><h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><p>1 2</p><p>1 3</p><p>4 5</p><p>2 3</p><p>3 1</p><p>2 1</p><p>4 2</p><p>2 2</p><p>3 3</p><p>1 1</p><h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><p>23+23i</p><h1 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> asum=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> bsum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">            <span class="type">int</span> a=sc.nextInt();</span><br><span class="line">            <span class="type">int</span> b=sc.nextInt();</span><br><span class="line">            asum+=a;</span><br><span class="line">            bsum+=b;</span><br><span class="line"> </span><br><span class="line">        &#125;</span><br><span class="line">        System.out.print(asum);</span><br><span class="line">        <span class="keyword">if</span>(bsum&gt;<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;+&quot;</span>+bsum+<span class="string">&quot;i&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span>(bsum&lt;<span class="number">0</span>)&#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;-&quot;</span>+bsum+<span class="string">&quot;i&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgaACd.png" alt="pCgaACd.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;读入10个复数，建立对应&lt;a href=&quot;https://so.csdn.net/so/search?q=%E9%93%BE</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>成绩排序(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F%EF%BC%88java%EF%BC%89/"/>
-    <id>https://bdta-zky.github.io/%E6%88%90%E7%BB%A9%E6%8E%92%E5%BA%8F%EF%BC%88java%EF%BC%89/</id>
-    <published>2023-07-08T13:44:41.000Z</published>
-    <updated>2023-10-17T09:08:16.491Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给出班里某门课程的成绩单，请你按成绩从高到低对成绩单排序输出，如果有相同分数则名字字典序小的在前。</p><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>第一行为n (0 &lt; n &lt; 20)，表示班里的学生数目；</p><p>接下来的n行，每行为每个学生的名字和他的成绩, 中间用单个空格隔开。名字只包含字母且长度不超过20，成绩为一个不大于100的非负整数。</p><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>把成绩单按分数从高到低的顺序进行排序并输出，每行包含名字和分数两项，之间有一个空格。</p><h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><blockquote><p>4</p><p>Kitty 80</p><p>Hanmeimei 90</p><p>Joey 92</p><p>Tim 28</p></blockquote><h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><blockquote><p>Joey 92</p><p>Hanmeimei 90</p><p>Kitty 80</p><p>Tim 28</p></blockquote><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>1.定义一个student结构体</p><p>2.排序（根据成绩</p><p>3.特殊情况（分数相同时根据名字字典序进行排序，利用compareto方法）</p><h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Chengjifenxi</span> &#123;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">//定义结构体并初始化</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">student</span> &#123;</span><br><span class="line">        String name=<span class="string">&quot;&quot;</span>;<span class="comment">//名字</span></span><br><span class="line">        <span class="type">int</span> score=<span class="number">0</span>;<span class="comment">//成绩</span></span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//给出n名学生</span></span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> n=sc.nextInt();</span><br><span class="line">        <span class="comment">//开辟结构体数组</span></span><br><span class="line">        student stu[]=<span class="keyword">new</span> <span class="title class_">student</span>[n];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            stu[i]=<span class="keyword">new</span> <span class="title class_">student</span>();<span class="comment">//&lt;&lt;注意这里</span></span><br><span class="line">            stu[i].name=sc.next();</span><br><span class="line">            stu[i].score=sc.nextInt();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//根据成绩冒泡排序</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; n-i-<span class="number">1</span>; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(stu[j].score&lt;stu[j+<span class="number">1</span>].score)&#123;</span><br><span class="line">                    student temp=stu[j];</span><br><span class="line">                    stu[j]=stu[j+<span class="number">1</span>];</span><br><span class="line">                    stu[j+<span class="number">1</span>]=temp;</span><br><span class="line">                    <span class="comment">//如果有相同分数则名字字典序小的在前。</span></span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(stu[j].score==stu[j+<span class="number">1</span>].score) &#123;</span><br><span class="line">                    <span class="comment">//利用compareto方法对字符串进行字典序排序</span></span><br><span class="line">                    <span class="keyword">if</span>(stu[j].name.compareTo(stu[j+<span class="number">1</span>].name)&gt;<span class="number">0</span>)&#123;</span><br><span class="line">                        student temp=stu[j];</span><br><span class="line">                        stu[j]=stu[j+<span class="number">1</span>];</span><br><span class="line">                        stu[j+<span class="number">1</span>]=temp;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//输出排序后的结果</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            System.out.println(stu[i].name+<span class="string">&quot; &quot;</span>+stu[i].score);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgapDK.png" alt="pCgapDK.png"></p><h1 id="java中string类的常用方法"><a href="#java中string类的常用方法" class="headerlink" title="java中string类的常用方法"></a>java中string类的常用方法</h1><p><a href="http://t.csdn.cn/L8jOo%EF%BC%88%E4%BD%9C%E8%80%85%EF%BC%9A%E5%8C%97%E9%A3%8E%EF%BC%89">http://t.csdn.cn/L8jOo（作者：北风）</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;给出班里某门课程的成绩单，请你按成绩从高到低对成绩单排序输出，如果有相同分数则名字字典序小的在前。&lt;/p&gt;
-&lt;h2 id=&quot;</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>蛇形填数(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0/"/>
-    <id>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0/</id>
-    <published>2023-07-08T13:42:31.000Z</published>
-    <updated>2023-10-17T09:08:16.516Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><strong>题目描述</strong></h1><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p><p>如下图所示，小明用从 11 开始的正整数“蛇形”填充无限大的矩阵。</p><blockquote><p>1 2 6 7 15 …<br>3 5 8 14 …<br>4 9 13 …<br>10 12 …<br>11 ……</p></blockquote><p>容易看出矩阵第二行第二列中的数是 55。请你计算矩阵中第 2020 行第 2020 列的数是多少？</p><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="comment">//第一行第一列是1,第二行第二列是5,第三行第三列是13</span></span><br><span class="line">        <span class="comment">//即1,5,13,25,41....</span></span><br><span class="line">        <span class="comment">//规律:n1 = 1 + 4 * 0(第一行)</span></span><br><span class="line">        <span class="comment">//       n2 = n1 + 4 * 1(第二行)</span></span><br><span class="line">        <span class="comment">//       n3 = n2 + 4 * 2(第三行)</span></span><br><span class="line">        <span class="comment">//       .....</span></span><br><span class="line">        <span class="comment">//     n = n + 4 * (行数 - 1)</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; <span class="number">25</span>; i++) &#123;</span><br><span class="line">            n = n + <span class="number">4</span> * i;</span><br><span class="line">            <span class="keyword">if</span> (i == <span class="number">19</span>) &#123;</span><br><span class="line">                System.out.println(n);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;&lt;strong&gt;题目描述&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。&lt;</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    <category term="2020年省赛" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2020%E5%B9%B4%E7%9C%81%E8%B5%9B/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>既约分数(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%A2%E7%BA%A6%E5%88%86%E6%95%B0/"/>
-    <id>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%97%A2%E7%BA%A6%E5%88%86%E6%95%B0/</id>
-    <published>2023-07-08T13:39:25.000Z</published>
-    <updated>2023-10-17T09:08:16.512Z</updated>
-    
-    <content type="html"><![CDATA[<p>如果一个分数的分子和分母的最大公约数是 1，这个分数称为既约分数。</p><p>例如4/3,8/1,1/7， 都是既约分数。</p><p>请问，有多少个既约分数，分子和分母都是 1 到 2020 之间的整数（包括 1和2020）？</p><h2 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h2><p>最大运行时间：2s</p><p>最大运行内存: 128M</p><h1 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.*;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">ans</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span> ; i &lt;= <span class="number">2020</span> ; i ++)&#123;</span><br><span class="line">          <span class="keyword">for</span>(<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">1</span> ; j &lt;= <span class="number">2020</span> ; j ++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(gcd(i , j) == <span class="number">1</span>) ans ++;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">gcd</span><span class="params">(<span class="type">int</span> a,<span class="type">int</span> b)</span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(b == <span class="number">0</span>) <span class="keyword">return</span> a;</span><br><span class="line">      <span class="keyword">else</span> <span class="keyword">return</span> gcd(b , a % b);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;如果一个分数的分子和分母的最大公约数是 1，这个分数称为既约分数。&lt;/p&gt;
-&lt;p&gt;例如4/3,8/1,1/7， 都是既约分数。&lt;/p&gt;
-&lt;p&gt;请问，有多少个既约分数，分子和分母都是 1 到 2020 之间的整数（包括 1和2020）？&lt;/p&gt;
-&lt;h2 id=&quot;运行限制&quot;&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    <category term="2020年省赛" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2020%E5%B9%B4%E7%9C%81%E8%B5%9B/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字三角形(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88java%EF%BC%89/"/>
-    <id>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%AD%97%E4%B8%89%E8%A7%92%E5%BD%A2%EF%BC%88java%EF%BC%89/</id>
-    <published>2023-07-08T13:33:58.000Z</published>
-    <updated>2023-10-17T09:08:16.513Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a><strong>题目描述</strong></h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgUJ0O.png" alt="pCgUJ0O.png"></p><p>上图给出了一个数字三角形。从三角形的顶部到底部有很多条不同的路径。对于每条路径，把路径上面的数加起来可以得到一个和，你的任务就是找到最大的和。</p><p>路径上的每一步只能从一个数走到下一层和它最近的左边的那个数或者右 边的那个数。此外，向左下走的次数与向右下走的次数相差不能超过 1。</p><h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入的第一行包含一个整数N (1≤N≤100)，表示三角形的行数。</p><p>下面的 N 行给出数字三角形。数字三角形上的数都是 0 至 100 之间的整数。</p><h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示答案。</p><h1 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h1><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote><p>5<br>7<br>3 8<br>8 1 0<br>2 7 4 4<br>4 5 2 6 5</p></blockquote><h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote><p>27</p></blockquote><h3 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a><strong>运行限制</strong></h3><ul><li><p>最大运行时间：1s</p></li><li><p>最大运行内存: 256M</p></li></ul><h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">      <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">int</span> n=sc.nextInt();</span><br><span class="line">        <span class="type">int</span> [][]a=<span class="keyword">new</span> <span class="title class_">int</span>[n][n];</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt;=i; j++) &#123;</span><br><span class="line">                a[i][j]=sc.nextInt();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> dp[][]=<span class="keyword">new</span> <span class="title class_">int</span>[n][n];<span class="comment">//初始化dp，对最后一行中间赋值</span></span><br><span class="line">        <span class="comment">//因为向左下走的次数与向右下走的次数相差不能超过1</span></span><br><span class="line">        <span class="comment">//所以如果输入N为奇数，那么最后一定会走到最后一行中间的位置</span></span><br><span class="line">        <span class="comment">//如果输入N为偶数，那么最后一定会走到中间两个的其中之一</span></span><br><span class="line">        <span class="keyword">if</span>(n%<span class="number">2</span>==<span class="number">0</span>)&#123;</span><br><span class="line">            dp[n-<span class="number">1</span>][n/<span class="number">2</span>]=a[n-<span class="number">1</span>][n/<span class="number">2</span>];</span><br><span class="line">            dp[n-<span class="number">1</span>][n/<span class="number">2</span>-<span class="number">1</span>]=a[n-<span class="number">1</span>][n/<span class="number">2</span>-<span class="number">1</span>];</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            dp[n-<span class="number">1</span>][n/<span class="number">2</span>]=a[n-<span class="number">1</span>][n/<span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> n-<span class="number">2</span>; i &gt;=<span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt;= i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(dp[i+<span class="number">1</span>][j]!=<span class="number">0</span>||dp[i+<span class="number">1</span>][j+<span class="number">1</span>]!=<span class="number">0</span>)&#123;</span><br><span class="line">                    dp[i][j]= Math.max(dp[i+<span class="number">1</span>][j],dp[i+<span class="number">1</span>][j+<span class="number">1</span>])+a[i][j];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(dp[<span class="number">0</span>][<span class="number">0</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h1><p><a href="https://imgse.com/i/pCgUDjP"><img src="https://s1.ax1x.com/2023/07/08/pCgUDjP.png" alt="pCgUDjP.png"></a></p><h1 id="经典的数塔问题"><a href="#经典的数塔问题" class="headerlink" title="经典的数塔问题"></a><strong>经典的数塔问题</strong></h1><p><a href="https://imgse.com/i/pCgUyB8"><img src="https://s1.ax1x.com/2023/07/08/pCgUyB8.png" alt="pCgUyB8.png"></a></p><p>比如3-&gt;7-&gt;2-&gt;9这个路径，他的路径和是3+7+2+9</p><p>不难发现如果要求到9的最大路径和，首先要求出他前一层的最大路径</p><p>核心代码dp[i][j]=max(dp[i-1][j],dp[i-1][j+1])+a[i][j]</p><p>dp[i][j]（9的最大路径和)</p><p>a[i][j]（9自己）</p><p>dp[i-1][j]（前一层5的最大路径和）dp[i-1][j+1]（前一层2的最大路径和）</p><p>在前一层的最大路径和取大的那一个</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;&lt;strong&gt;题目描述&lt;/strong&gt;&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://s1.ax1x.com/2023/07/08/pCgU</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    <category term="2020年省赛" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2020%E5%B9%B4%E7%9C%81%E8%B5%9B/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-    <category term="动态规划" scheme="https://bdta-zky.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数列求值(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%88%97%E6%B1%82%E5%80%BC/"/>
-    <id>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E6%95%B0%E5%88%97%E6%B1%82%E5%80%BC/</id>
-    <published>2023-07-08T13:29:07.000Z</published>
-    <updated>2023-10-17T09:08:16.512Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p><strong>本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。</strong></p><p>给定数列 1,1,1,3,5,9,17,⋯1,1,1,3,5,9,17,⋯，从第 4项开始，每项都是前 3 项的和。</p><p>求第 2019032420190324 项的最后 4 位数字。</p><h2 id="运行限制"><a href="#运行限制" class="headerlink" title="运行限制"></a>运行限制</h2><p>最大运行时间：1s</p><p>最大运行内存: 128M</p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>类似斐波那契数列</p><h1 id="代码1"><a href="#代码1" class="headerlink" title="代码1"></a>代码1</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao600</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">20190324</span>];</span><br><span class="line">        a[<span class="number">0</span>]=a[<span class="number">1</span>]=a[<span class="number">2</span>]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">3</span>; i &lt;<span class="number">20190324</span>; i++) &#123;</span><br><span class="line">            a[i]=((a[i-<span class="number">1</span>]+a[i-<span class="number">2</span>]+a[i-<span class="number">3</span>])%<span class="number">10000</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(a[<span class="number">20190323</span>]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h2><p><img src="https://s1.ax1x.com/2023/07/08/pCgUipn.png" alt="pCgUipn.png"></p><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p><strong>内存占用过大</strong></p><p><strong>改进</strong>：因为只需要输出第20190324项，所以前面几项可定义为临时变量，计算一次释放一次，动态运行。</p><h1 id="代码2（优化）"><a href="#代码2（优化）" class="headerlink" title="代码2（优化）"></a>代码2（优化）</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao600</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">int</span> a=<span class="number">1</span>,b=<span class="number">1</span>,c=<span class="number">1</span>,d=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">3</span>; i &lt; <span class="number">20190324</span>; i++) &#123;</span><br><span class="line">            d=(a+b+c)%<span class="number">10000</span>;</span><br><span class="line">            a=b;</span><br><span class="line">            b=c;</span><br><span class="line">            c=d;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(d);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="结果实例-1"><a href="#结果实例-1" class="headerlink" title="结果实例"></a>结果实例</h2><p><img src="https://s1.ax1x.com/2023/07/08/pCgUipn.png" alt="pCgUipn.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;本题为填空题，只需要算出结果后，在代码中使用输出语句将所填结果输出即可。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;给</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    <category term="2019年省赛" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2019%E5%B9%B4%E7%9C%81%E8%B5%9B/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>字符统计(JAVA)</title>
-    <link href="https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1/"/>
-    <id>https://bdta-zky.github.io/%E8%93%9D%E6%A1%A5%E6%9D%AF-%E5%AD%97%E7%AC%A6%E7%BB%9F%E8%AE%A1/</id>
-    <published>2023-07-08T13:23:26.000Z</published>
-    <updated>2023-10-17T09:08:16.508Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个只包含大写字母的字符串 S，请你输出其中出现次数最多的字母。</p><p>如果有多个字母均出现了最多次，按字母表顺序依次输出所有这些字母。</p><h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个只包含大写字母的字符串 S .</p><h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>若干个大写字母，代表答案。</p><h2 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h2><p>BABBACAC</p><h2 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h2><p>AB</p><h2 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h2><p>对于 100% 的评测用例，1 ≤ |S | ≤ 106 .</p><h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>定义一个长度为26的数组，作为计数器，分别对应A<del>Z，记录A</del>Z每个字母出现的次数</p><p>然后输出最大值a【i】</p><h2 id="特殊情况："><a href="#特殊情况：" class="headerlink" title="特殊情况："></a>特殊情况：</h2><p>若两个及以上字母出现次数均为max，则可利用for循环，对max之后的a【i】与max进行比较，a【i】的顺序也正好为字典序，符合题意。</p><h1 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Lanqiao2672</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner sc=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        String s=sc.next();   <span class="comment">//键盘录入字符串S</span></span><br><span class="line">        <span class="type">int</span> a[]=<span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">26</span>];    <span class="comment">//定义一个长度为26的数组记录每个字母出现的次数</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">//将每个字符分别与A~Z进行比较，ASCII值相等的对应数组a【i】++；</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; s.length(); i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">65</span>; j &lt; <span class="number">91</span>; j++) &#123;   </span><br><span class="line">                <span class="keyword">if</span>((<span class="type">int</span>)s.charAt(i)==j)</span><br><span class="line">                    a[j-<span class="number">65</span>]++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//求出数组a的最大值</span></span><br><span class="line">        <span class="type">int</span> max=a[<span class="number">0</span>];</span><br><span class="line">        <span class="type">int</span> maxi=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; a.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i] &gt; max) &#123;</span><br><span class="line">                max = a[i];</span><br><span class="line">                maxi = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//判断最大值相等情况，按照字典序输出则正好按照a【i】i值由小到大排列</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> maxi; i &lt; a.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[i]==a[maxi])&#123;</span><br><span class="line">                System.out.print((<span class="type">char</span>)(i+<span class="number">65</span>));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"> </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgUpkQ.png" alt="pCgUpkQ.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;给定一个只包含大写字母的字符串 S，请你输出其中出现次数最多的字母。&lt;/p&gt;
-&lt;p&gt;如果有多个字母均出现了最多次，按字母表顺</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="蓝桥杯真题" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/"/>
-    
-    <category term="2022年省赛" scheme="https://bdta-zky.github.io/categories/java/%E8%93%9D%E6%A1%A5%E6%9D%AF%E7%9C%9F%E9%A2%98/2022%E5%B9%B4%E7%9C%81%E8%B5%9B/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="蓝桥杯" scheme="https://bdta-zky.github.io/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>案例3-1 基于控制台的购书系统</title>
-    <link href="https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B3-1-%E5%9F%BA%E4%BA%8E%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%9A%84%E8%B4%AD%E4%B9%A6%E7%B3%BB%E7%BB%9F/"/>
-    <id>https://bdta-zky.github.io/%E6%A1%88%E4%BE%8B3-1-%E5%9F%BA%E4%BA%8E%E6%8E%A7%E5%88%B6%E5%8F%B0%E7%9A%84%E8%B4%AD%E4%B9%A6%E7%B3%BB%E7%BB%9F/</id>
-    <published>2023-07-08T13:21:01.000Z</published>
-    <updated>2023-10-17T09:08:16.502Z</updated>
-    
-    <content type="html"><![CDATA[<p>伴随互联网的蓬勃发展，网络购书系统作为电子商务的一种形式正以其高效、低成本的优势逐步成为新兴的经营模式，人们已经不再满足互联网的用途仅仅局限于信息的浏览和发布，更渴望着能够充分享受互联网带来的更多便利。网络购书系统正适应了当今社会快节奏地生活，使顾客足不出户便可以方便快捷轻松地选购自己喜欢的图书</p><p>本案例要求，使用所学知识编写一个基于控制台的购书系统，实现购书功能。程序输出所有图书的信息，包括每本书的编号、书名、单价、库存顾客购书时，根据提示输入图书编号选购需要的书，并根据提示输入购买书的的数量。购买完毕后输出顾客的订单信息，包括订单号、订单明细、订单总额。</p><h1 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h1><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">book</span>   &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> number;   <span class="comment">// 编号</span></span><br><span class="line">    <span class="keyword">private</span> String name;   <span class="comment">// 书名</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">double</span> price;  <span class="comment">// 单价</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> kucun;      <span class="comment">// 库存</span></span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">book</span><span class="params">()</span> &#123;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">book</span><span class="params">(<span class="type">int</span> number, String name, <span class="type">double</span> price, <span class="type">int</span> kucun)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.number = number;</span><br><span class="line">        <span class="built_in">this</span>.name = name;</span><br><span class="line">        <span class="built_in">this</span>.price = price;</span><br><span class="line">        <span class="built_in">this</span>.kucun = kucun;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getNumber</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> number;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">getName</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">double</span> <span class="title function_">getPrice</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> price;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getKucun</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> kucun;</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setKucun</span><span class="params">(<span class="type">int</span> kucun)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.kucun = kucun;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Tushu</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        <span class="type">Tushu</span> <span class="variable">d</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Tushu</span>();   <span class="comment">// 创建对象</span></span><br><span class="line"> </span><br><span class="line">        book[] books = <span class="keyword">new</span> <span class="title class_">book</span>[<span class="number">3</span>];   <span class="comment">// 定义数组</span></span><br><span class="line">        books[<span class="number">0</span>] = <span class="keyword">new</span> <span class="title class_">book</span>(<span class="number">01</span>, <span class="string">&quot;java基础&quot;</span>, <span class="number">29.9</span>, <span class="number">100</span>);</span><br><span class="line">        books[<span class="number">1</span>] = <span class="keyword">new</span> <span class="title class_">book</span>(<span class="number">02</span>, <span class="string">&quot;数据结构&quot;</span>, <span class="number">39.9</span>, <span class="number">200</span>);</span><br><span class="line">        books[<span class="number">2</span>] = <span class="keyword">new</span> <span class="title class_">book</span>(<span class="number">03</span>, <span class="string">&quot;操作系统&quot;</span>, <span class="number">49.9</span>, <span class="number">500</span>);</span><br><span class="line"> </span><br><span class="line">        d.Put(books);     <span class="comment">// 将数组元素添加到方法中</span></span><br><span class="line">        d.Order(books);     <span class="comment">//订单</span></span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 输出图书信息</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">Put</span><span class="params">(book[] ts)</span> &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;图书编号\t图书名称\t\t图书单价\t库存&quot;</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; ts.length ; i++)&#123;   <span class="comment">// 遍历数组,输出图书信息</span></span><br><span class="line">            System.out.println(ts[i].getNumber() + <span class="string">&quot;\t\t&quot;</span> + ts[i].getName() + <span class="string">&quot;\t\t&quot;</span> + ts[i].getPrice() + <span class="string">&quot;\t&quot;</span> +ts[i].getKucun());</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;----------------------------------&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 订单方法</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">Order</span><span class="params">(book[] books)</span> &#123;</span><br><span class="line">        <span class="type">Scanner</span> <span class="variable">in</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">boolean</span> <span class="variable">b</span> <span class="operator">=</span> <span class="literal">true</span>;   <span class="comment">// 定义一个boolean变量</span></span><br><span class="line">        <span class="type">double</span> <span class="variable">ZongJinEr</span> <span class="operator">=</span> <span class="number">0</span>;   <span class="comment">// 记录商品总额</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">Sum</span> <span class="operator">=</span> <span class="number">0</span>;     <span class="comment">// 记录购买书本件数</span></span><br><span class="line">        <span class="keyword">while</span> (b) &#123;   <span class="comment">// 使用循环使购买图书可以重复购买</span></span><br><span class="line">            <span class="type">int</span> flag=<span class="number">0</span>;     <span class="comment">//定义一个变量作为合法编号判断</span></span><br><span class="line">            System.out.println(<span class="string">&quot;请输入要购买图书的编号:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> <span class="variable">Bian</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">            System.out.println(<span class="string">&quot;请输入购买数量:&quot;</span>);</span><br><span class="line">            <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> in.nextInt();</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span> ; i &lt; books.length ; i++)&#123;</span><br><span class="line">                <span class="comment">// 遍历数组</span></span><br><span class="line">                <span class="keyword">if</span> (Bian == books[i].getNumber())&#123;</span><br><span class="line">                    <span class="comment">// 寻找图书对应的编号</span></span><br><span class="line">                    <span class="keyword">if</span>(num&lt;=<span class="number">0</span>||num&gt;books[i].getKucun())&#123;</span><br><span class="line">                        System.out.println(<span class="string">&quot;该图书库存量为&quot;</span>+books[i].getKucun()+<span class="string">&quot;\n请重新输入！&quot;</span>);</span><br><span class="line">                        <span class="keyword">continue</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    books[i].setKucun(books[i].getKucun()-num);</span><br><span class="line">                    System.out.println(<span class="string">&quot;订单编号:&quot;</span> + Bian);</span><br><span class="line">                    System.out.println(<span class="string">&quot;购买书名:&quot;</span> + books[i].getName() + <span class="string">&quot;\n订单总额:&quot;</span> + num*books[i].getPrice() + <span class="string">&quot;\n交易明细,购买:&quot;</span> + books[i].getName() + num + <span class="string">&quot;本&quot;</span>);</span><br><span class="line">                    ZongJinEr += num*books[i].getPrice();   <span class="comment">// 商品价格相加</span></span><br><span class="line">                    Sum += num;    <span class="comment">// 购买件数相加</span></span><br><span class="line">                    flag++;</span><br><span class="line">                &#125;</span><br><span class="line"> </span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(flag==<span class="number">0</span>) System.out.println(<span class="string">&quot;非法编号！&quot;</span>);</span><br><span class="line">            System.out.println(<span class="string">&quot;是否继续购买:&quot;</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">s</span> <span class="operator">=</span> in.next();</span><br><span class="line">            <span class="keyword">if</span> (s.equals(<span class="string">&quot;否&quot;</span>))&#123;   <span class="comment">// 输入否循环结束</span></span><br><span class="line">                b = <span class="literal">false</span>;</span><br><span class="line">                System.out.println(<span class="string">&quot;一共购买:&quot;</span> + Sum + <span class="string">&quot;本,共消费:&quot;</span> + ZongJinEr);   <span class="comment">// 打印购买件数,与总额</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="结果实例"><a href="#结果实例" class="headerlink" title="结果实例"></a>结果实例</h1><p><img src="https://s1.ax1x.com/2023/07/08/pCgNO6P.png" alt="pCgNO6P.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;伴随互联网的蓬勃发展，网络购书系统作为电子商务的一种形式正以其高效、低成本的优势逐步成为新兴的经营模式，人们已经不再满足互联网的用途仅仅局限于信息的浏览和发布，更渴望着能够充分享受互联网带来的更多便利。网络购书系统正适应了当今社会快节奏地生活，使顾客足不出户便可以方便快捷轻</summary>
-      
-    
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/categories/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/categories/java/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
-    
-    
-    <category term="java" scheme="https://bdta-zky.github.io/tags/java/"/>
-    
-    <category term="算法模拟题" scheme="https://bdta-zky.github.io/tags/%E7%AE%97%E6%B3%95%E6%A8%A1%E6%8B%9F%E9%A2%98/"/>
     
   </entry>
   
